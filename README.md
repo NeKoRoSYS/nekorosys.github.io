@@ -1,2 +1,4 @@
 # GenecroMCBE
-Official website made by yours truly. Second official repository along with MCPEDL for posting add-on packs for Minecraft: Bedrock Edition.
+Official website made by GenecroMarX. This is where I will also officially post my add-on packs.
+
+MCPEDL Page - https://mcpedl.com/user/zachmc
