@@ -1,4 +1,9 @@
-[About Me](./about) | [View Portfolio]()
+---
+layout: default
+title: "About GenecroMarX"
+permalink: /home
+---
+[About Me](https://genecromarx.github.io/about-genecromarx) | [View Portfolio]()
 
 ## Recent Posts
 
