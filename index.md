@@ -2,4 +2,4 @@
 
 ## Recent Posts
 
-*   [(Test Post) Happy New Year!!!](https://genecromarx.github.io/2022/01/01/test.html)
+*   [(Test Post) Happy New Year!!!](https://genecromarx.github.io/testannouncement)
