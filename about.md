@@ -1,3 +1,8 @@
+---
+layout: default
+title: "About GenecroMarX"
+permalink: /about-genecromarx
+---
 [< Home](https://genecromarx.github.io)
 
 # About Me
