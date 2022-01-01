@@ -3,7 +3,7 @@ layout: default
 title: "Happy New Year!"
 date: 2021-01-01 13:20:01 -0000
 categories: Announcement
-permalink: /happynewyear
+permalink: /happy-new-year
 ---
 # (Test Announcement) Happy New Year!
 
