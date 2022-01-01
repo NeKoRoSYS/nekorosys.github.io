@@ -1,7 +1,6 @@
 ---
 layout: default
-title: "About GenecroMarX"
-permalink: /home
+title: "GenecroMarX"
 ---
 [About Me](https://genecromarx.github.io/about-genecromarx) | [View Portfolio]()
 
