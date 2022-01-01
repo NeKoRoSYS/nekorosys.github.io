@@ -5,6 +5,8 @@ date: 2021-01-01 13:20:01 -0000
 categories: [announcement]
 permalink: /happy-new-year
 ---
+[< Home](https://genecromarx.github.io/home)
+
 # (Test Announcement) Happy New Year!
 
 Even though this is a test announcement, it wouldn't hurt to greet y'all a Happy New Year, no?
