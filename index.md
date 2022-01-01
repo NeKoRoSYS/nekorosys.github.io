@@ -1,4 +1,4 @@
-[About Me](genecromarx.github.io/about)
+[About Me](./about)
 
 ## Recent Posts
 
