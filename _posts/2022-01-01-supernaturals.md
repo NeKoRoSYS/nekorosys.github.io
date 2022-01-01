@@ -5,6 +5,8 @@ date: 2021-01-01 19:00:00 -0000
 categories: [addon pack]
 permalink: /supernaturals
 ---
+[< Home](https://genecromarx.github.io/index/)
+
 # Genecro's Supernaturals
 
 The Supermaturals Add-on introduces new items, materials, blocks, and two factions of extremely dangerous mobs. Supernaturals are hostile toward any friendly beings they come across, and most of their stats have been drastically buffed compared to the usual vanilla Minecraft monsters! Most features are under development and may lack textures and will most likely have bugs, be sure to stay tuned for more updates in the future!
@@ -133,3 +135,5 @@ However, they do have weaknesses! Vampires burn in the daylight, but they burn f
 -     _Optimization._
 
 [Download Resource Pack](https://www.mediafire.com/file/gac0cuuejytmd9t/RP_Supernaturals_1-9-5.mcaddon/file) | [Download Behavior Pack](https://www.mediafire.com/file/aimw0658xin2keq/BP_Supernaturals_1-9-5.mcaddon/file)
+
+[^ Back to Top ^](#genecros-supernaturals)
