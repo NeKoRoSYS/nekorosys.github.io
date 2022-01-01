@@ -1,4 +1,4 @@
-[< Back](genecromarx.github.io)
+[< Back](./index)
 
 # About Me
 
