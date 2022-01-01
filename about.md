@@ -12,6 +12,8 @@ Here are my active social media accounts! _I suck at managing socmeds, it's bett
 
 [Discord](https://discord.gg/h4Q6mfGrh3) | [Twitter](https://twitter.com/GenecroMarcus) | [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w)
 
+Feel free to contact me using these links for business inquiries! [My Portfolio]
+
 ## Buy me a Cup of Coffee!
 
 It'd be really appreciated if someone were to [buy me a cup of coffee](https://ko-fi.com/genecromarx#paypalModal). This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
