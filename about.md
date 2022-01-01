@@ -12,8 +12,4 @@ I made this website to create a more personal space for my creations.
 
 Here are my active social media accounts! _I suck at managing socmeds, it's better to head over to my Discord server to contact me_
 
-[Discord](https://discord.gg/h4Q6mfGrh3)
-
-[Twitter](https://twitter.com/GenecroMarcus)
-
-[YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w)
+> [Discord](https://discord.gg/h4Q6mfGrh3) | [Twitter](https://twitter.com/GenecroMarcus) | [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w)
