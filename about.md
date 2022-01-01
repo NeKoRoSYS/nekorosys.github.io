@@ -3,7 +3,7 @@ layout: default
 title: "About GenecroMarX"
 permalink: /about-genecromarx
 ---
-[< Home](https://genecromarx.github.io)
+[< Home](https://genecromarx.github.io/home)
 
 # About Me
 
