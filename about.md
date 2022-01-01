@@ -10,7 +10,7 @@ I made this website to create a more personal space for my creations.
 
 ## Socials
 
-Here are my active social media accounts! _I suck at managing socmeds, it's better to head to my Discord server to contact me_
+Here are my active social media accounts! _I suck at managing socmeds, it's better to head over to my Discord server to contact me_
 
 [Discord](https://discord.gg/h4Q6mfGrh3)
 
