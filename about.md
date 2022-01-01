@@ -6,10 +6,12 @@ I am an aspiring graphic designer, I play video games, and I also develop Minecr
 
 I made this website to create a more personal space for my creations.
 
-
-
 ## Socials
 
 Here are my active social media accounts! _I suck at managing socmeds, it's better to head over to my Discord server to contact me_
 
 [Discord](https://discord.gg/h4Q6mfGrh3) | [Twitter](https://twitter.com/GenecroMarcus) | [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w)
+
+## Buy me a Cup of Coffee!
+
+It'd be really appreciated if someone were to buy me a cup of coffee. This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
