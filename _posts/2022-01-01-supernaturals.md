@@ -47,9 +47,9 @@ _It is the utmost importance to turn on all the "Experimental Feature" toggles b
 
 There are two playable modes that players can select by using the cogwheel icon at the Behavior Pack settings:
 
--     Normal Mode - Weaker Vampires and Werewolves, more reasonable Wandering Hunter trades, and decreased spawn rates.
+-     **Normal Mode** - Weaker Vampires and Werewolves, more reasonable Wandering Hunter trades, and decreased spawn rates.
 
--     Bloodlust Mode - Stronger Vampires and Werewolves, less reasonable Wandering Hunter trades, and increased spawn rates.
+-     **Bloodlust Mode** - Stronger Vampires and Werewolves, less reasonable Wandering Hunter trades, and increased spawn rates.
 
 -     Subtle changes to the Vampire Boss can be observed from the two modes.
 
