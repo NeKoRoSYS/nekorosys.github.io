@@ -7,6 +7,7 @@ I am an aspiring graphic designer, I play video games, and I also develop Minecr
 I made this website to create a more personal space for my creations.
 
 
+
 ## Socials
 
 Here are my active social media accounts! _I suck at managing socmeds, it's better to head to my Discord server to contact me_
