@@ -5,7 +5,7 @@ date: 2021-01-01 19:00:00 -0000
 categories: [addon pack]
 permalink: /supernaturals
 ---
-[< Home](https://genecromarx.github.io/)
+[< Home](https://genecromarx.github.io/home)
 
 # Genecro's Supernaturals
 
