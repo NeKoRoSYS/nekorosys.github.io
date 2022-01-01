@@ -1,6 +1,6 @@
 # About Me
 
-Hello there, I am GenecroMarX! You can call me Necro for short, or even Marky, I guess. ¯\\__(ツ)__/¯
+Hello there, I am GenecroMarX! You can call me Necro for short, or even Marky, I guess. ¯\\___(ツ)___/¯
 
 I am an aspiring graphic designer, I play video games, and I also develop Minecraft: Bedrock Edition add-ons! You can see most of my works officially at my [MCPEDL Page](https://mcpedl.com/user/zachmc/).
 
