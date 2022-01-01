@@ -14,4 +14,4 @@ Here are my active social media accounts! _I suck at managing socmeds, it's bett
 
 ## Buy me a Cup of Coffee!
 
-It'd be really appreciated if someone were to buy me a cup of coffee. This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
+It'd be really appreciated if someone were to [buy me a cup of coffee](https://ko-fi.com/genecromarx#paypalModal). This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
