@@ -14,6 +14,7 @@ I am an aspiring graphic designer, I play video games, and I also develop Minecr
 I made this website to create a more personal space for my creations.
 
 <br>
+
 ## Socials
 
 Here are my active social media accounts! _I suck at managing socmeds, it's better to head over to my Discord server to contact me_
@@ -21,6 +22,7 @@ Here are my active social media accounts! _I suck at managing socmeds, it's bett
 [Discord](https://discord.gg/h4Q6mfGrh3) | [Twitter](https://twitter.com/GenecroMarcus) | [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w) | [TikTok](https://tiktok.com/@necromarxph)
 
 <br>
+
 ## Business Inquiries
 
 Feel free to contact me using the aforementioned links above for business inquiries!
@@ -31,6 +33,7 @@ Feel free to contact me using the aforementioned links above for business inquir
 [Minecraft: Bedrock Edition](https://mcpedl.com/user/zachmc)
 
 <br>
+
 ## Buy me some Coffee!
 
 It'd be really appreciated if someone were to [buy me a cup of coffee](https://ko-fi.com/genecromarx#paypalModal). This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
