@@ -22,11 +22,13 @@ Here are my active social media accounts! _I suck at managing social media accou
 -     [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w)<br>
 -     [TikTok](https://tiktok.com/@necromarxph)
 
+Feel free to contact me using the aforementioned links above for business inquiries!
+
 <br>
 
 ## Business Inquiries
 
-Feel free to contact me using the aforementioned links above for business inquiries!
+Below are my portfolios to showcase my skills in case *you* are looking for someone to work with. ヽ(゜∇゜)ノ
 
 ### My Portfolios
 
