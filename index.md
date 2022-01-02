@@ -2,7 +2,7 @@
 layout: default
 title: "GenecroMarX"
 ---
-[About Me](https://genecromarx.github.io/about-genecromarx) | [View Portfolio (Graphics Design)](https://www.behance.net/genecro) | [View Portfolio (Minecraft: Bedrock Edition)](https://mcpedl.com/user/zachmc)
+[About Me](https://genecromarx.github.io/about-genecromarx)
 
 ## Recent Posts
 
