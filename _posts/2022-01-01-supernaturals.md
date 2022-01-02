@@ -144,3 +144,7 @@ However, they do have weaknesses! Vampires burn in the daylight, but they burn f
 -     _Optimization._
 
 [Download Resource Pack](https://download1503.mediafire.com/gigarl43uhkg/gac0cuuejytmd9t/RP_Supernaturals_1-9-5.mcaddon) | [Download Behavior Pack](https://download1588.mediafire.com/xqts3xcka9zg/aimw0658xin2keq/BP_Supernaturals_1-9-5.mcaddon)
+
+<br>
+
+[^ Back to Top ^](supernaturals#genecros-supernaturals)
