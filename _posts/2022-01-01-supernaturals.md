@@ -43,7 +43,7 @@ Re-distribute the add-on packs or works elsewhere, without the author's approval
  
 "Genecro's Supernaturals" is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) by the author "GenecroMarX," also known as "G3NECRX," and "ZachMC." 
  
-**I shall take action if at least of these terms and conditions are not followed.**
+**I shall take action if at least one of these terms and conditions are not followed.**
 
 <br>
 
