@@ -11,14 +11,18 @@ permalink: /supernaturals
 
 The Supernaturals Add-on introduces new items, materials, blocks, and two factions of extremely dangerous mobs. Supernaturals are hostile toward any friendly beings they come across, and most of their stats have been drastically buffed compared to the usual vanilla Minecraft monsters! Most features are under development and may lack textures and will most likely have bugs, be sure to stay tuned for more updates in the future!
 
+<br>
+
 ## Info
 
-Current Version - 1.9.5, [View at MCPEDL](https://mcpedl.com/the-vampires-addon/)
+**Current Version** - 1.9.5, [View at MCPEDL](https://mcpedl.com/the-vampires-addon/)
 
-Special Thanks:
+**Special Thanks:**
 
-IamBaalVeer#4244 - Playtesting & Bug fixing; and
-All the wholesome people who helped me out develop Supernaturals at Bedrock Add-ons!
+**IamBaalVeer#4244** - Playtesting & Bug fixing; and
+All the wholesome people who helped me out develop Supernaturals at [Bedrock Add-ons]()!
+
+<br>
 
 ### Terms of Usage
 
@@ -40,6 +44,8 @@ Re-distribute the add-on packs or works elsewhere, without the author's approval
 "Genecro's Supernaturals" is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License by the author "GenecroMarX," also known as "G3NECRX," and "ZachMC." 
  
 I shall take action if at least of these terms and conditions are not followed. 
+
+<br>
 
 ### Features
 
@@ -92,13 +98,14 @@ _Here is a list of the new items and blocks brought by the add-on pack:_
 
 _Side Note - All recipes are automatically listed on the recipe book, if the required materials are in the inventory._
 
+<br>
 _Here is a list of the new entities and their abilities:_
 
 **Bloodstone Golem** - Fierce killing machines that dwell in the deep dark caves and are powered by Bloodstone. These Warden wannabes are fast and strong, you better not mess with them!
 
 **Wandering Hunter** - These traders will randomly spawn around the overworld to aid you in your battle against the Supernaturals.
- 
 
+<br>
 #### Vampires Faction
 
 **Lesser Vampire** - Increased health, attack damage, and movement speed.
@@ -114,9 +121,11 @@ _Here is a list of the new entities and their abilities:_
 Vampires are hostile toward players and most land-dwelling mobs. They are incredibly fast so there's really little possibilities of being able to escape them, making every encounter an "offense is the best defense" scenario.
 However, they do have weaknesses! Vampires burn in the daylight, but they burn faster in the lava, so make sure you always have a lava bucket around!
 
+<br>
 #### [BETA] Werewolves Faction
 **Wereager** - A new Villager variant that spawns anywhere during the day, is hostile at night time.
- 
+
+<br>
 
 ### Planned Features
 
