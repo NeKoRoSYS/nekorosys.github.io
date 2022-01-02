@@ -31,15 +31,16 @@ You ("you," "player") are to follow these terms and conditions upon downloading 
 
 You are permitted to:
 
-Examine the code and works to learn more about the creation and development of add-ons.
-Change the code or works to suit your needs.
-Use the add-on packs as you see fit in-game.
+-     Examine the code and works to learn more about the creation and development of add-ons.<br>
+-     Change the code or works to suit your needs.<br>
+-     Use the add-on packs as you see fit in-game.
+
 You are NOT permitted to:
 
-Negate the accreditation of the original author.
-Paste the direct download link, negating the MCPEDL page.
-Take the author's code, works, and textures to republish them as your own.
-Re-distribute the add-on packs or works elsewhere, without the author's approval.
+-     Negate the accreditation of the original author.<br>
+-     Paste the direct download link, negating the MCPEDL page.<br>
+-     Take the author's code, works, and textures to republish them as your own.<br>
+-     Re-distribute the add-on packs or works elsewhere, without the author's approval.
  
 "Genecro's Supernaturals" is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) by the author "GenecroMarX," also known as "G3NECRX," and "ZachMC." 
  
