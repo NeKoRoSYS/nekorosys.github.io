@@ -19,7 +19,14 @@ Here are my active social media accounts! _I suck at managing socmeds, it's bett
 
 [Discord](https://discord.gg/h4Q6mfGrh3) | [Twitter](https://twitter.com/GenecroMarcus) | [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w) | [TikTok](https://tiktok.com/@necromarxph)
 
-Feel free to contact me using these links above for business inquiries! [My Portfolio (Graphics Design](https://www.behance.net/genecro) / [My Portfolio (Minecraft: Bedrock Edition](https://mcpedl.com/user/zachmc)
+## Business Inquiries
+
+Feel free to contact me using the aforementioned links above for business inquiries!
+
+### My Portfolios
+
+[Graphic Design](https://www.behance.net/genecro)<br>
+[Minecraft: Bedrock Edition](https://mcpedl.com/user/zachmc)
 
 ## Buy me some Coffee!
 
