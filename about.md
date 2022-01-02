@@ -12,12 +12,14 @@ Hello there, I am GenecroMarX! You can call me Necro for short, or even Marky, I
 I am an aspiring graphic designer, I play video games, and I also develop Minecraft: Bedrock Edition add-ons! You can see most of my works with Minecraft: Bedrock Edition officially at my [MCPEDL Page](https://mcpedl.com/user/zachmc/).
 
 I made this website to create a more personal space for my creations.
+
 <br>
 ## Socials
 
 Here are my active social media accounts! _I suck at managing socmeds, it's better to head over to my Discord server to contact me_
 
 [Discord](https://discord.gg/h4Q6mfGrh3) | [Twitter](https://twitter.com/GenecroMarcus) | [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w) | [TikTok](https://tiktok.com/@necromarxph)
+
 <br>
 ## Business Inquiries
 
@@ -27,6 +29,7 @@ Feel free to contact me using the aforementioned links above for business inquir
 
 [Graphic Design](https://www.behance.net/genecro)<br>
 [Minecraft: Bedrock Edition](https://mcpedl.com/user/zachmc)
+
 <br>
 ## Buy me some Coffee!
 
