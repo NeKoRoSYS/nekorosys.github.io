@@ -20,7 +20,7 @@ The Supernaturals Add-on introduces new items, materials, blocks, and two factio
 **Special Thanks:**
 
 **IamBaalVeer#4244** - Playtesting & Bug fixing; and
-All the wholesome people who helped me out develop Supernaturals at [Bedrock Add-ons]()!
+All the wholesome people who helped me out develop Supernaturals at [Bedrock Add-ons](https://discord.gg/HMSRWuR78w)!
 
 <br>
 
