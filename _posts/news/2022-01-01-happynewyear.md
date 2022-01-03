@@ -3,7 +3,7 @@ layout: default
 title: "Happy New Year!"
 date: 2021-01-01 13:20:01 -0000
 categories: announcement
-permalink: /happy-new-year
+permalink: /news/happy-new-year
 ---
 [< Home](https://genecromarx.github.io)
 
