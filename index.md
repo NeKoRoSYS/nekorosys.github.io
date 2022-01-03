@@ -2,7 +2,7 @@
 layout: default
 title: "GenecroMarX"
 ---
-[About Me](https://genecromarx.github.io/about-genecromarx)
+[About Me](docs/about)
 
 ## Recent Posts
 
