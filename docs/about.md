@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About GenecroMarX"
-permalink: /about-genecromarx
+permalink: docs/about
 ---
 [< Home](https://genecromarx.github.io)
 
