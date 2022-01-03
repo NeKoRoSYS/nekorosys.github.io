@@ -9,7 +9,14 @@
 
 {% seo %}
     {% include head-custom.html %}
-    <style>
+    
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      <style>
 ul {
   list-style-type: none;
   margin: 0;
@@ -34,12 +41,6 @@ li a:hover {
   background-color: #ce2727;
 }
 </style>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
         <header class="inner">
           {% if site.github.is_project_page %}
             <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
