@@ -6,4 +6,4 @@ paginate: 5
 paginate_path: "/:num/"
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-slate
+theme: jekyll-theme-time-machine
