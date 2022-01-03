@@ -2,7 +2,7 @@
 layout: default
 title: "GenecroMarX"
 ---
-[About Me](docs/about)
+# Welcome to my website!
 
 ## Recent Posts
 
