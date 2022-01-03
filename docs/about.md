@@ -22,7 +22,7 @@ Here are my active social media accounts! _I suck at managing social media accou
 -     [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w)<br>
 -     [TikTok](https://tiktok.com/@necromarxph)
 
-Feel free to contact me using the aforementioned links above for [business inquiries](about-genecromarx#business-inquiries)!
+Feel free to contact me using the aforementioned links above for [business inquiries](about#business-inquiries)!
 
 <br>
 
