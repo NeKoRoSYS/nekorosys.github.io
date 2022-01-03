@@ -6,8 +6,6 @@ categories: addon
 tags: [addon, add-on, genecro, genecro's, supernaturals, genecro's supernaturals]
 permalink: /addons/supernaturals
 ---
-[< Home](https://genecromarx.github.io)
-
 # Genecro's Supernaturals
 
 The Supernaturals Add-on introduces new items, materials, blocks, and two factions of extremely dangerous mobs. Supernaturals are hostile toward any friendly beings they come across, and most of their stats have been drastically buffed compared to the usual vanilla Minecraft monsters! Most features are under development and may lack textures and will most likely have bugs, be sure to stay tuned for more updates in the future!
