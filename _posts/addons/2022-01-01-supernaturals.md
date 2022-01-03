@@ -4,7 +4,7 @@ title: "[1.9.5] Genecro's Supernaturals"
 date: 2021-01-01 19:00:00 -0000
 categories: addon
 tags: [addon, add-on, genecro, genecro's, supernaturals, genecro's supernaturals]
-permalink: /supernaturals
+permalink: /addons/supernaturals
 ---
 [< Home](https://genecromarx.github.io)
 
