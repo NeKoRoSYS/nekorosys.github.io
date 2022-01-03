@@ -18,37 +18,12 @@
     <div id="header_wrap" class="outer">
       
         <header class="inner">
-          <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: center;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 5px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #ce2727;
-}
-</style>
           {% if site.github.is_project_page %}
             <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           {% endif %}
 
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          <h1 align=center id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h2 align=center id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -57,11 +32,6 @@ li a:hover {
             </section>
           {% endif %}
         </header>
-      <ul>
-  <li><a class="active" href="https://genecromarx.github.io">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="https://genecromarx.github.io/docs/about">About</a></li>
-</ul>
     </div>
 
     <!-- MAIN CONTENT -->
