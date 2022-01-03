@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Add-Ons"
+permalink: /addons
 ---
 # Minecraft: Bedrock Edition Add-Ons
 
