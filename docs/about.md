@@ -15,10 +15,10 @@ I am an aspiring graphic designer, I play video games, and I also develop Minecr
 
 Here are my active social media accounts! _I suck at managing social media accounts, it's better to head over to my Discord server to contact me._ (●´ω｀●)
 
--     [Discord](https://discord.gg/h4Q6mfGrh3)<br>
--     [Twitter](https://twitter.com/GenecroMarcus)<br>
--     [YouTube](https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w)<br>
--     [TikTok](https://tiktok.com/@necromarxph)
+-     <a href="https://discord.gg/h4Q6mfGrh3" target="_blank">Discord</a><br>
+-     <a href="https://twitter.com/GenecroMarcus" target="_blank">Twitter</a><br>
+-     <a href="https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w" target="_blank">YouTube</a><br>
+-     <a href="https://tiktok.com/@necromarxph" target="_blank">TikTok</a>
 
 Feel free to contact me using the aforementioned links above for [business inquiries](about#business-inquiries)!
 
@@ -30,11 +30,11 @@ Below are my portfolios to showcase my skills in case *you* are looking for some
 
 ### My Portfolios
 
-[Graphic Design](https://www.behance.net/genecro)<br>
-[Minecraft: Bedrock Edition](https://mcpedl.com/user/zachmc)
-
+<a href="https://www.behance.net/genecro" target="_blank">Graphic Design</a><br>
+<a href="https://mcpedl.com/user/zachmc" target="_blank">Minecraft: Bedrock Edition</a>
+  
 <br>
 
 ## Buy me some Coffee!
 
-It'd be really appreciated if someone were to [buy me a cup of coffee](https://ko-fi.com/genecromarx#paypalModal). This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
+It'd be really appreciated if someone were to <a href="https://ko-fi.com/genecromarx#paypalModal" target="_blank">buy me a cup of coffee</a>. This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
