@@ -14,7 +14,7 @@ The Supernaturals Add-on introduces new items, materials, blocks, and two factio
 
 ## Info
 
-**Current Version** - 1.9.5, [View at MCPEDL](https://mcpedl.com/the-vampires-addon/)
+**Current Version** - 1.9.5, <a href="https://mcpedl.com/the-vampires-addon" target="_blank">View at MCPEDL</a>
 
 **Special Thanks:**
 
