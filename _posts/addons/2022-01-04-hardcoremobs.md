@@ -60,4 +60,10 @@ _Here is list of changes for most hostile mobs in the game. You can try the add
 -     **Skeleton** - Very fast, double health and attack damage.<br>
 -     **Spiders** - Increased speed and agility.
 
+## Planned Features
+
+-     _More hostile mobs to buff._
+-     _Better loot tables._
+-     _Modified UI to display a new "Hardcore Mobs" difficulty that OPs can select for their worlds._
+
 [Download Behavior Pack](https://download1587.mediafire.com/0h0yhdkx9d1g/1nfjc3qonp16vvt/HCMobsB.mcpack)
