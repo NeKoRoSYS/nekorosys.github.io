@@ -48,6 +48,7 @@ You are NOT permitted to:
 
 **It is recommended NOT to enable this behavior pack on your important worlds, unless there is a recent back-up for them.**<br>
 
+<br>
 #### Which mobs have been changed?
 
 The creeper is probably the most dangerous mob seeing as it is super fast and causes a huge fire explosion. The only way that you might survive is if you're equipped with some armor, but even then the odds are quite low that you'll survive. 
