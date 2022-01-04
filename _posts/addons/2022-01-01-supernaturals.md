@@ -62,8 +62,8 @@ There are two playable modes that players can select by using the cogwheel icon 
 -     Subtle changes to the Vampire Boss can be observed from the two modes.
 
 -     Bloodstone ores generate differently and are more uncommon in Bloodlust Mode.
- 
 
+<br>
 _Here is a list of the new items and blocks brought by the add-on pack:_
 
 **Condensed Vampire Specimen** - A special item dropped by Ghoullagers and Lesser Vampires, can be crafted into Bloodstone Shards.
