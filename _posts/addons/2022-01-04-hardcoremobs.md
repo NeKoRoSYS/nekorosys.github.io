@@ -46,7 +46,7 @@ You are NOT permitted to:
 
 #### How does it work?
 
-**It is recommended NOT to enable this behavior pack on your important worlds, unless there is a recent back-up for them.**
+**It is recommended NOT to enable this behavior pack on your important worlds, unless there is a recent back-up for them.**<br>
 
 #### Which mobs have been changed?
 
@@ -60,10 +60,14 @@ _Here is list of changes for most hostile mobs in the game. You can try the add
 -     **Skeleton** - Very fast, double health and attack damage.<br>
 -     **Spiders** - Increased speed and agility.
 
+<br>
+
 ## Planned Features
 
 -     _More hostile mobs to buff._
 -     _Better loot tables._
 -     _Modified UI to display a new "Hardcore Mobs" difficulty that OPs can select for their worlds._
+
+<br>
 
 [Download Behavior Pack](https://download1587.mediafire.com/0h0yhdkx9d1g/1nfjc3qonp16vvt/HCMobsB.mcpack)
