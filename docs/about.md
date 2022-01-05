@@ -17,6 +17,7 @@ Here are my active social media accounts! _I suck at managing social media accou
 
 -     <a href="https://discord.gg/h4Q6mfGrh3" target="_blank">Discord</a><br>
 -     <a href="https://twitter.com/GenecroMarX" target="_blank">Twitter</a><br>
+-     <a href="https://facebook.com/GenecroMarX" target="_blank">Facebook Page</a><br>
 -     <a href="https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w" target="_blank">YouTube</a><br>
 -     <a href="https://tiktok.com/@necromarxph" target="_blank">TikTok</a>
 
