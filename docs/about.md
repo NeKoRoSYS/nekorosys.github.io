@@ -16,7 +16,7 @@ I am an aspiring graphic designer, I play video games, and I also develop Minecr
 Here are my active social media accounts! _I suck at managing social media accounts, it's better to head over to my Discord server to contact me._ (●´ω｀●)
 
 -     <a href="https://discord.gg/h4Q6mfGrh3" target="_blank">Discord</a><br>
--     <a href="https://twitter.com/GenecroMarcus" target="_blank">Twitter</a><br>
+-     <a href="https://twitter.com/GenecroMarX" target="_blank">Twitter</a><br>
 -     <a href="https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w" target="_blank">YouTube</a><br>
 -     <a href="https://tiktok.com/@necromarxph" target="_blank">TikTok</a>
 
