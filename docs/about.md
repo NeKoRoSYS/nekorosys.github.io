@@ -18,7 +18,6 @@ Here are my active social media accounts! _I suck at managing social media accou
 -     <a href="https://discord.gg/h4Q6mfGrh3" target="_blank">Discord</a><br>
 -     <a href="https://twitter.com/GenecroMarX" target="_blank">Twitter</a><br>
 -     <a href="https://facebook.com/GenecroMarX" target="_blank">Facebook Page</a><br>
--     <a href="https://www.youtube.com/channel/UC1NQ6FKRa-Uvgb3V9bW1u9w" target="_blank">YouTube</a><br>
 -     <a href="https://tiktok.com/@necromarxph" target="_blank">TikTok</a>
 
 Feel free to contact me using the aforementioned links above for [business inquiries](about#business-inquiries)!
@@ -27,7 +26,7 @@ Feel free to contact me using the aforementioned links above for [business inqui
 
 ## Business Inquiries
 
-Below are my portfolios to showcase my skills in case *you* are looking for someone to work with. ヽ(゜∇゜)ノ
+Below are my portfolios to showcase my skills in case *you* are looking for someone to work with. (I am open for paid commissions!) ヽ(゜∇゜)ノ
 
 ### My Portfolios
 
