@@ -25,7 +25,7 @@ Here are my active social media accounts! _I suck at managing social media accou
 
 ## Business Inquiries
 
-Below are my portfolios to showcase my skills in case *you* are looking for someone to work with. I am open for paid commissions, just contact me on my Discord! (GenecroMarX#5117) ヽ(゜∇゜)ノ
+Below are my portfolios to showcase my skills in case *you* are looking for someone to work with. I am open for paid commissions, just contact me on Twitter via DMs or my Discord! (GenecroMarX#5117) ヽ(゜∇゜)ノ
 
 ### My Portfolios
 
