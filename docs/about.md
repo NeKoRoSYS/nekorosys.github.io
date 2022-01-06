@@ -31,8 +31,8 @@ Below are my portfolios to showcase my skills in case *you* are looking for some
 
 ### My Portfolios
 
-<a href="https://www.behance.net/genecromarx" target="_blank">Graphic Design</a><br>
-<a href="https://mcpedl.com/user/zachmc" target="_blank">Minecraft: Bedrock Edition</a>
+<a href="https://www.behance.net/genecromarx" target="_blank">(Behance) Graphic Design</a><br>
+<a href="https://mcpedl.com/user/zachmc" target="_blank">(MCPEDL) Minecraft: Bedrock Edition</a>
 
 _You can also contact me using my email address - genecromarcus@gmail.com_
 
