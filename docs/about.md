@@ -18,6 +18,7 @@ Here are my active social media accounts! _I suck at managing social media accou
 -     <a href="https://discord.gg/h4Q6mfGrh3" target="_blank">Discord</a><br>
 -     <a href="https://twitter.com/GenecroMarX" target="_blank">Twitter</a><br>
 -     <a href="https://facebook.com/GenecroMarX" target="_blank">Facebook Page</a><br>
+-     <a href="https://www.youtube.com/channel/UC10INBToHX-7wut2r0P-w_w" target="_blank">YouTube</a><br>
 -     <a href="https://tiktok.com/@necromarxph" target="_blank">TikTok</a>
 
 Feel free to contact me using the aforementioned links above for [business inquiries](about#business-inquiries)!
@@ -32,7 +33,9 @@ Below are my portfolios to showcase my skills in case *you* are looking for some
 
 <a href="https://www.behance.net/genecromarx" target="_blank">Graphic Design</a><br>
 <a href="https://mcpedl.com/user/zachmc" target="_blank">Minecraft: Bedrock Edition</a>
-  
+
+_You can also contact me using my email address - genecromarcus@gmail.com_
+
 <br>
 
 ## Buy me some Coffee!
