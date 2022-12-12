@@ -2,7 +2,7 @@
 
 You ("you") are to follow these terms and conditions upon using my ("NecroMarX," "Genecro," "ZachMC," "author," "I") creations and assets.
 
-My assets, creations, and projects include but are not limited to:
+**My assets, creations, and projects include but are not limited to:**
 
 -     Minecraft: Bedrock Edition Add-ons (Behaviour Packs and Resource Packs)
 -     Public GitHUB Repositories (This website, my Unity projects, MC:BE add-ons, and other projects)
