@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Add-Ons"
-permalink: /addons
+permalink: /docs/addons
 ---
 # Minecraft: Bedrock Add-Ons
 
