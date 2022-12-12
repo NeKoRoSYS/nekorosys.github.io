@@ -1,12 +1,5 @@
 title: NecroMarX
 description: Hobbyist
-
-home: https://necromarx.github.io/
-blogs: /docs/blogs/
-addons: /docs/addons/
-behance: https://behance.net/necromarx/
-about: /docs/about/
-
 permalink: /:title/
 markdown: kramdown
 paginate: 5
