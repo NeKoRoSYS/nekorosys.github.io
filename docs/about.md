@@ -16,8 +16,8 @@ I am an aspiring graphic designer, sofware developer, and game developer. I made
 Here are my active social media accounts! _I suck at managing social media accounts, it's better to head over to my Discord server to contact me._ (●´ω｀●)
 
 -     <a href="https://discord.gg/h4Q6mfGrh3" target="_blank">Discord</a><br>
--     <a href="https://twitter.com/NecroMarX" target="_blank">Twitter</a><br>
--     <a href="https://facebook.com/NecroMarX" target="_blank">Facebook Page</a><br>
+-     <a href="https://twitter.com/necromarX" target="_blank">Twitter</a><br>
+-     <a href="https://facebook.com/necromarX" target="_blank">Facebook Page</a><br>
 -     <a href="https://www.youtube.com/channel/UC10INBToHX-7wut2r0P-w_w" target="_blank">YouTube</a><br>
 -     <a href="https://tiktok.com/@necromarxph" target="_blank">TikTok</a>
 
