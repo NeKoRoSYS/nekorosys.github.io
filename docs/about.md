@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About NecroMarX"
+title: "About Me"
 permalink: docs/about
 ---
 # About Me
