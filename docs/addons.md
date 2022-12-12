@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "My Add-ons"
-permalink: docs/addons
+title: "My Projects"
+permalink: docs/projects/
 ---
-# Minecraft: Bedrock Add-ons
+# My Projects
 
 *   [NecroMarX's HardCore Mobs Add-on](addons/hardcore-mobs) - This addon makes most of the hostile mobs on the overworld and nether dimensions almost indestructible and incredibly difficult to deal with. It's mainly the fact that they are much faster which turns everything into a greater challenge, but if that wasn't enough, they also have much more powerful attacks. For example, most of the mobs cause twice as much damage. <a href="https://mcpedl.com/hardcore-mobs-addon" target="_blank">View at MCPEDL</a>
 
