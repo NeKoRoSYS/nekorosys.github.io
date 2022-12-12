@@ -7,7 +7,7 @@ permalink: docs/about/
 
 Hello there, I am NecroMarX! You can call me Necro for short, or even Marky, I guess. ¯\_(ツ)_/¯
 
-I am an aspiring graphic designer, sofware developer, and game developer. I made this website for the sole purpose of making a personal space for my creations for everyone interested to see!
+I am an aspiring graphic designer and game developer. I created this website for the sole purpose of providing a personal space for myself and my creations that anyone interested can see!
 
 <br>
 
@@ -23,7 +23,7 @@ I have a [LinkTree]({{ site.linktree }}), but these are my most active social me
 
 ## Business Inquiries
 
-In case you or a friend is looking for someone to work with, below are my available portfolios. I am a freelancer and is open for paid commissions, just contact me on my [Twitter]({{ site.twitter }}) or Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
+In case you (or a friend) are looking for someone to work with, below are my available portfolios where I often publish my projects out of GitHUB. I am a freelancer and I do paid commissions. If you are interested in working with me, I am always available on my [Twitter]({{ site.twitter }}) and Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
 
 ### My Portfolios
 
