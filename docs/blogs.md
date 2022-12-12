@@ -1,5 +1,5 @@
 ---
 layout: default
-title: "Blogs"
+title: "My Blogs"
 permalink: docs/blogs
 ---
