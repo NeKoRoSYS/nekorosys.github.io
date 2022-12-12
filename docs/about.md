@@ -23,7 +23,7 @@ I have a [LinkTree](https://linktr.ee/NecroMarX), but these are my most active s
 
 ## Business Inquiries
 
-In case you or a friend is looking for someone to work with, below are my available portfolios. I am a freelancer and is open for paid commissions, just contact me on my [Twitter](https://twitter.com/necromarx) or Discord! ("{{ site.discord }}") ヽ(゜∇゜)ノ
+In case you or a friend is looking for someone to work with, below are my available portfolios. I am a freelancer and is open for paid commissions, just contact me on my [Twitter](https://twitter.com/necromarx) or Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
 
 ### My Portfolios
 
