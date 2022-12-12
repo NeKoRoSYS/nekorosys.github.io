@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About Me"
-permalink: {{ site.about }}
+permalink: site.about
 ---
 # About Me
 
