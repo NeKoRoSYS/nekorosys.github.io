@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Add-Ons"
+title: "My Add-ons"
 permalink: docs/addons
 ---
 # Minecraft: Bedrock Add-Ons
