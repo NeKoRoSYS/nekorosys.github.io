@@ -4,7 +4,7 @@ title: "Genecro's HardCore Mobs Add-on"
 date: 2021-01-04 12:10:00 -0000
 categories: addon
 tags: [addon, add-on, genecro, genecro's, hardcore, hardcore mobs, genecro's hardcore mobs]
-permalink: /addons/hardcore-mobs
+permalink: docs/addons/hardcore-mobs
 ---
 # Genecro's HardCore Mobs Add-on
 
