@@ -13,7 +13,7 @@ I am an aspiring graphic designer, sofware developer, and game developer. I made
 
 ## Socials
 
-Here are my active social media accounts! (●´ω｀●)
+I have a [LinkTree](https://linktr.ee/NecroMarX), but these are my most active social media accounts! (●´ω｀●)
 
 -     <a href="https://twitter.com/necromarX" target="_blank">Twitter</a><br>
 -     <a href="https://www.youtube.com/@necromarx" target="_blank">YouTube</a><br>
