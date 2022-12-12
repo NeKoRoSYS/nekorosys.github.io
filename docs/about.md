@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About Me"
-permalink: site.about
+permalink: docs/about/
 ---
 # About Me
 
