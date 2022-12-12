@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "GenecroMarX"
+permalink: home
 ---
 # Welcome to my website!
 
