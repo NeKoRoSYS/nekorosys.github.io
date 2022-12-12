@@ -5,9 +5,9 @@ permalink: docs/about
 ---
 # About Me
 
-Hello there, I am GenecroMarX! You can call me Necro for short, or even Marky, I guess. ¯\_(ツ)_/¯
+Hello there, I am NecroMarX! You can call me Necro for short, or even Marky, I guess. ¯\_(ツ)_/¯
 
-I am an aspiring graphic designer, I play video games, and I also develop Minecraft: Bedrock Edition add-ons! I made this website for the sole purpose of making a more personal space for my creations.
+I am an aspiring graphic designer, sofware developer, and game developer. I made this website for the sole purpose of making a personal space for my creations for everyone interested to see!
 
 <br>
 
@@ -25,7 +25,7 @@ Here are my active social media accounts! _I suck at managing social media accou
 
 ## Business Inquiries
 
-Below are my portfolios to showcase my skills in case *you* are looking for someone to work with. I am open for paid commissions, just contact me on Twitter via DMs or my Discord! (GenecroMarX#5117) ヽ(゜∇゜)ノ
+Below are my portfolios to showcase my skills in case you are looking for someone to work with. I am open for paid commissions, just contact me on Twitter via DMs or my Discord! (GenecroMarX#5117) ヽ(゜∇゜)ノ
 
 ### My Portfolios
 
