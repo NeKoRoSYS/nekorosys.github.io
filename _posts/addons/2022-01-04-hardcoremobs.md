@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Genecro's HardCore Mobs Add-on"
+title: "NecroMarX's HardCore Mobs Add-on"
 date: 2021-01-04 12:10:00 -0000
 categories: addon
-tags: [addon, add-on, genecro, genecro's, hardcore, hardcore mobs, genecro's hardcore mobs]
+tags: [addon, add-on, genecro, genecro's, hardcore, hardcore mobs, genecro's hardcore mobs, necro, necro's, necro's hardcore mobs]
 permalink: docs/addons/hardcore-mobs
 ---
-# Genecro's HardCore Mobs Add-on
+# NecroMarX's HardCore Mobs Add-on
 
 This addon makes most of the hostile mobs on the overworld and nether dimensions almost indestructible and incredibly difficult to deal with. It's mainly the fact that they are much faster which turns everything into a greater challenge, but if that wasn't enough, they also have much more powerful attacks. For example, most of the mobs cause twice as much damage.
 
@@ -21,7 +21,7 @@ This addon makes most of the hostile mobs on the overworld and nether dimensions
 ### Terms of Usage
 
 Usage Conditions
-You ("you," "player") are to follow these terms and conditions upon downloading and using the add-on packs, developed and published by GenecroMarX ("GenecroMarX," "G3NECRX," "ZachMC," "author," "I").
+You ("you," "player") are to follow these terms and conditions upon downloading and using the add-on packs, developed and published by GenecroMarX ("NecroMarX," "Genecro," "ZachMC," "author," "I").
 
 You are permitted to:
 
@@ -36,7 +36,7 @@ You are NOT permitted to:
 -     Take the author's code, works, and textures to republish them as your own.<br>
 -     Re-distribute the add-on packs or works elsewhere, without the author's approval.
  
-"Genecro's Supernaturals" is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) by the author "GenecroMarX," also known as "G3NECRX," and "ZachMC." 
+"Genecro's Supernaturals" is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) by the author "NecroMarX," also known as "Genecro," and "ZachMC." 
  
 **I shall take action if at least one of these terms and conditions are not followed.**
 
