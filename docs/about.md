@@ -23,7 +23,7 @@ I have a [LinkTree]({{ site.linktree }}), but these are my most active social me
 
 ## Business Inquiries
 
-In case you (or a friend) are looking for someone to work with, below are my available portfolios where I often publish my projects out of GitHUB. I am a freelancer and I do paid commissions. If you are interested in working with me, I am always available on my [Twitter]({{ site.twitter }}) and Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
+In case you (or a friend) are looking for someone to work with, below are my portfolios where I often publish my projects that are out of GitHUB. I am a freelancer and I do paid commissions. If you are interested in working with me, I am always available on my [Twitter]({{ site.twitter }}) and Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
 
 ### My Portfolios
 
