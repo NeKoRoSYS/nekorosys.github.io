@@ -25,6 +25,7 @@ I have a [LinkTree]({{ site.linktree }}), but these are my most active social me
 
 In case you (or a friend) are looking for someone to work with, below are my portfolios where I often publish my projects that are out of GitHUB. I am a freelancer and I do paid commissions. If you are interested in working with me, I am always available on my [Twitter]({{ site.twitter }}) and Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
 
+
 ### My Portfolios
 
 <a href="{{ site.behance }}" target="_blank">Behance</a> - Graphic Design<br>
@@ -34,4 +35,4 @@ In case you (or a friend) are looking for someone to work with, below are my por
 
 ## Buy me some Coffee!
 
-It'd be really appreciated if someone were to <a href="{{ site.kofi }}" target="_blank">buy me a cup of coffee</a>. This will help motivate myself to do better and achieve goals from furhter beyond! (っ＾▿＾)っ
+It'd be really appreciated if you support me by <a href="{{ site.kofi }}" target="_blank">buying me a cup of coffee</a>. This will help motivate myself to do better, provide services of better quality, and achieve goals from furthr beyond! (っ＾▿＾)っ
