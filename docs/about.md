@@ -14,7 +14,6 @@ I am an aspiring graphic designer and game developer. I created this website for
 ## Socials
 
 I have a [LinkTree]({{ site.linktree }}), but these are my most active social media accounts! (●´ω｀●)
-
 -     <a href="{{ site.twitter }}" target="_blank">Twitter</a><br>
 -     <a href="{{ site.youtube }}" target="_blank">YouTube</a><br>
 -     <a href="{{ site.tiktok }}" target="_blank">TikTok</a>
@@ -27,9 +26,9 @@ In case you (or a friend) are looking for someone to work with, below are my por
 
 
 ### My Portfolios
-
-<a href="{{ site.behance }}" target="_blank">Behance</a> - Graphic Design<br>
-<a href="{{ site.mcpedl }}" target="_blank">MCPEDL</a> - Minecraft: Bedrock Edition
+<a href="{{ site.behance }}" target="_blank">Behance</a> - Graphic Designing<br>
+<a href="{{ site.mcpedl }}" target="_blank">MCPEDL</a> - Minecraft: Bedrock Edition Add-on Development
+<a href="{{ site.github }}" target="_blank">GitHub</a> - Software and Game Development
 
 <br>
 
