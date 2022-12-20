@@ -12,7 +12,7 @@ You ("you") are to follow these terms and conditions upon using my ("NecroMarX,"
 **My projects, assets, and creations include but are not limited to:**
 
 -     Minecraft: Bedrock Edition Add-ons (Behaviour Packs and Resource Packs)
--     Public GitHUB Repositories (This website, my Unity projects, MC:BE add-ons, and other projects)
+-     Public GitHub Repositories (This website, my Unity projects, MC:BE add-ons, and other projects)
 
 **You are permitted to:**
 
