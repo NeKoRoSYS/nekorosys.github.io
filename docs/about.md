@@ -27,7 +27,7 @@ In case you (or a friend) are looking for someone to work with, below are my por
 
 ### My Portfolios
 <a href="{{ site.behance }}" target="_blank">Behance</a> - Graphic Designing<br>
-<a href="{{ site.mcpedl }}" target="_blank">MCPEDL</a> - Minecraft: Bedrock Edition Add-on Development
+<a href="{{ site.mcpedl }}" target="_blank">MCPEDL</a> - Minecraft: Bedrock Edition Add-on Development<br>
 <a href="{{ site.github }}" target="_blank">GitHub</a> - Software and Game Development
 
 <br>
