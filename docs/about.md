@@ -5,7 +5,7 @@ permalink: docs/about/
 ---
 # About Me
 
-Hello there, I am NecroMarX! You can call me Necro for short, or even Marky, I guess. ¯\_(ツ)_/¯
+Hello there, I am NeKoRoSYS! You can call me Nekoro or Necro for short, or even Marky, I guess. ¯\_(ツ)_/¯
 
 I am an aspiring graphic designer and game developer. I created this website for the sole purpose of providing a personal space for myself and my creations that anyone interested can see!
 
