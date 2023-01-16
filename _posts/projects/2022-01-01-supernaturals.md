@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "[1.9.5] NecroMarX's Supernaturals"
+title: "[1.9.5] NeKoRoSYS's Supernaturals"
 date: 2022-01-01 19:00:00 -0000
 categories: addon
-tags: [addon, add-on, genecro, genecro's, supernaturals, genecro's supernaturals, necro, necro's, necro's supernaturals]
+tags: [nekoro, nekorosys, addon, add-on, genecro, genecro's, supernaturals, genecro's supernaturals, necro, necro's, necro's supernaturals]
 permalink: docs/projects/supernaturals
 ---
-# NecroMarX's Supernaturals
+# NeKoRoSYS's Supernaturals
 
 The Supernaturals Add-on introduces new items, materials, blocks, and two factions of extremely dangerous mobs. Supernaturals are hostile toward any friendly beings they come across, and most of their stats have been drastically buffed compared to the usual vanilla Minecraft monsters! Most features are under development and may lack textures and will most likely have bugs, be sure to stay tuned for more updates in the future!
 
@@ -14,7 +14,7 @@ The Supernaturals Add-on introduces new items, materials, blocks, and two factio
 
 ## Info
 
-[Terms of Use](https://necromarx.github.io/docs/terms_of_use/)
+[Terms of Use](https://nekorosys.github.io/docs/terms_of_use/)
 
 **Current Version** - 1.9.5, <a href="https://mcpedl.com/the-vampires-addon" target="_blank">View at MCPEDL</a>
 
