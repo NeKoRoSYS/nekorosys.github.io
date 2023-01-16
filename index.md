@@ -1,5 +1,5 @@
 ---
 layout: default
-title: "NecroMarX"
+title: "NeKoRoSYS"
 ---
 # Welcome to my website!
