@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "NecroMarX's HardCore Mobs Add-on"
+title: "NeKoRoSYS's HardCore Mobs Add-on"
 date: 2021-01-04 12:10:00 -0000
 categories: addon
-tags: [addon, add-on, genecro, genecro's, hardcore, hardcore mobs, genecro's hardcore mobs, necro, necro's, necro's hardcore mobs]
+tags: [nekoro, nekorosys, addon, add-on, genecro, genecro's, hardcore, hardcore mobs, genecro's hardcore mobs, necro, necro's, necro's hardcore mobs]
 permalink: docs/projects/hardcore-mobs
 ---
-# NecroMarX's HardCore Mobs Add-on
+# NeKoRoSYS's HardCore Mobs Add-on
 
 This addon makes most of the hostile mobs on the overworld and nether dimensions almost indestructible and incredibly difficult to deal with. It's mainly the fact that they are much faster which turns everything into a greater challenge, but if that wasn't enough, they also have much more powerful attacks. For example, most of the mobs cause twice as much damage.
 
@@ -14,7 +14,7 @@ This addon makes most of the hostile mobs on the overworld and nether dimensions
 
 ## Info
 
-[Terms of Use](https://necromarx.github.io/docs/terms_of_use/)
+[Terms of Use](https://nekorosys.github.io/docs/terms_of_use/)
 
 **Current Version** - 1.1.2, <a href="https://mcpedl.com/hardcore-mobs-addon" target="_blank">View at MCPEDL</a>
 
