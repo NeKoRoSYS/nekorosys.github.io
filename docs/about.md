@@ -34,4 +34,4 @@ In case you (or a friend) are looking for someone to work with, below are my por
 
 ## Buy me some Coffee!
 
-It'd be really appreciated if you support me by <a href="{{ site.kofi }}" target="_blank">buying me a cup of coffee</a>. This will help motivate myself to do better, provide services of better quality, and achieve goals from furthr beyond! (っ＾▿＾)っ
+It'd be really appreciated if you support me by <a href="{{ site.kofi }}" target="_blank">buying me a cup of coffee</a>. This will help motivate myself to do better, provide services of better quality, and achieve goals from further beyond! (っ＾▿＾)っ
