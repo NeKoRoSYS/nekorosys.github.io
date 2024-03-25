@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,maximum-scale=2">
 		<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico"  | absolute_url }}">
-		<link id="style" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">	
-		<link id="layout" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/layout.css?v=' | append: site.github.build_revision | relative_url }}">
-		<link id="background" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/home.css?v=' | append: site.github.build_revision | relative_url }}">
+		<link id="style" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' }}">	
+		<link id="layout" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/layout.css?v=' }}">
+		<link id="background" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/home.css?v=' }}">
 		{% seo %}
     		{% include head-custom.html %}
 	</head>
@@ -47,12 +47,12 @@
 			<main>
 			<div class="maincontainer">
 				<div class="titlebar">
-					{{ site.title }}
+					<p></p>{{ site.title }}</p>
 				</div>
 				
 				<div class="textbox">
 				<div class="textboxcontent">
-					{{ content }}
+					<p>{{ content }}</p>
 				</div>
 				</div>
 			</div>
