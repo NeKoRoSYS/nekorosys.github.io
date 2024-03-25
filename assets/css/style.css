@@ -1,4 +1,102 @@
 ---
 ---
 
-@import "jekyll-theme-slate";
+body {
+	font-family: "Century Schoolbook";
+}
+
+.background {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+     	background-attachment: fixed;
+}
+
+header {
+	color: white;
+	background: linear-gradient(to top, #212121  0%, black 100%);
+}
+
+.headercontent a {
+	text-decoration: none !important;
+	color: white;
+}
+
+.headercontent h1 {
+	transition: text-shadow 0.25s linear;
+}
+
+.headercontent h1:hover {
+	text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+.topnav {
+	background: linear-gradient(to bottom, white 0%, #E8E8E8 100%);
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.75);
+	font-weight: bold;
+}
+
+.topnav a {
+	color: black;
+	text-decoration: none;
+	background-image: linear-gradient(to bottom, white 0%, #E8E8E8 100%);
+	transition: font-size 0.25s linear;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-image: linear-gradient(to top, white 0%, #E8E8E8 100%);
+	font-size: 18px;
+}
+
+.topnav a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.maincontainer {
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.38);
+}
+
+.titlebar {
+	background: linear-gradient(to bottom, #212121  0%, black 100%);
+	color: white;
+	font-weight: bold;
+}
+
+.textbox {
+	background: linear-gradient(to bottom, white 0%, #E8E8E8 100%);
+}
+
+footer {
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.75);
+	background-color: #212121;
+	color: white;
+}
+
+@media (max-width: 1242px) {	
+	header {
+		font-size: 11px;
+	}
+
+	.topnav a {
+		font-size: 16px;
+	}
+
+
+	p {
+		font-size: 14px;
+	}
+
+	a {
+		font-size: 14px;
+	}
+
+	button {
+		font-size: 14px;
+	}
+
+	li {
+		font-size: 14px;
+	}
+}

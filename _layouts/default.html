@@ -1,80 +1,67 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,maximum-scale=2">
+		<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico"  | absolute_url }}">
+		<link id="style" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">	
+		<link id="layout" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/layout.css?v=' | append: site.github.build_revision | relative_url }}">
+		<link id="background" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/home.css?v=' | append: site.github.build_revision | relative_url }}">
+		{% seo %}
+    		{% include head-custom.html %}
+	</head>
 
-  <head>
-<link rel="shortcut icon" type="image/png" 
-      href="{{ "/assets/images/favicon.ico"  | absolute_url }}">
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
-{% seo %}
-    {% include head-custom.html %}
-    <style>
-
-.topnav {
-  overflow: hidden;
-    display: flex;
-  background-color: #333;
-    align-items: center;
-  justify-content: center;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 12px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ce2727;
-  color: white;
-}
-
-.topnav a.active {
-  background-color: #ce2727;
-  color: white;
-}
-</style>
-  </head>
-
-  <body>
-    
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          
-          <h1 align=center id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 align=center id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-
-        </header>
-    </div>
-    
-    <div class="topnav">
-  <a href="https://nekorosys.github.io/">Home</a>
-            <a href="https://nekorosys.github.io/docs/blogs/">Blogs</a>
-        <a href="https://nekorosys.github.io/docs/projects/">Projects</a>\
-  <a href="https://nekorosys.github.io/docs/about/">About</a>
-</div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-      </footer>
-    </div>
-  </body>
+	<body onload="checkMobile();">
+	<script>
+		window.onload = checkMobile();
+		function checkMobile() {
+		var layout = document.getElementById('layout');
+		var style = document.getElementById('style');
+		const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		if (isMobile) {
+			layout.setAttribute('href', '{{ '/assets/css/layoutmobile.css?v=' | append: site.github.build_revision | relative_url }}');
+			style.setAttribute('href', '{{ '/assets/css/stylemobile.css?v=' | append: site.github.build_revision | relative_url }}');
+		} else
+			{
+			layout.setAttribute('href', '{{ '/assets/css/layout.css?v=' | append: site.github.build_revision | relative_url }}');
+			style.setAttribute('href', '{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}');
+			}
+		}
+		</script>
+	<div class="background"></div>
+	<header>
+		<div class="headercontent">
+			<a href="index.html"><h1 id="project_title" style="text-align: center;">{{ site.title | default: site.github.repository_name }}</h1></a>
+		</div>
+		<div class="topnav">
+			<a href="https://nekorosys.github.io/">Home</a>
+			<a href="https://nekorosys.github.io/docs/blogs/">Blogs</a>
+			<a href="https://nekorosys.github.io/docs/projects/">Projects</a>
+			<a href="https://nekorosys.github.io/docs/about/">About</a>
+		</div>
+	</header>
+	<div class="wrapper">
+		<div class="content">
+		<div class="gradient">
+			<main>
+			<div class="maincontainer">
+				<div class="titlebar">
+					{{ site.title }}
+				</div>
+				
+				<div class="textbox">
+				<div class="textboxcontent">
+					{{ content }}
+				</div>
+				</div>
+			</div>
+			</main>
+		</div>
+		</div>
+	</div>
+	<footer>
+		<p><b>Made with ❤️ by NeKoRoSYS</b></p>
+	</footer>
+	</body>
 </html>

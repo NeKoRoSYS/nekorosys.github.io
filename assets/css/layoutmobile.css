@@ -1,0 +1,124 @@
+---
+---
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body {
+	margin: auto;
+	min-height: 100vh;
+  	width: 100vw;
+	display: grid;
+	grid-template-rows: auto auto minmax(50px, 1fr);
+	grid-row-gap: 0px;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.background {
+	z-index: -2;
+	position: fixed;
+	min-height: 100vh;
+  	min-width: 100vw;
+}
+
+header {
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 150px;
+	width: 100%;
+}
+
+.topnav {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 45px;
+	width: 100%;
+}
+
+.topnav a {
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+.headercontent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 0;
+	margin: auto;
+	width: 100%;
+}
+
+.background {
+	z-index: -1;
+	margin: auto;
+	width: auto;
+}
+
+.content {
+	flex-grow: 1;
+	width: 100vw;
+	margin: auto;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+main {
+	margin: auto;
+	height: 100%;
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+  	flex-direction: column;
+}
+
+.maincontainer {
+	width: 100%;
+	height: 100%;
+}
+
+.titlebar {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.textbox {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 100%;
+}
+
+.textboxcontent {
+	text-align: justify;
+	margin-left: 14px;
+	margin-right:14px;
+}
+
+footer {
+	resize: vertical;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
