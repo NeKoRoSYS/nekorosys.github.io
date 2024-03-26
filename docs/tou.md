@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Terms of Usa"
+title: "Terms of Use"
 permalink: docs/terms_of_use/
 ---
 Some of my projects, assets, and creations are made public as they are open-source which means people can contribute if they want, and to help fellow developers (and aspiring ones) learn!
