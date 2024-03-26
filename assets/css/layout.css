@@ -101,8 +101,8 @@ main {
 }
 
 .textbox {
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
@@ -112,10 +112,26 @@ main {
 .textboxcontent {
 	text-align: justify;
 	margin-left: 50px;
-	margin-right:50px;
+	margin-right: 50px;
 }
 
 .textboxcontent h2 {
+	margin-bottom: 0px;
+}
+
+.textboxcontent h3 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+
+}
+
+.textboxcontent p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.textboxcontent ul {
+	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
