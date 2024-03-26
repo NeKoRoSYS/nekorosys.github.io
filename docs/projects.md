@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "My Projects"
-permalink: docs/projects/
+permalink: projects/
 ---
 # My Projects
 
