@@ -12,23 +12,7 @@
     		{% include head-custom.html %}
 	</head>
 
-	<body onload="checkMobile();">
-	<script>
-		window.onload = checkMobile();
-		function checkMobile() {
-		var layout = document.getElementById('layout');
-		var skin = document.getElementById('skin');
-		const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		if (isMobile) {
-			layout.setAttribute('href', '{{ '/assets/css/layoutmobile.css?v=' | append: site.github.build_revision | relative_url }}');
-			skin.setAttribute('href', '{{ '/assets/css/skinmobile.css?v=' | append: site.github.build_revision | relative_url }}');
-		} else
-			{
-			layout.setAttribute('href', '{{ '/assets/css/layout.css?v=' | append: site.github.build_revision | relative_url }}');
-			skin.setAttribute('href', '{{ '/assets/css/skin.css?v=' | append: site.github.build_revision | relative_url }}');
-			}
-		}
-		</script>
+	<body>
 	<div class="background"></div>
 	<header>
 		<div class="headercontent">
