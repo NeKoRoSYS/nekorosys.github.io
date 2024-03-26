@@ -1,5 +1,5 @@
 ---
 layout: default
-title: "NeKoRoSYS"
+title: "Home"
 ---
 # Welcome to my website!
