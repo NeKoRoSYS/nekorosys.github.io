@@ -7,6 +7,7 @@ background: '/assets/css/about.css?v='
 Hello there, I am NeKoRoSYS! You can call me Nekoro or Necro for short, or even Marky, I guess. ¯\_(ツ)_/¯
 
 I am an aspiring graphic designer and game developer. I created this website for the sole purpose of providing a personal space for myself and my creations, that anyone interested can see!
+
 <br>
 
 ## Socials
@@ -15,6 +16,7 @@ I have a [LinkTree]({{ site.linktree }}), but these are my most active social me
 -     <a href="{{ site.twitter }}" target="_blank">Twitter</a><br>
 -     <a href="{{ site.youtube }}" target="_blank">YouTube</a><br>
 -     <a href="{{ site.tiktok }}" target="_blank">TikTok</a>
+
 <br>
 
 ## Business Inquiries
@@ -24,6 +26,7 @@ In case you (or a friend) are looking for someone to work with, below are my por
 -     <a href="{{ site.behance }}" target="_blank">Behance:</a> Graphic Designing<br>
 -     <a href="{{ site.mcpedl }}" target="_blank">MCPEDL:</a> Minecraft: Bedrock Edition Add-on Development<br>
 -     <a href="{{ site.github }}" target="_blank">GitHub:</a> Software and Game Development
+
 <br>
 
 ## Buy me some Coffee!
