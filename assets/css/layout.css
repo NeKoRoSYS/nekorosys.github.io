@@ -115,6 +115,10 @@ main {
 	margin-right: 50px;
 }
 
+.textboxcontent h1 {
+	margin-top: 0px;
+}
+
 .textboxcontent h2 {
 	margin-bottom: 0px;
 }
