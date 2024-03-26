@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico"  | absolute_url }}">
 		<link id="skin" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/skin.css?v=' }}">	
 		<link id="layout" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/layout.css?v=' }}">
-		<link id="background" rel="stylesheet" type="text/css" media="screen" href="{{ page.background | '/assets/css/home.css?v=' }}">
+		<link id="background" rel="stylesheet" type="text/css" media="screen" href="{{ page.background | site.background }}">
 		{% seo %}
     		{% include head-custom.html %}
 	</head>
