@@ -3,8 +3,6 @@ layout: default
 title: "Terms of Usa"
 permalink: docs/terms_of_use/
 ---
-### Terms of Use
-
 Some of my projects, assets, and creations are made public as they are open-source which means people can contribute if they want, and to help fellow developers (and aspiring ones) learn!
 
 You ("you") are to follow these terms and conditions upon using my ("NeKoRoSYS", "NecroMarX," "Genecro," "ZachMC," "author," "I") projects, assets, and creations.
