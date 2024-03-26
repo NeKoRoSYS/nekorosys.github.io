@@ -16,4 +16,4 @@ paginate: 5
 paginate_path: "/:num/"
 show_downloads: false
 google_analytics:
-background: "/assets/css/home.css?v="
+background: /assets/css/home.css?v=
