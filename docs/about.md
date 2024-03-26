@@ -4,13 +4,9 @@ title: "About Me"
 permalink: docs/about/
 background: '/assets/css/about.css?v='
 ---
-# About Me
-
 Hello there, I am NeKoRoSYS! You can call me Nekoro or Necro for short, or even Marky, I guess. ¯\_(ツ)_/¯
 
-I am an aspiring graphic designer and game developer. I created this website for the sole purpose of providing a personal space for myself and my creations that anyone interested can see!
-
-<br>
+I am an aspiring graphic designer and game developer. I created this website for the sole purpose of providing a personal space for myself and my creations, that anyone interested can see!
 
 ## Socials
 
@@ -19,19 +15,14 @@ I have a [LinkTree]({{ site.linktree }}), but these are my most active social me
 -     <a href="{{ site.youtube }}" target="_blank">YouTube</a><br>
 -     <a href="{{ site.tiktok }}" target="_blank">TikTok</a>
 
-<br>
-
 ## Business Inquiries
 
 In case you (or a friend) are looking for someone to work with, below are my portfolios where I often publish my work. I am a freelancer and I do paid commissions. If you are interested in working with me, I am always available on my [Twitter]({{ site.twitter }}) and Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
 
-
 ### My Portfolios
-<a href="{{ site.behance }}" target="_blank">Behance</a> - Graphic Designing<br>
-<a href="{{ site.mcpedl }}" target="_blank">MCPEDL</a> - Minecraft: Bedrock Edition Add-on Development<br>
-<a href="{{ site.github }}" target="_blank">GitHub</a> - Software and Game Development
-
-<br>
+-     <a href="{{ site.behance }}" target="_blank">Behance:</a> Graphic Designing<br>
+-     <a href="{{ site.mcpedl }}" target="_blank">MCPEDL:</a> Minecraft: Bedrock Edition Add-on Development<br>
+-     <a href="{{ site.github }}" target="_blank">GitHub:</a> Software and Game Development
 
 ## Buy me some Coffee!
 
