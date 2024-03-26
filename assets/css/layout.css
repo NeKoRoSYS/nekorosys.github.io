@@ -1,6 +1,3 @@
----
----
-
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
@@ -101,8 +98,8 @@ main {
 }
 
 .textbox {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
@@ -160,10 +157,15 @@ footer {
 		padding-top: 75px;
 		padding-bottom: 75px;
 	}
+	
+	.textbox {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 
 	.textboxcontent {
 		margin-left: 20px;
-		margin-right: 28px;
+		margin-right: 20px;
 	}
 }
 
