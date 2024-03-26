@@ -23,9 +23,9 @@ I have a [LinkTree]({{ site.linktree }}), but these are my most active social me
 <hr>
 In case you (or a friend) are looking for someone to work with, below are my portfolios where I often publish my work. I am a freelancer and I do paid commissions. If you are interested in working with me, I am always available on my [Twitter]({{ site.twitter }}) and Discord! ({{ site.discord }}) ヽ(゜∇゜)ノ
 ### My Portfolios
--     <a href="{{ site.behance }}" target="_blank">Behance:</a> Graphic Designing<br>
--     <a href="{{ site.mcpedl }}" target="_blank">MCPEDL:</a> Minecraft: Bedrock Edition Add-on Development<br>
--     <a href="{{ site.github }}" target="_blank">GitHub:</a> Software and Game Development
+-     <a href="{{ site.behance }}" target="_blank">Behance</a> - Graphic Designing<br>
+-     <a href="{{ site.mcpedl }}" target="_blank">MCPEDL</a> - Minecraft: Bedrock Edition Add-on Development<br>
+-     <a href="{{ site.github }}" target="_blank">GitHub</a> - Software and Game Development
 
 <br>
 
