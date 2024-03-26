@@ -2,6 +2,7 @@
 layout: default
 title: "About Me"
 permalink: docs/about/
+background: '/assets/css/about.css?v='
 ---
 # About Me
 
