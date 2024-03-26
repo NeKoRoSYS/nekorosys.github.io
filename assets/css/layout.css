@@ -115,6 +115,10 @@ main {
 	margin-right:50px;
 }
 
+.textboxcontent h2 {
+	margin-bottom: 0px;
+}
+
 footer {
 	resize: vertical;
 	overflow: auto;
