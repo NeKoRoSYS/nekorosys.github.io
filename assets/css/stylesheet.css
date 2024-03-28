@@ -47,8 +47,9 @@ header, .drawer header {
 .drawer a:not(#drawerButton) {
     text-decoration: none !important;
     color: white;
-    background-color: black;
+    background: linear-gradient(to bottom, #202020 0%, #323232 100%);
     transition: text-shadow 0.25s linear;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
 }
 
 .drawer a:not(#drawerButton):hover {
@@ -57,7 +58,8 @@ header, .drawer header {
 
 .drawer header {
     color: black;
-    background: linear-gradient(to bottom, white 0%, #E8E8E8 100%);
+    background: linear-gradient(to bottom, white 0%, #999999 100%);
+    box-shadow: 0px 0px 50px rgb(255 255 255 / 75%);
 }
 
 .fadeScreen {
