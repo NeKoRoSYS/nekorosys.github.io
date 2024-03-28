@@ -99,15 +99,15 @@ header {
 }
 
 .drawer a:not(#drawerButton) {
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     display: flex;
     height: 50px;
     width: 100%;
     align-content: center;
     flex-wrap: nowrap;
+    gap: 5%;
     flex-direction: row;
-    gap: inherit;
 }
 
 .drawer header h2 {
