@@ -1,11 +1,12 @@
 ---
 layout: default
 title: "Happy New Year!"
-date: 2021-01-01 13:20:01 -0000
+date: 2021-01-01 13:20:01 +0800
 categories: announcement
 permalink: blogs/happy-new-year
 ---
-Posted: {{ page.date }}
+Posted: {{ post.date | date: "%B %d, %Y %I:%M %p" }}
+Categories: {{ post.categories }}
 
 Even though this is a test announcement, it wouldn't hurt to greet y'all a Happy New Year, no?
 
