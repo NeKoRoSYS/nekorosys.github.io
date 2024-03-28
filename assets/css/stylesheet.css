@@ -1,6 +1,7 @@
-body {
+bosy {
     font-family: "Merriweather", serif;
     font-size: smaller;
+    font-display: swap;
 }
 
 .background {
