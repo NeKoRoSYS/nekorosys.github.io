@@ -4,14 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,maximum-scale=2">
-		<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico"  | absolute_url }}">
-		<link id="style" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/stylesheet.css?v=' }}">	
-		<link id="layout" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/layout.css?v=' }}">
-		<link id="background" rel="stylesheet" type="text/css" media="screen" href="{{ page.background | default: site.background }}">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		{% include website-style.html %}
 		{% seo %}
     		{% include head-custom.html %}
 	</head>
@@ -31,7 +24,7 @@
 		
 	<header>
 		<div id="header" class="headercontent">
-			<a href="index.html"><h1 id="project_title" style="text-align: center;">{{ site.title | default: site.github.repository_name }}</h1></a>
+			<a class="noSelect" href="index.html"><h1 id="project_title" style="text-align: center;">{{ site.title | default: site.github.repository_name }}</h1></a>
 			<a class="drawerButton noSelect" onclick="useDrawer()" id="drawerButton"><b>≡</b></a>
 		</div>
 		<div class="topnav">
