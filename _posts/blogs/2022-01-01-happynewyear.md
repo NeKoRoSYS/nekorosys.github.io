@@ -6,6 +6,7 @@ categories: announcement
 permalink: blogs/happy-new-year
 ---
 Posted: {{ post.date | date: "%B %d, %Y %I:%M %p" }}
+
 Categories: {{ post.categories }}
 
 Even though this is a test announcement, it wouldn't hurt to greet y'all a Happy New Year, no?
