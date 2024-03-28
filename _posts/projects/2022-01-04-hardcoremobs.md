@@ -3,7 +3,7 @@ layout: default
 title: "NeKoRoSYS's HardCore Mobs Add-on"
 date: 2021-01-04 12:10:00 -0000
 categories:
-  - Addon
+  - Minecraft
 tags: [nekoro, nekorosys, addon, add-on, genecro, genecro's, hardcore, hardcore mobs, genecro's hardcore mobs, necro, necro's, necro's hardcore mobs]
 permalink: projects/hardcore-mobs
 ispost: true
