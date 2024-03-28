@@ -93,7 +93,7 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 5%;
+    gap: 1%;
     justify-content: flex-start;
     overflow-x: hidden;
 }
