@@ -5,9 +5,9 @@ date: 2022-01-01 13:20:01 +0000
 categories: Announcement
 permalink: blogs/happy-new-year
 ---
-Posted: {{ page.date | date: "%B %d, %Y %I:%M %p" }} (GMT +8)
+***Posted:** {{ page.date | date: "%B %d, %Y %I:%M %p" }} (GMT +8)*
 
-Categories: {{ page.categories }}
+***Categories:** {{ page.categories }}*
 
 <br>
 
