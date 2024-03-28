@@ -1,8 +1,19 @@
-		<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico" | absolute_url }}">
-		<link id="style" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/stylesheet.css?v=' }}">	
-		<link id="layout" rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/layout.css?v=' }}">
-		<link id="background" rel="stylesheet" type="text/css" media="screen" href="{{ page.background | default: site.background }}">
-		<link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="preconnect stylesheet">
+<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico" | absolute_url }}">
+
+<link href="{{ '/assets/css/stylesheet.css?v=' }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null">
+<noscript><link rel="stylesheet" type="text/css" media="all" href="{{ '/assets/css/stylesheet.css?v=' }}"></noscript>
+
+<link href="{{ '/assets/css/layout.css?v=' }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null">
+<noscript><link rel="stylesheet" type="text/css" media="all" href="{{ '/assets/css/layout.css?v=' }}"></noscript>
+
+<link href="{{ page.background | default: site.background }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null">
+<noscript><link rel="stylesheet" type="text/css" media="all" href="{{ page.background | default: site.background }}"></noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" type="text/css" rel="preconnect" as="style" onload="this.rel='stylesheet'; this.onload=null"/>
+<noscript><link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" type="text/css" rel="preconnect" as="style" onload="this.rel='stylesheet'; this.onload=null"/>
+<noscript><link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"></noscript>
