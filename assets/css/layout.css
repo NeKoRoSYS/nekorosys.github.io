@@ -48,8 +48,21 @@ header {
 
 .topnav a {
 	float: left;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 5%;
+	justify-content: flex-start;
+	align-items: center;
 	text-align: center;
 	padding: 14px 16px;
+}
+
+.topnav a span {
+	display: block;
+}
+
+.topnav a p {
+	display: none;
 }
 
 .headercontent {
@@ -229,6 +242,17 @@ footer {
 	}
 }
 
+@media (max-width: 768px) {	
+	.topnav a span {
+		display: block;
+	}
+}
+
+@media (min-width: 769px) {	
+	.topnav a p {
+		display: block;
+	}
+}
 
 @media (min-width: 1242px) {
 	.maincontainer {
