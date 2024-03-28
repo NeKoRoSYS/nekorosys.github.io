@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 	<head>
+		<script src="/assets/js/drawer.js"></script>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,maximum-scale=2">
@@ -14,6 +15,15 @@
 
 	<body>
 	<div class="background"></div>
+	<div class="fadeScreen" id="fadeBlack" style="opacity: 0; pointer-events: none;" onclick="useDrawer()"></div>
+	<div class="drawer" id="mainSidenav" style="width: 0;">
+		<header id="drawerHeader">
+			<h2>Menu</h2>
+		</header>
+		<a href="index.html">Home</a>
+		<a href="./docs/about.html">About</a>
+	</div>
+		
 	<header>
 		<div class="headercontent">
 			<a href="index.html"><h1 id="project_title" style="text-align: center;">{{ site.title | default: site.github.repository_name }}</h1></a>
