@@ -61,6 +61,10 @@
 				
 				<div class="textbox">
 				<div class="textboxcontent">
+					{% if page.ispost %}
+					        {% include post_info.html %}
+					{% endif %}
+					<br>
 					{{ content }}
 				</div>
 				</div>
