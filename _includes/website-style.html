@@ -1,12 +1,14 @@
-<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico" | absolute_url }}">
 
-<link href="{{ '/assets/css/stylesheet.css?v=' }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null">
+<link href="{{ "/assets/images/favicon.ico" | absolute_url }}" type="image/png" rel="preconnect" as="style" onload="this.rel='shortcut icon'; this.onload=null"/>
+<noscript><link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico" | absolute_url }}"></noscript>
+
+<link href="{{ '/assets/css/stylesheet.css?v=' }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null"/>
 <noscript><link rel="stylesheet" type="text/css" media="all" href="{{ '/assets/css/stylesheet.css?v=' }}"></noscript>
 
-<link href="{{ '/assets/css/layout.css?v=' }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null">
+<link href="{{ '/assets/css/layout.css?v=' }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null"/>
 <noscript><link rel="stylesheet" type="text/css" media="all" href="{{ '/assets/css/layout.css?v=' }}"></noscript>
 
-<link href="{{ page.background | default: site.background }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null">
+<link href="{{ page.background | default: site.background }}" type="text/css" rel="preload" media="none" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null"/>
 <noscript><link rel="stylesheet" type="text/css" media="all" href="{{ page.background | default: site.background }}"></noscript>
 
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" type="text/css" rel="preconnect" as="style" onload="this.rel='stylesheet'; this.onload=null"/>
