@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Home"
+background: '/assets/css/shojorei.css?v='
 ---
 # Welcome to my website!
 
