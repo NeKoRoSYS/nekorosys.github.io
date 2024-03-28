@@ -48,6 +48,11 @@ header, .drawer header {
     text-decoration: none !important;
     color: white;
     background-color: black;
+    transition: text-shadow 0.25s linear;
+}
+
+.drawer a:not(#drawerButton):hover {
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
 
 .drawer header {
