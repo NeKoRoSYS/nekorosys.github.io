@@ -9,8 +9,10 @@ Posted: {{ page.date | date: "%B %d, %Y %I:%M %p" }} (GMT +8)
 
 Categories: {{ page.categories }}
 
+<br>
+
 Even though this is a test announcement, it wouldn't hurt to greet y'all a Happy New Year, no?
 
-Happy New Year! 🎉
+<br>
 
-![AmogusTwerk](https://c.tenor.com/O_x4UCmt5p0AAAAC/among-us-twerk.gif)
+Happy New Year! 🎉
