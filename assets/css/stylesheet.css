@@ -4,10 +4,6 @@ body {
     font-display: swap;
 }
 
-.material-symbols-outlined {
-    font-display: swap !important;
-}
-
 .background {
     background-size: cover;
     background-repeat: no-repeat;
