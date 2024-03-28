@@ -102,12 +102,17 @@ header {
     justify-content: space-around;
     align-items: center;
     display: flex;
-    height: 50px;
+    min-height: 30px;
+    max-height: 50px;
     width: 100%;
     align-content: center;
     flex-wrap: nowrap;
     gap: 5%;
     flex-direction: row;
+}
+
+.drawer header {
+    min-height: 100px;
 }
 
 .drawer header h2 {
