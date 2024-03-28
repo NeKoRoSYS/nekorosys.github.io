@@ -4,7 +4,7 @@ var drawerButton = document.getElementById("drawerButton");
 	if (isOpen == false)
 	{
 		drawerButton.textContent = "X";
-		document.getElementById("html").style.overflowY = hidden;
+		document.getElementById("html").style.overflowY = "hidden";
 		document.getElementById("drawerHeader").appendChild(drawerButton);
 		document.getElementById("fadeBlack").style.opacity = "0.5";
 		document.getElementById("mainSidenav").style.width = "50%";
@@ -12,7 +12,7 @@ var drawerButton = document.getElementById("drawerButton");
 	} else
 	{
 		drawerButton.textContent = "≡";
-		document.getElementById("html").style.overflowY = auto;
+		document.getElementById("html").style.overflowY = "auto";
 		document.getElementById("header").appendChild(drawerButton);
 		document.getElementById("fadeBlack").style.opacity = "0.0";
 		document.getElementById("mainSidenav").style.width = "0";
