@@ -41,7 +41,7 @@ header, .drawer header {
 .drawer {
     background: linear-gradient(to top, #212121 0%, black 100%);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
-    transition: 0.25s linear;
+    transition: 0.25s;
 }
 
 .drawer a:not(#drawerButton) {
@@ -65,7 +65,7 @@ header, .drawer header {
 .fadeScreen {
     background-color: black;
     opacity: 0;
-    transition: 0.25s linear;
+    transition: 0.25s;
 }
 
 .noSelect {
