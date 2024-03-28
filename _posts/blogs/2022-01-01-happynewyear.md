@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Happy New Year!"
-date: 2021-01-01 13:20:01 +0000
+date: 2022-01-01 13:20:01 +0000
 categories: Announcement
 permalink: blogs/happy-new-year
 ---
