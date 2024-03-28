@@ -5,7 +5,7 @@ date: 2021-01-01 13:20:01 -0000
 categories: announcement
 permalink: blogs/happy-new-year
 ---
-Posted: {{ date }}
+Posted: {{ page.date }}
 
 Even though this is a test announcement, it wouldn't hurt to greet y'all a Happy New Year, no?
 
