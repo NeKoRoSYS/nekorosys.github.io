@@ -5,10 +5,7 @@ body {
 
 @font-face {
   font-family: 'Material Symbols Outlined';
-  font-style: normal;
-  font-weight: 400;
   font-display: swap !important;
-  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v170/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
 }
 
 .background {
@@ -25,7 +22,7 @@ header, .drawer header {
 
 .headercontent a, .drawer header a {
     text-decoration: none !important;
-    transition: text-shadow 0.25s linear;
+    transition: text-shadow 0.25s cubic-bezier(0, 0, 0, 1);;
     color: white;
 }
 
@@ -49,14 +46,14 @@ header, .drawer header {
 .drawer {
     background: linear-gradient(to top, #212121 0%, black 100%);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
-    transition: 0.5s;
+    transition: 0.5s cubic-bezier(0, 0, 0, 1);
 }
 
 .drawer a:not(#drawerButton) {
     text-decoration: none !important;
     color: white;
     background: linear-gradient(to bottom, #202020 0%, #323232 100%);
-    transition: text-shadow 0.25s linear;
+    transition: text-shadow 0.25s cubic-bezier(0, 0, 0, 1);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
 }
 
@@ -73,7 +70,7 @@ header, .drawer header {
 .fadeScreen {
     background-color: black;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.5 scubic-bezier(0, 0, 0, 1);
 }
 
 .noSelect {
@@ -100,7 +97,7 @@ header, .drawer header {
     color: black;
     text-decoration: none;
     background-image: linear-gradient(to bottom, white 0%, #E8E8E8 100%);
-    transition: font-size 0.25s linear;
+    transition: font-size 0.25s cubic-bezier(0, 0, 0, 1);;
     font-size: 17px;
 }
 
