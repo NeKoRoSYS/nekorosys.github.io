@@ -1,12 +1,7 @@
 body {
     font-family: "Merriweather", serif;
     font-size: smaller;
-}
-
-@font-face {
-  font-family: 'Material Symbols Outlined';
-  font-display: swap !important;
-}
+}
 
 .background {
     background-size: cover;
