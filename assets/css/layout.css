@@ -104,6 +104,10 @@ header {
     display: flex;
     height: 50px;
     width: 100%;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: inherit;
 }
 
 .drawer header h2 {
