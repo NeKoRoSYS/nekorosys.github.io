@@ -1,0 +1,7 @@
+{% if page.date %}
+  <p><b>Posted:</b> <i>{{ page.date | date: "%B %d, %Y %I:%M %p" }} (GMT +8)</i></p>
+{% endif %}
+
+{% if page.categories %}
+  <p><b>Categories:</b> <i>{{ page.categories | join: ', ' }}</i></p>
+{% endif %}
