@@ -1,18 +1,12 @@
 ---
 layout: default
 ---
+<h1>{{ page.category }}</h1>
 
+<ul>
 {% for post in site.categories[page.category] %}
-  <div class="post-box">
-    <div class="post-title">
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </div>
-    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <p class="post-excerpt">{{ post.excerpt }}</p>
-    <div>
-      {% for category in site.categories %}
-        <a href="#">#{{ category }}</a>
-      {% endfor %}
-    </div>
-  </div>
+  <li>
+    {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </li>
 {% endfor %}
+</ul>
