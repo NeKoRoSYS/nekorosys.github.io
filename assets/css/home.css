@@ -2,7 +2,7 @@
 ---
 
 .background {
-	background-image: url("../images/feu.jpg");
+	background-image: url('/assets/images/feu.jpg');
 	background-color: #ffdc6c;
 }
 
