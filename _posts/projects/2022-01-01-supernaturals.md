@@ -2,7 +2,7 @@
 layout: default
 title: "[1.9.5] NeKoRoSYS's Supernaturals"
 date: 2022-01-01 19:00:00 -0000
-categories:
+category:
  - Minecraft
 tags: [nekoro, nekorosys, addon, add-on, genecro, genecro's, supernaturals, genecro's supernaturals, necro, necro's, necro's supernaturals]
 permalink: projects/supernaturals
