@@ -2,8 +2,8 @@
 layout: default
 title: "Happy New Year!"
 date: 2022-01-01 13:20:01 +0000
-categories:
-  - Announcement
+category:
+  - Blog
 permalink: blogs/happy-new-year
 ispost: true
 ---
