@@ -2,7 +2,7 @@
 ---
 
 .background {
-	background-image: url("../images/building.jpg");
+	background-image: url('/assets/images/building.jpg');
 	background-color: #e49c53;
 }
 
