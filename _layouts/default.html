@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html id="html" lang="{{ site.lang | default: "en-US" }}" style="overflow-y: auto;">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-		{% include website-layout.html %}
-		{% include website-style.html %}
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 		{% seo %}
     		{% include head-custom.html %}
+		{% include website-layout.html %}
+		{% include website-style.html %}
 	</head>
 
 	<body>
-	<div class="background"></div>
-	<header>
-		<div id="header" class="headercontent">
-			<a class="noSelect" href="index.html"><h1 id="project_title" style="text-align: center;">{{ site.title | default: site.github.repository_name }}</h1></a>
-			<a class="drawerButton noSelect" onclick="useDrawer()" id="drawerButton"><b>≡</b></a>
-		</div>
-		<div class="topnav">
-			{% include navtabs.html %}
-		</div>
-	</header>
-	<div class="wrapper">
-		<div class="content">
-		<div class="gradient">
-			<main>
-			<div class="maincontainer">
-				<div class="titlebar">
-					<h2>{{ page.title }}</h2>
+		<div class="background"></div>
+			<header>
+				<div id="header" class="headercontent">
+					<a class="noSelect" href="index.html"><h1 id="project_title" style="text-align: center;">{{ site.title | default: site.github.repository_name }}</h1></a>
+					<a class="drawerButton noSelect" onclick="useDrawer()" id="drawerButton"><b>≡</b></a>
 				</div>
-				
-				<div class="textbox">
-				<div class="textboxcontent">
-					{% if page.ispost %}
-					        {% include post-info.html %}
-						<br>
-					{% endif %}
-					{{ content }}
+				<div class="topnav">
+					{% include navtabs.html %}
 				</div>
+			</header>
+		<div class="wrapper">
+			<div class="content">
+				<div class="gradient">
+					<main>
+						<div class="maincontainer">
+							<div class="titlebar">
+								<h2>{{ page.title }}</h2>
+							</div>
+							<div class="textbox">
+								<div class="textboxcontent">
+									{% if page.ispost %}
+					      					  {% include post-info.html %}
+										  <br>
+									{% endif %}
+									{{ content }}
+								</div>
+							</div>
+						</div>
+					</main>
 				</div>
 			</div>
-			</main>
 		</div>
-		</div>
-	</div>
-	<footer>
-		<p><b>Made with ❤️ by NeKoRoSYS.</b></p>
-	</footer>
-	{% include drawer.html %}
+		<footer>
+			<p><b>Made with ❤️ by NeKoRoSYS.</b></p>
+		</footer>
+		{% include drawer.html %}
 	</body>
 </html>
