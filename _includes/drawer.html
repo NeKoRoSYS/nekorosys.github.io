@@ -1,3 +1,10 @@
+<div class="fadeScreen" id="fadeBlack" style="opacity: 0; pointer-events: none;" onclick="useDrawer()"></div>
+<div class="drawer" id="mainSidenav" style="width: 0;">
+	<header id="drawerHeader">
+		<h2>Menu</h2>
+	</header>
+	{% include navtabs.html %}
+</div>
 <script>
 let isOpen = false;
 function useDrawer() {
