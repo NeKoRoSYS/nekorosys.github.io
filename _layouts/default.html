@@ -12,14 +12,6 @@
 
 	<body>
 	<div class="background"></div>
-	<div class="fadeScreen" id="fadeBlack" style="opacity: 0; pointer-events: none;" onclick="useDrawer()"></div>
-	<div class="drawer" id="mainSidenav" style="width: 0;">
-		<header id="drawerHeader">
-			<h2>Menu</h2>
-		</header>
-		{% include navtabs.html %}
-	</div>
-		
 	<header>
 		<div id="header" class="headercontent">
 			<a class="noSelect" href="index.html"><h1 id="project_title" style="text-align: center;">{{ site.title | default: site.github.repository_name }}</h1></a>
@@ -55,6 +47,6 @@
 	<footer>
 		<p><b>Made with ❤️ by NeKoRoSYS.</b></p>
 	</footer>
-	<script src="/assets/js/drawer.js" defer></script>
+	{% include drawer.html %}
 	</body>
 </html>
