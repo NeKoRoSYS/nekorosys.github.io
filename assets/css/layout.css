@@ -241,6 +241,10 @@ footer {
     .drawer {
         display: none;
     }
+
+    .fadeScreen {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
