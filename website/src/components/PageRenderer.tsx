@@ -28,7 +28,7 @@ function PopoutBlock({ htmlString }: { htmlString: string }) {
         variants={innerBlockVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="bg-purple-950/20 backdrop-blur-md p-8 rounded-2xl border border-purple-700/50 text-left text-xl leading-relaxed text-purple-300 shadow-xl"
+        className="bg-gray-900/25 backdrop-blur-md p-8 rounded-2xl border border-purple-700/75 text-left text-xl leading-relaxed text-purple-300 shadow-xl"
       >
         <div dangerouslySetInnerHTML={{ __html: htmlString }} /> 
       </motion.div>
@@ -46,9 +46,9 @@ function PopoutPanel({ htmlString }: { htmlString: string }) {
     > 
       <motion.div 
         variants={innerPanelVariants}
-        className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/20 backdrop-blur-md p-8 border-y border-purple-700/50 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
+        className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/25 backdrop-blur-md p-8 border-y border-purple-700/75 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
       > 
-        <div className="max-w-7xl mx-auto px-6" dangerouslySetInnerHTML={{ __html: htmlString }} /> 
+        <div className="max-w-6xl mx-auto px-6" dangerouslySetInnerHTML={{ __html: htmlString }} /> 
       </motion.div> 
     </motion.div> 
   ); 
