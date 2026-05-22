@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import Background from './components/Background';
 import HeaderBar from './components/HeaderBar';
 import FooterBar from './components/FooterBar';
-import SmoothScroller from './components/SmoothScroller';
+import { SmoothScroller } from './effects/Effects';
 import { PageLoader } from './components/Loaders';
 
 const Home = lazy(() => import('./pages/Home'));
@@ -17,18 +17,9 @@ function LocationAwareRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route 
-          path="/" 
-          element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} 
-        />
-        <Route 
-          path="/home" 
-          element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} 
-        />
-        <Route 
-          path="/about" 
-          element={<Suspense fallback={<PageLoader />}><About /></Suspense>} 
-        />
+        <Route path="/" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
+        <Route path="/home" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
+        <Route path="/about" element={<Suspense fallback={<PageLoader />}><About /></Suspense>} />
       </Routes>
     </AnimatePresence>
   );
@@ -44,7 +35,7 @@ export default function App() {
         
         <HeaderBar/>
         
-        <div className="relative z-10 flex flex-col items-center w-full max-w-7xl mx-auto px-6 mt-32">
+        <div className="relative z-10 flex flex-col items-center w-full max-w-7xl mx-auto px-6">
           <LocationAwareRoutes />
         </div>
 

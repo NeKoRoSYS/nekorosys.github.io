@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import { motion, useInView, type Variants, type Transition } from 'framer-motion';
+import { CheckIfAboveCenter } from '../effects/Effects';
 
 const innerBlockVariants: Variants = { 
   hiddenTop: { opacity: 0, scale: 0.92, y: -40 }, 
@@ -22,24 +23,15 @@ const pulseTransition: Transition = {
 export function BlockLoader() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: false, amount: 0.35 });
-  const [isAboveCenter, setIsAboveCenter] = useState(false);
-
-  useEffect(() => {
-    if (!isInView && containerRef.current) {
-      const rect = containerRef.current.getBoundingClientRect();
-      const centerY = window.innerHeight / 2;
-      const relativeY = rect.top + rect.height / 2 - centerY;
-      
-      setIsAboveCenter(relativeY < 0);
-    }
-  }, [isInView]);
+  const aboveCenter = CheckIfAboveCenter(containerRef);
 
   return (
     <div ref={containerRef} className="w-full max-w-2xl mb-12 min-h-30">
       <motion.div
         variants={innerBlockVariants}
-        initial={isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-        animate={isInView ? "visible" : isAboveCenter ? "hiddenTop" : "hiddenBottom"}
+        initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
+        animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
+        style={{ willChange: "auto" }}
         className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/20 h-full w-full shadow-xl flex flex-col gap-4"
       >
         <motion.div animate={{ opacity: [0.3, 0.7, 0.3] }} transition={pulseTransition} className="h-6 bg-white/10 rounded w-3/4"></motion.div>
@@ -53,23 +45,14 @@ export function BlockLoader() {
 export function PanelLoader() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: false, amount: 0.35 });
-  const [isAboveCenter, setIsAboveCenter] = useState(false);
-
-  useEffect(() => {
-    if (!isInView && containerRef.current) {
-      const rect = containerRef.current.getBoundingClientRect();
-      const centerY = window.innerHeight / 2;
-      const relativeY = rect.top + rect.height / 2 - centerY;
-      
-      setIsAboveCenter(relativeY < 0);
-    }
-  }, [isInView]);
+  const aboveCenter = CheckIfAboveCenter(containerRef);
 
   return (
     <motion.div
       ref={containerRef}
-      initial={isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-      animate={isInView ? "visible" : isAboveCenter ? "hiddenTop" : "hiddenBottom"}
+      initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
+      animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
+      style={{ willChange: "auto" }}
       viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
       className="w-full mb-8 relative min-h-30"
     >
@@ -100,7 +83,6 @@ export function PageLoader() {
         transition={pulseTransition}
         className="mt-6 text-purple-400/80 tracking-widest text-sm font-medium uppercase"
       >
-        Synthesizing...
       </motion.p>
     </div>
   );

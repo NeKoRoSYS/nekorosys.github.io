@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react'; 
+import { useEffect, useRef, type ReactNode } from 'react'; 
 import { motion, useInView, type Variants } from 'framer-motion'; 
 import Lenis from '@studio-freight/lenis'; 
+import { CheckIfAboveCenter } from '../effects/Effects';
 
 const innerBlockVariants: Variants = { 
   hiddenTop: { opacity: 0, scale: 0.92, y: -40 }, 
@@ -8,11 +9,11 @@ const innerBlockVariants: Variants = {
   visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 70, damping: 14, duration: 0.8 } }
 };
 
-//const innerPanelVariants: Variants = { 
-//  hiddenTop: { opacity: 0, y: -40 }, 
-//  hiddenBottom: { opacity: 0, y: 40 }, 
-//  visible: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.8 } } 
-//}; 
+const innerPanelVariants: Variants = { 
+  hiddenTop: { opacity: 0, y: -40 }, 
+  hiddenBottom: { opacity: 0, y: 40 }, 
+  visible: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.8 } } 
+}; 
 
 interface WrapperProps {
   children: ReactNode;
@@ -22,24 +23,15 @@ interface WrapperProps {
 export function PopoutBlock({ children, className = "" }: WrapperProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: false, amount: 0.35 });
-  const [isAboveCenter, setIsAboveCenter] = useState(false);
-
-  useEffect(() => {
-    if (!isInView && containerRef.current) {
-      const rect = containerRef.current.getBoundingClientRect();
-      const centerY = window.innerHeight / 2;
-      const relativeY = rect.top + rect.height / 2 - centerY;
-      
-      setIsAboveCenter(relativeY < 0);
-    }
-  }, [isInView]);
+  const aboveCenter = CheckIfAboveCenter(containerRef);
 
   return ( 
     <div ref={containerRef} className={`w-full max-w-2xl mb-12 min-h-30 ${className}`}> 
       <motion.div 
         variants={innerBlockVariants}
-        initial={isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-        animate={isInView ? "visible" : isAboveCenter ? "hiddenTop" : "hiddenBottom"}
+        initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
+        animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
+        style={{ willChange: "auto" }}
         className="bg-white/10 hover:bg-gray-900/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_15px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg]"
       >
         {children} 
@@ -48,40 +40,31 @@ export function PopoutBlock({ children, className = "" }: WrapperProps) {
   );
 }
 
-//function PopoutPanel({ children, className = "" }: WrapperProps) {
-//  const containerRef = useRef<HTMLDivElement>(null);
-//  const isInView = useInView(containerRef, { once: false, amount: 0.35 });
-//  const [isAboveCenter, setIsAboveCenter] = useState(false);
-//
-//  useEffect(() => {
-//    if (!isInView && containerRef.current) {
-//      const rect = containerRef.current.getBoundingClientRect();
-//      const centerY = window.innerHeight / 2;
-//      const relativeY = rect.top + rect.height / 2 - centerY;
-//      
-//      setIsAboveCenter(relativeY < 0);
-//    }
-//  }, [isInView]);
-//  
-//  return ( 
-//    <motion.div
-//      ref={containerRef}
-//      initial={isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-//      animate={isInView ? "visible" : isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-//      viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
-//      className={`w-full mb-8 relative min-h-30 ${className}`}
-//    > 
-//      <motion.div 
-//        variants={innerPanelVariants}
-//        className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/25 backdrop-blur-md p-8 border-y border-purple-400/80 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
-//      > 
-//        <div className="max-w-6xl mx-auto px-6 min-h-150 flex flex-col items-center">
-//           {children}
-//        </div> 
-//      </motion.div> 
-//    </motion.div> 
-//  ); 
-//} 
+export function PopoutPanel({ children, className = "" }: WrapperProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef, { once: false, amount: 0.35 });
+  const aboveCenter = CheckIfAboveCenter(containerRef);
+  
+  return ( 
+    <motion.div
+      ref={containerRef}
+      initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
+      animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
+      style={{ willChange: "auto" }}
+      viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
+      className={`w-full mb-8 relative min-h-30 ${className}`}
+    > 
+      <motion.div 
+        variants={innerPanelVariants}
+        className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/25 backdrop-blur-md p-8 border-y border-purple-400/80 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
+      > 
+        <div className="max-w-6xl mx-auto px-6 min-h-150 flex flex-col items-center">
+           {children}
+        </div> 
+      </motion.div> 
+    </motion.div> 
+  ); 
+} 
 
 export default function ScrollSection() { 
   useEffect(() => { 
