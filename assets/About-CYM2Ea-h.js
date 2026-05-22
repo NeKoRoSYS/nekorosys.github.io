@@ -1,1 +1,0 @@
-import{r as e}from"./index-Dn380wI5.js";var t=e();function n(){return(0,t.jsx)(`p`,{children:`a`})}export{n as default};
