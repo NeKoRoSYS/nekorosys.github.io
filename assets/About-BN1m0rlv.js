@@ -1,0 +1,1 @@
+import{r as e}from"./index-DYeWrQCU.js";var t=e();function n(){return(0,t.jsx)(`p`,{children:`a`})}export{n as default};
