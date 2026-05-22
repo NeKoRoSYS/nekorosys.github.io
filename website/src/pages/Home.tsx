@@ -17,7 +17,7 @@ export default function Home() {
                 </FadeIn>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl px-4">
+            <div className="flex flex-col md:flex-row gap-8 max-w-6xl px-4">
                 <PopoutBlock className="flex-1">
                 <div className="flex items-center gap-3 mb-4">
                     <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_rgba(52,211,153,0.8)]" />
