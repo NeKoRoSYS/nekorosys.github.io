@@ -10,9 +10,9 @@ export default function App() {
       <Background />
       <HeaderBar />
       
-      <div className="relative z-10 flex flex-col items-center w-full max-w-7xl mx-auto px-6 pb-24">
+      <div className="relative z-10 flex flex-col items-center w-full max-w-7xl mx-auto px-6">
         <div className="mt-44 flex flex-col items-center text-center">
-          <h1 className="text-7xl font-extrabold text-purple-500 tracking-tight drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
+          <h1 className="text-7xl font-extrabold text-purple-500 tracking-tight drop-shadow-[0_0_15px_rgba(211,34,238,0.5)]">
             Hello, World!
           </h1>
           <ScrollSection/>

@@ -3,7 +3,6 @@
 html, 
 body, 
 #root {
-  scroll-behavior: smooth !important;
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
 }
