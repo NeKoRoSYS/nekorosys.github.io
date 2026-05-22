@@ -48,40 +48,40 @@ export function PopoutBlock({ children, className = "" }: WrapperProps) {
   );
 }
 
-function PopoutPanel({ children, className = "" }: WrapperProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: false, amount: 0.35 });
-  const [isAboveCenter, setIsAboveCenter] = useState(false);
-
-  useEffect(() => {
-    if (!isInView && containerRef.current) {
-      const rect = containerRef.current.getBoundingClientRect();
-      const centerY = window.innerHeight / 2;
-      const relativeY = rect.top + rect.height / 2 - centerY;
-      
-      setIsAboveCenter(relativeY < 0);
-    }
-  }, [isInView]);
-  
-  return ( 
-    <motion.div
-      ref={containerRef}
-      initial={isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-      animate={isInView ? "visible" : isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-      viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
-      className={`w-full mb-8 relative min-h-30 ${className}`}
-    > 
-      <motion.div 
-        variants={innerPanelVariants}
-        className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/25 backdrop-blur-md p-8 border-y border-purple-400/80 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
-      > 
-        <div className="max-w-6xl mx-auto px-6 min-h-150 flex flex-col items-center">
-           {children}
-        </div> 
-      </motion.div> 
-    </motion.div> 
-  ); 
-} 
+//function PopoutPanel({ children, className = "" }: WrapperProps) {
+//  const containerRef = useRef<HTMLDivElement>(null);
+//  const isInView = useInView(containerRef, { once: false, amount: 0.35 });
+//  const [isAboveCenter, setIsAboveCenter] = useState(false);
+//
+//  useEffect(() => {
+//    if (!isInView && containerRef.current) {
+//      const rect = containerRef.current.getBoundingClientRect();
+//      const centerY = window.innerHeight / 2;
+//      const relativeY = rect.top + rect.height / 2 - centerY;
+//      
+//      setIsAboveCenter(relativeY < 0);
+//    }
+//  }, [isInView]);
+//  
+//  return ( 
+//    <motion.div
+//      ref={containerRef}
+//      initial={isAboveCenter ? "hiddenTop" : "hiddenBottom"}
+//      animate={isInView ? "visible" : isAboveCenter ? "hiddenTop" : "hiddenBottom"}
+//      viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
+//      className={`w-full mb-8 relative min-h-30 ${className}`}
+//    > 
+//      <motion.div 
+//        variants={innerPanelVariants}
+//        className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/25 backdrop-blur-md p-8 border-y border-purple-400/80 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
+//      > 
+//        <div className="max-w-6xl mx-auto px-6 min-h-150 flex flex-col items-center">
+//           {children}
+//        </div> 
+//      </motion.div> 
+//    </motion.div> 
+//  ); 
+//} 
 
 export default function ScrollSection() { 
   useEffect(() => { 

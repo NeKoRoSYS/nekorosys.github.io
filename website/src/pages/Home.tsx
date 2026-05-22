@@ -1,5 +1,4 @@
 import { PopoutBlock } from '../components/PageRenderer';
-import { PanelLoader, BlockLoader } from '../components/Loaders';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 
 export default function Home() {
