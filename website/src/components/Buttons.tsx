@@ -1,23 +1,52 @@
+import { type ReactNode, type MouseEventHandler } from 'react';
 import Colors from '../shared/Colors';
 
-export function Rectangular({ children, onClick, className }) {
+interface ButtonBaseProps {
+  children: ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  className?: string;
+  radiusClass: string;
+}
+
+function ButtonBase({ children, onClick, className = '', radiusClass }: ButtonBaseProps) {
   return (
-    <button 
-      onClick={onClick} 
-      className={`btn-base ${className} cursor-pointer border rounded-xl ${!className ? Colors.interactable : undefined} px-10 py-3 transition-all ${ Colors.riseOnHover }`}
+    <button
+      onClick={onClick}
+      className={`btn-base ${className} cursor-pointer border ${radiusClass} ${
+        !className ? Colors.interactable : ''
+      } px-10 py-3 transition-all ${Colors.riseOnHover}`}
     >
       {children}
     </button>
   );
 }
 
-export function Pill({ children, onClick, className }) {
+interface ButtonProps {
+  children: ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  className?: string;
+}
+
+export function Rectangular({ children, onClick, className }: ButtonProps) {
   return (
-    <button 
+    <ButtonBase 
       onClick={onClick} 
-      className={`btn-base ${className} cursor-pointer border rounded-4xl ${!className ? Colors.interactable : undefined} px-10 py-3 transition-all ${ Colors.riseOnHover }`}
+      className={className} 
+      radiusClass="rounded-xl"
     >
       {children}
-    </button>
+    </ButtonBase>
+  );
+}
+
+export function Pill({ children, onClick, className }: ButtonProps) {
+  return (
+    <ButtonBase 
+      onClick={onClick} 
+      className={className} 
+      radiusClass="rounded-4xl"
+    >
+      {children}
+    </ButtonBase>
   );
 }

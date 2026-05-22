@@ -40,7 +40,7 @@ export function CheckScrollOnTop() {
   return isAtTop;
 }
 
-export function CheckIfAboveCenter(object: RefObject<HTMLDivElement>) {
+export function CheckIfAboveCenter(object: RefObject<HTMLDivElement | null>) {
   const isInView = useInView(object, { once: false, amount: 0.35 });
   const [isAboveCenter, setIsAboveCenter] = useState(false);
 
