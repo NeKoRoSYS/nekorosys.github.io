@@ -41,7 +41,9 @@ function PopoutBlock({ htmlString }: { htmlString: string }) {
         variants={innerBlockVariants}
         initial={isAboveCenter ? "hiddenTop" : "hiddenBottom"}
         animate={isInView ? "visible" : isAboveCenter ? "hiddenTop" : "hiddenBottom"}
-        className="bg-gray-900/25 backdrop-blur-md p-8 rounded-2xl border border-purple-400/80 text-left text-xl leading-relaxed text-purple-300 shadow-xl hover:drop-shadow-[0_0_15px_rgba(211,34,238,0.5)] transition-[filter,shadow] duration-300"
+        whileHover={{ borderWidth: "4px" }}
+        transition={{ borderWidth: { duration: 0.2 }, default: { type: "tween", ease: "easeOut", duration: 0.7 } }}
+        className="bg-gray-900/25 backdrop-blur-md p-8 rounded-2xl border border-purple-400/80 text-left text-xl leading-relaxed text-purple-300 shadow-xl hover:drop-shadow-[0_0_15px_rgba(211,34,238,0.5)]"
       >
         <div dangerouslySetInnerHTML={{ __html: htmlString }} /> 
       </motion.div>
