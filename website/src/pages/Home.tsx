@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { PillButton } from '../components/Buttons';
-import { PopoutBlock } from '../components/PageRenderer';
+import { PopoutBlock } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 import Colors from '../shared/Colors';
 

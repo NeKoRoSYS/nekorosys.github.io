@@ -24,8 +24,9 @@ function LocationAwareRoutes() {
 }
 
 export default function App() {
-  const location = useLocation();
+const location = useLocation();
   const isActive = (path:string) => location.pathname === path;
+  
   return (
     <>
       <SmoothScroller />

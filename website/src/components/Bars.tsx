@@ -1,6 +1,6 @@
 import Colors from "../shared/Colors";
 import { Link } from "react-router-dom";
-import { CheckScrollOnTop } from '../shared/Effects'
+import { CheckScrollOnTop } from '../shared/Utils'
 
 export function HeaderBar() {
   const isAtTop = CheckScrollOnTop();

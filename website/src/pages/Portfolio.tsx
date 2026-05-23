@@ -1,7 +1,8 @@
-import HoverCard from '../components/HoverCard';
-import HoverItem from '../components/HoverItem';
-import { PopoutBlock, PopoutPanel } from '../components/PageRenderer';
+import { HoverCard, HoverItem } from '../components/Hoverables';
+import { PopoutBlock, PopoutPanel } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
+
+import Icons from '../shared/Icons'
 
 export default function Portfolio() {
   return (
@@ -30,42 +31,42 @@ export default function Portfolio() {
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">Frontend</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-              <HoverItem name="React" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-              <HoverItem name="Tailwind" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-              <HoverItem name="TypeScript" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-              <HoverItem name="JavaScript" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-              <HoverItem name="HTML5" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-              <HoverItem name="CSS3" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <HoverItem name="React" iconSrc={Icons.reactIcon} />
+                <HoverItem name="Tailwind" iconSrc={Icons.tailwindIcon} />
+                <HoverItem name="TypeScript" iconSrc={Icons.typescriptIcon} />
+                <HoverItem name="JavaScript" iconSrc={Icons.javascriptIcon} />
+                <HoverItem name="HTML5" iconSrc={Icons.html5Icon} />
+                <HoverItem name="CSS3" iconSrc={Icons.css3Icon} />
             </div>
           </HoverCard>
 
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">Backend</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-              <HoverItem name="C#" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-              <HoverItem name="C++" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-              <HoverItem name="Python" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-              <HoverItem name="Next.js" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
-              <HoverItem name="Node.js" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-              <HoverItem name="MongoDB" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+                <HoverItem name="C#" iconSrc={Icons.csharpIcon} />
+                <HoverItem name="C++" iconSrc={Icons.cplusplusIcon} />
+                <HoverItem name="Python" iconSrc={Icons.pythonIcon} />
+                <HoverItem name="Next.js" iconSrc={Icons.nextjsIcon} />
+                <HoverItem name="Node.js" iconSrc={Icons.nodejsIcon} />
+                <HoverItem name="MongoDB" iconSrc={Icons.mongodbIcon} />
             </div>
           </HoverCard>
 
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">DevOps</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-              <HoverItem name="Linux" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
-              <HoverItem name="Docker" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
-              <HoverItem name="Git" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-              <HoverItem name="Bash" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+                <HoverItem name="Linux" iconSrc={Icons.linuxIcon} />
+                <HoverItem name="Docker" iconSrc={Icons.dockerIcon} />
+                <HoverItem name="Git" iconSrc={Icons.gitIcon} />
+                <HoverItem name="Bash" iconSrc={Icons.bashIcon} />
             </div>
           </HoverCard>
 
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">Tools</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-              <HoverItem name="VS Code" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
-              <HoverItem name="Unity" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
+                <HoverItem name="VS Code" iconSrc={Icons.vscodeIcon} />
+                <HoverItem name="Unity" iconSrc={Icons.unityIcon} />
             </div>
           </HoverCard>
         </div>

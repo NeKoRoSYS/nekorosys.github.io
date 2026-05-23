@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView, type Transition } from 'framer-motion';
-import { CheckIfAboveCenter } from '../shared/Effects';
+import { CheckIfAboveCenter } from '../shared/Utils';
 import { innerBlockVariants, innerPanelVariants } from '../shared/Animations';
 
 const pulseTransition: Transition = {

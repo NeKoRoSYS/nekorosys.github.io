@@ -1,6 +1,6 @@
 import { useRef, type ReactNode } from 'react'; 
 import { motion, useInView } from 'framer-motion'; 
-import { CheckIfAboveCenter } from '../shared/Effects';
+import { CheckIfAboveCenter } from '../shared/Utils';
 import { innerBlockVariants, innerPanelVariants } from '../shared/Animations';
 
 interface WrapperProps {
