@@ -56,17 +56,6 @@ export default function Portfolio() {
         </FadeIn>
 
         <div className="max-w-4xl w-full px-4 mx-auto mt-8">
-        <HoverCard>
-          <div className="flex items-center gap-4 mb-6">
-            <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
-            <h4 className="font-bold text-lg sm:text-xl text-white">{"$ ls ./skills/main-tools"}</h4>
-          </div>
-          
-          <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
-            <p><span className={`${Colors.textAccent} font-mono`}>{"> Unity:"}</span> Game Development</p>
-            <p><span className={`${Colors.textAccent} font-mono`}>{"> VS Code:"}</span> Code Editor</p>
-          </div>
-        </HoverCard>
 
         <HoverCard>
           <div className="flex items-center gap-4 mb-6">
@@ -80,6 +69,19 @@ export default function Portfolio() {
             <p><span className={`${Colors.textAccent} font-mono`}>{"> Canva:"}</span> Layouting</p>
           </div>
         </HoverCard>
+        
+        <HoverCard>
+          <div className="flex items-center gap-4 mb-6">
+            <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+            <h4 className="font-bold text-lg sm:text-xl text-white">{"$ ls ./skills/main-dev-tools"}</h4>
+          </div>
+          
+          <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
+            <p><span className={`${Colors.textAccent} font-mono`}>{"> Unity:"}</span> Game Development</p>
+            <p><span className={`${Colors.textAccent} font-mono`}>{"> VS Code:"}</span> Code Editor</p>
+          </div>
+        </HoverCard>
+        
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-0 md:gap-8 max-w-4xl w-full px-4 mb-10 md:mb-20 mx-auto">
 
