@@ -1,8 +1,7 @@
 import { Suspense, lazy } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-
-import Background from './components/Background';
+import Background, { BackgroundAscii } from './components/Backgrounds';
 import { HeaderBar, FooterBar } from './components/Bars';
 import { SmoothScroller } from './shared/Effects';
 import { PageLoader } from './components/Loaders';
@@ -25,21 +24,23 @@ function LocationAwareRoutes() {
 }
 
 export default function App() {
+  const location = useLocation();
+  const isActive = (path) => location.pathname === path;
   return (
-    <Router>
+    <>
       <SmoothScroller />
       
       <div className="relative flex flex-col min-h-screen items-center justify-start bg-black text-white overflow-x-hidden scrollbar-none selection:bg-purple-300/30">
-        <Background />
+        {isActive('/bad-apple') ? <BackgroundAscii /> : <Background/>}
         
         <HeaderBar/>
         
-        <div className="relative z-10 flex flex-col items-center w-full md:max-w-8x1 mx-auto px-6">
+        <div className="relative z-10 flex flex-col items-center w-full md:max-w-8xl mx-auto px-6">
           <LocationAwareRoutes />
         </div>
 
         <FooterBar />
       </div>
-    </Router>
+    </>
   );
 }
