@@ -20,7 +20,7 @@ export function PopoutBlock({ children, className = "" }: WrapperProps) {
         initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
         animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
         style={{ willChange: "auto" }}
-        className="bg-white/10 hover:bg-gray-900/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_16px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg]"
+        className="bg-linear-to-br from-gray-700/25 to-white/15 hover:from-gray-700/15 hover:to-purple-500/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_16px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg,gradient]"
       >
         {children} 
       </motion.div>

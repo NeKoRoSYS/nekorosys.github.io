@@ -42,7 +42,6 @@ export default function Portfolio() {
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">Backend</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-              <HoverItem name="Unity" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
               <HoverItem name="C#" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
               <HoverItem name="C++" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
               <HoverItem name="Python" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
