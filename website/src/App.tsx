@@ -1,11 +1,11 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Background from './components/Background';
 import HeaderBar from './components/HeaderBar';
 import FooterBar from './components/FooterBar';
-import { SmoothScroller } from './effects/Effects';
+import { SmoothScroller } from './shared/Effects';
 import { PageLoader } from './components/Loaders';
 
 const Portfolio = lazy(() => import('./pages/Portfolio'));

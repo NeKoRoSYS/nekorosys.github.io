@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CheckScrollOnTop } from '../effects/Effects'
+import { CheckScrollOnTop } from '../shared/Effects'
 import Colors from "../shared/Colors";
 
 export default function HeaderBar() {

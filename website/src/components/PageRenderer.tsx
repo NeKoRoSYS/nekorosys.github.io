@@ -1,19 +1,7 @@
-import { useEffect, useRef, type ReactNode } from 'react'; 
-import { motion, useInView, type Variants } from 'framer-motion'; 
-import Lenis from '@studio-freight/lenis'; 
-import { CheckIfAboveCenter } from '../effects/Effects';
-
-const innerBlockVariants: Variants = { 
-  hiddenTop: { opacity: 0, scale: 0.92, y: -40 }, 
-  hiddenBottom: { opacity: 0, scale: 0.92, y: 40 }, 
-  visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 70, damping: 14, duration: 0.8 } }
-};
-
-const innerPanelVariants: Variants = { 
-  hiddenTop: { opacity: 0, y: -40 }, 
-  hiddenBottom: { opacity: 0, y: 40 }, 
-  visible: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.8 } } 
-}; 
+import { useRef, type ReactNode } from 'react'; 
+import { motion, useInView } from 'framer-motion'; 
+import { CheckIfAboveCenter } from '../shared/Effects';
+import { innerBlockVariants, innerPanelVariants } from '../shared/Animations';
 
 interface WrapperProps {
   children: ReactNode;
@@ -66,33 +54,3 @@ export function PopoutPanel({ children, className = "" }: WrapperProps) {
   ); 
 } 
 
-export default function ScrollSection() { 
-  useEffect(() => { 
-    const lenis = new Lenis({ 
-      duration: 1.2, 
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
-    }); 
-
-    function raf(time: number) { 
-      lenis.raf(time); 
-      requestAnimationFrame(raf); 
-    } 
-
-    requestAnimationFrame(raf); 
-    return () => lenis.destroy(); 
-  }, []); 
-
-  return (
-    <div className="gap-0 flex flex-col items-center text-center py-20">
-      
-      <div className="max-w-8xl mx-7 px-4 gap-12 flex grid-cols-3 justify-center-safe items-center"> 
-      </div> 
-      
-      <div className="max-w-8xl w-full mx-auto px-4 flex flex-col items-center"> 
-      </div> 
-
-      <div className="w-full mx-auto px-4 gap-12 flex flex-col items-center">
-      </div> 
-    </div>
-  );
-}

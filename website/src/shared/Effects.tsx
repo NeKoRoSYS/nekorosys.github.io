@@ -29,7 +29,8 @@ export function CheckScrollOnTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsAtTop(window.scrollY < 100);
+      const isCurrentlyAtTop = window.scrollY < 100;
+      setIsAtTop((prev) => (prev !== isCurrentlyAtTop ? isCurrentlyAtTop : prev));
     };
 
     window.addEventListener('scroll', handleScroll);

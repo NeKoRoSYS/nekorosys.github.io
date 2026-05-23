@@ -1,8 +1,7 @@
 const Colors = {
     // Existing
     button: "border-purple-400/80 hover:border-green-400 bg-purple-950/50 hover:bg-green-600/50 hover:drop-shadow-[0_0_10px_rgba(80,200,150,0.5)]",
-    interactable: "border-purple-400/80 hover:border-green-400 bg-purple-950/50 hover:bg-green-600/50 hover:drop-shadow-[0_0_10px_rgba(80,200,150,0.5)]",
-    riseOnHover: "translate-y-0 hover:-translate-y-1",
+    get interactable() { return this.button },
 
     // Typography
     textAccent: "text-purple-400",

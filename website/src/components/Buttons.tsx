@@ -1,4 +1,5 @@
 import { type ReactNode, type MouseEventHandler } from 'react';
+import { Animations } from '../shared/Animations';
 import Colors from '../shared/Colors';
 
 interface ButtonBaseProps {
@@ -14,7 +15,7 @@ function ButtonBase({ children, onClick, className = '', radiusClass }: ButtonBa
       onClick={onClick}
       className={`btn-base ${className} cursor-pointer border ${radiusClass} ${
         !className ? Colors.interactable : ''
-      } px-10 py-3 transition-all ${Colors.riseOnHover}`}
+      } px-10 py-3 transition-all ${Animations.riseOnHover}`}
     >
       {children}
     </button>
