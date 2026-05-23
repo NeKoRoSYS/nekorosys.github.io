@@ -20,7 +20,7 @@ export function PopoutBlock({ children, className = "" }: WrapperProps) {
         initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
         animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
         style={{ willChange: "auto" }}
-        className="bg-white/10 hover:bg-gray-900/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_15px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg]"
+        className="bg-white/10 hover:bg-gray-900/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_16px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg]"
       >
         {children} 
       </motion.div>
@@ -44,7 +44,7 @@ export function PopoutPanel({ children, className = "" }: WrapperProps) {
     > 
       <motion.div 
         variants={innerPanelVariants}
-        className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/25 backdrop-blur-md p-8 border-y border-purple-400/80 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
+        className="w-screen relative left-1/2 -translate-x-1/2 border-gray-600/80 bg-gray-900/20 backdrop-blur-md p-8 border-y text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
       > 
         <div className="max-w-7xl mx-auto px-6 min-h-150 flex flex-col items-center">
            {children}

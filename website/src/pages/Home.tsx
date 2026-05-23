@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex flex-col w-full items-center animate-in fade-in duration-700 mt-32 mb-15">
             <div className="mt-12 mb-20 text-center">
                 <FadeIn delay={0.1}>
-                    <h1 className="text-7xl font-extrabold drop-shadow-[0_0_10px_rgba(110,0,180,0.75)] text-transparent bg-clip-text bg-linear-to-br from-purple-400 to-pink-400 tracking-tight">
+                    <h1 className="text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(110,0,180,0.75)] text-transparent bg-clip-text bg-linear-to-br from-purple-400 to-pink-400 tracking-tight">
                         Hello, World!
                     </h1>
                     <p className="mt-4 text-gray-400 text-lg tracking-widest uppercase font-medium">

@@ -10,7 +10,7 @@ export default function HeaderBar() {
     >
       
       <div className="w-full max-w-7xl py-7 px-8 flex justify-between items-center">
-        <div className={`font-extrabold ${ isAtTop ? "drop-shadow-[0_0_10px_rgba(110,0,180,0.75)] text-transparent bg-clip-text bg-linear-to-br from-purple-400 to-pink-400" : "drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]  text-white" } text-xl text-white-500 tracking-wide`}>
+        <div className={`font-extrabold ${ isAtTop ? "drop-shadow-[0_0_8px_rgba(110,0,180,0.75)] text-transparent bg-clip-text bg-linear-to-br from-purple-400 to-pink-400" : "drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]  text-white" } text-xl text-white-500 tracking-wide`}>
           NeKoRoSYS
         </div>
         

@@ -65,7 +65,7 @@ export function PageLoader() {
       <motion.div
         animate={{ scale: [0.95, 1.05, 0.95], opacity: [0.5, 1, 0.5] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="w-16 h-16 rounded-full border-t-2 border-purple-500 border-r-2 shadow-[0_0_15px_rgba(211,34,238,0.5)] animate-spin"
+        className="w-16 h-16 rounded-full border-t-2 border-purple-500 border-r-2 shadow-[0_0_16px_rgba(211,34,238,0.5)] animate-spin"
       />
       <motion.p 
         animate={{ opacity: [0.4, 0.8, 0.4] }}
