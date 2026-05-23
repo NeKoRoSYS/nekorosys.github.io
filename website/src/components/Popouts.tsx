@@ -14,7 +14,7 @@ export function PopoutBlock({ children, className = "" }: WrapperProps) {
   const aboveCenter = CheckIfAboveCenter(containerRef);
 
   return ( 
-    <div ref={containerRef} className={`w-full max-w-2xl mb-12 min-h-30 ${className}`}> 
+    <div ref={containerRef} className={`w-full mb-12 min-h-30 ${className}`}> 
       <motion.div 
         variants={innerBlockVariants}
         initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}

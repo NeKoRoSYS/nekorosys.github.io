@@ -1,8 +1,10 @@
 import Colors from "../shared/Colors";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { CheckScrollOnTop } from '../shared/Utils'
 
 export function HeaderBar() {
+  const location = useLocation();
+  const isActive = (path:string) => location.pathname === path;
   const isAtTop = CheckScrollOnTop();
 
   return (
@@ -15,9 +17,9 @@ export function HeaderBar() {
         </div>
         
         <nav className={`flex gap-6 text-sm font-medium ${Colors.textMutedNav}`}>
-          <Link to="/home" className="hover:text-purple-400 transition-all">Home</Link>
-          <Link to="/portfolio" className="hover:text-purple-400 transition-all">Portfolio</Link>
-          <Link to="/blogs" className="hover:text-purple-400 transition-all">Blogs</Link>
+          <Link to="/home" className={`${isActive('/home') ? 'text-purple-400' : ''} hover:text-purple-400 duration-500 transition-all`}>Home</Link>
+          <Link to="/portfolio" className={`${isActive('/portfolio') ? 'text-purple-400' : ''} hover:text-purple-400 duration-500 transition-all`}>Portfolio</Link>
+          <Link to="/blogs" className={`${isActive('/blogs') ? 'text-purple-400' : ''} hover:text-purple-400 duration-500 transition-all`}>Blogs</Link>
         </nav>
       </div>
 

@@ -2,33 +2,34 @@ import { HoverCard, HoverItem } from '../components/Hoverables';
 import { PopoutBlock, PopoutPanel } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 import Icons from '../shared/Icons'
+import Colors from '../shared/Colors';
 
 const techStack = {
   frontend: [
-    { name: "React", iconSrc: Icons.reactIcon },
-    { name: "Tailwind", iconSrc: Icons.tailwindIcon },
-    { name: "TypeScript", iconSrc: Icons.typescriptIcon },
-    { name: "JavaScript", iconSrc: Icons.javascriptIcon },
-    { name: "HTML5", iconSrc: Icons.html5Icon },
-    { name: "CSS3", iconSrc: Icons.css3Icon },
+    { name: ">React", iconSrc: Icons.reactIcon },
+    { name: ">Tailwind", iconSrc: Icons.tailwindIcon },
+    { name: ">TypeScript", iconSrc: Icons.typescriptIcon },
+    { name: ">JavaScript", iconSrc: Icons.javascriptIcon },
+    { name: ">HTML5", iconSrc: Icons.html5Icon },
+    { name: ">CSS3", iconSrc: Icons.css3Icon },
   ],
   backend: [
-    { name: "C#", iconSrc: Icons.csharpIcon },
-    { name: "C++", iconSrc: Icons.cplusplusIcon },
-    { name: "Python", iconSrc: Icons.pythonIcon },
-    { name: "Next.js", iconSrc: Icons.nextjsIcon },
-    { name: "Node.js", iconSrc: Icons.nodejsIcon },
-    { name: "MongoDB", iconSrc: Icons.mongodbIcon },
+    { name: ">C#", iconSrc: Icons.csharpIcon },
+    { name: ">C++", iconSrc: Icons.cplusplusIcon },
+    { name: ">Python", iconSrc: Icons.pythonIcon },
+    { name: ">Next.js", iconSrc: Icons.nextjsIcon },
+    { name: ">Node.js", iconSrc: Icons.nodejsIcon },
+    { name: ">MongoDB", iconSrc: Icons.mongodbIcon },
   ],
   devops: [
-    { name: "Linux", iconSrc: Icons.linuxIcon },
-    { name: "Docker", iconSrc: Icons.dockerIcon },
-    { name: "Git", iconSrc: Icons.gitIcon },
-    { name: "Bash", iconSrc: Icons.bashIcon },
+    { name: ">Linux", iconSrc: Icons.linuxIcon },
+    { name: ">Docker", iconSrc: Icons.dockerIcon },
+    { name: ">Git", iconSrc: Icons.gitIcon },
+    { name: ">Bash", iconSrc: Icons.bashIcon },
   ],
   tools: [
-    { name: "VS Code", iconSrc: Icons.vscodeIcon },
-    { name: "Unity", iconSrc: Icons.unityIcon },
+    { name: ">Unity", iconSrc: Icons.unityIcon },
+    { name: ">VS Code", iconSrc: Icons.vscodeIcon },
   ]
 };
 
@@ -50,13 +51,44 @@ export default function Portfolio() {
 
         <FadeIn delay={0.2}>
           <h1 className="mb-12 text-3xl sm:text-4xl font-extrabold text-white tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
-            Versatile
+            { `{ Versatile == true }` }
           </h1>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 sm:gap-0 md:gap-8 max-w-6xl w-full px-4 mb-20">
+        <div className="max-w-4xl w-full px-4 mx-auto mt-8">
+        <HoverCard>
+          <div className="flex items-center gap-4 mb-6">
+            <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+            <h4 className="font-bold text-lg sm:text-xl text-white">{"$ ls ./skills/main-tools"}</h4>
+          </div>
+          
+          <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
+            <p><span className={`${Colors.textAccent} font-mono`}>{"> Unity:"}</span> Game Development</p>
+            <p><span className={`${Colors.textAccent} font-mono`}>{"> VS Code:"}</span> Code Editor</p>
+          </div>
+        </HoverCard>
+
+        <HoverCard>
+          <div className="flex items-center gap-4 mb-6">
+            <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+            <h4 className="font-bold text-lg sm:text-xl text-white">{"$ ls ./skills/graphic-design"}</h4>
+          </div>
+          
+          <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
+            <p><span className={`${Colors.textAccent} font-mono`}>{"> Adobe Photoshop:"}</span> General-purpose</p>
+            <p><span className={`${Colors.textAccent} font-mono`}>{"> IbisPaint:"}</span> Illustration</p>
+            <p><span className={`${Colors.textAccent} font-mono`}>{"> Canva:"}</span> Layouting</p>
+          </div>
+        </HoverCard>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-0 md:gap-8 max-w-4xl w-full px-4 mb-10 md:mb-20 mx-auto">
+
           <HoverCard>
-            <h4 className="font-bold text-xl text-white mb-6 text-center">Frontend</h4>
+            <div className="flex items-center gap-4 mb-6">
+              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+              <h4 className="font-bold text-lg sm:text-sm text-white">{"$ ls ./skills/frontend"}</h4>
+            </div>
+            
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
                 {techStack.frontend.map((tech) => (
                   <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
@@ -65,7 +97,10 @@ export default function Portfolio() {
           </HoverCard>
 
           <HoverCard>
-            <h4 className="font-bold text-xl text-white mb-6 text-center">Backend</h4>
+            <div className="flex items-center gap-4 mb-6">
+              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+              <h4 className="font-bold text-lg sm:text-sm text-white">{"$ ls ./skills/backend"}</h4>
+            </div>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
                 {techStack.backend.map((tech) => (
                   <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
@@ -74,25 +109,19 @@ export default function Portfolio() {
           </HoverCard>
 
           <HoverCard>
-            <h4 className="font-bold text-xl text-white mb-6 text-center">DevOps</h4>
+            <div className="flex items-center gap-4 mb-6">
+              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+              <h4 className="font-bold text-lg sm:text-sm text-white">{"$ ls ./skills/devops"}</h4>
+            </div>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
                 {techStack.devops.map((tech) => (
                   <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
                 ))}
             </div>
           </HoverCard>
-
-          <HoverCard>
-            <h4 className="font-bold text-xl text-white mb-6 text-center">Tools</h4>
-            <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-                {techStack.tools.map((tech) => (
-                  <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
-                ))}
-            </div>
-          </HoverCard>
         </div>
 
-        <div className="flex flex-col gap-8 w-full px-4">
+        <div className="flex flex-col gap-16 w-full px-4">
           <PopoutPanel>
             <div className="flex items-center justify-center gap-4 mb-4">
               <h1 className="font-bold text-3xl sm:text-5xl text-white drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">My Projects</h1>
