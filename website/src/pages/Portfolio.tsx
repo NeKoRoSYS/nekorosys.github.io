@@ -20,7 +20,7 @@ export default function Portfolio() {
         </div>
 
         <FadeIn delay={0.2}>
-          <h1 className="mb-12 md:mb-16 text-3xl sm:text-4xl font-extrabold text-white tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
+          <h1 className="mb-12 text-3xl sm:text-4xl font-extrabold text-white tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
             Versatile
           </h1>
         </FadeIn>

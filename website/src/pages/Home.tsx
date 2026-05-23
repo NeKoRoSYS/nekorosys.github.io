@@ -35,7 +35,9 @@ export default function Home() {
           </PopoutBlock>
         </div>
 
-        <Link to="/portfolio" className='mt-16'><PillButton>{"Hire Me"}</PillButton></Link>
+        <FadeIn className='mt-16' delay={0.3}>
+            <Link to="/portfolio"><PillButton>{<b>Hire Me</b>}</PillButton></Link>
+        </FadeIn>
       </div>
     </PageWrapper>
   );
