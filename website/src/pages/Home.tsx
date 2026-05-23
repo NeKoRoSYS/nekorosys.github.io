@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { Pill } from '../components/Buttons';
 import { PopoutBlock } from '../components/PageRenderer';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 import Colors from '../shared/Colors';
@@ -8,7 +10,7 @@ export default function Home() {
         <div className="flex flex-col w-full items-center animate-in fade-in duration-700 mt-32 mb-15">
             <div className="mt-12 mb-20 text-center">
                 <FadeIn delay={0.1}>
-                    <h1 className="text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(110,0,180,0.75)] text-transparent bg-clip-text bg-linear-to-br from-purple-400 to-pink-400 tracking-tight">
+                    <h1 className="text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(0,180,110,0.75)] text-transparent bg-clip-text bg-linear-to-br from-green-600 to-green-300 tracking-tight">
                         Hello, World!
                     </h1>
                     <p className="mt-4 text-gray-400 text-lg tracking-widest uppercase font-medium">
@@ -30,6 +32,8 @@ export default function Home() {
                 </div>
                 </PopoutBlock>
             </div>
+
+            <Link to="/portfolio" className='mt-35'><Pill>{"See Portfolio"}</Pill></Link>
         </div>
     </PageWrapper>
   );

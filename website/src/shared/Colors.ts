@@ -1,6 +1,6 @@
 const Colors = {
     // Existing
-    button: "border-purple-400/80 hover:border-green-400 bg-purple-950/50 hover:bg-green-600/50 hover:drop-shadow-[0_0_8px_rgba(80,200,150,0.5)]",
+    button: "border-yellow-400/80 hover:border-green-400 bg-yellow-950/50 hover:bg-green-600/50 hover:drop-shadow-[0_0_8px_rgba(80,200,150,0.5)]",
     get interactable() { return this.button },
 
     // Typography
