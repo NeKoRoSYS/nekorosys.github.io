@@ -68,7 +68,6 @@ export default function Portfolio() {
               <HoverItem name="Unity" iconSrc="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
             </div>
           </HoverCard>
-
         </div>
 
         <div className="flex flex-col gap-8 w-full px-4">

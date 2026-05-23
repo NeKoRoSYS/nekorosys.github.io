@@ -19,7 +19,7 @@ export function PopoutBlock({ children, className = "" }: WrapperProps) {
         variants={innerBlockVariants}
         initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
         animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
-        style={{ willChange: "transform, opacity" }}
+      style={{ willChange: "auto" }}
         className="bg-linear-to-br from-gray-700/25 to-white/15 hover:from-gray-700/15 hover:to-purple-500/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_16px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg,gradient]"
       >
         {children} 
@@ -38,7 +38,7 @@ export function PopoutPanel({ children, className = "" }: WrapperProps) {
       ref={containerRef}
       initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
       animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
-      style={{ willChange: "transform, opacity" }}
+      style={{ willChange: "auto" }}
       viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
       className={`w-full mb-8 relative min-h-30 ${className}`}
     > 
