@@ -181,7 +181,6 @@ export function BackgroundAscii({
         src={backgroundVideo} 
         autoPlay 
         loop 
-        muted 
         playsInline 
         crossOrigin="anonymous" 
         style={{ position: 'absolute', width: '1px', height: '1px', opacity: 0 }} 
