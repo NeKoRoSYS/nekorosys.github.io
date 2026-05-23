@@ -5,13 +5,19 @@ export function CheckScrollOnTop() {
   const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const isCurrentlyAtTop = window.scrollY < 100;
-      setIsAtTop((prev) => (prev !== isCurrentlyAtTop ? isCurrentlyAtTop : prev));
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsAtTop(window.scrollY < 100);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

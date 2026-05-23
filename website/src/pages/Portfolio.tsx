@@ -1,8 +1,36 @@
 import { HoverCard, HoverItem } from '../components/Hoverables';
 import { PopoutBlock, PopoutPanel } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
-
 import Icons from '../shared/Icons'
+
+const techStack = {
+  frontend: [
+    { name: "React", iconSrc: Icons.reactIcon },
+    { name: "Tailwind", iconSrc: Icons.tailwindIcon },
+    { name: "TypeScript", iconSrc: Icons.typescriptIcon },
+    { name: "JavaScript", iconSrc: Icons.javascriptIcon },
+    { name: "HTML5", iconSrc: Icons.html5Icon },
+    { name: "CSS3", iconSrc: Icons.css3Icon },
+  ],
+  backend: [
+    { name: "C#", iconSrc: Icons.csharpIcon },
+    { name: "C++", iconSrc: Icons.cplusplusIcon },
+    { name: "Python", iconSrc: Icons.pythonIcon },
+    { name: "Next.js", iconSrc: Icons.nextjsIcon },
+    { name: "Node.js", iconSrc: Icons.nodejsIcon },
+    { name: "MongoDB", iconSrc: Icons.mongodbIcon },
+  ],
+  devops: [
+    { name: "Linux", iconSrc: Icons.linuxIcon },
+    { name: "Docker", iconSrc: Icons.dockerIcon },
+    { name: "Git", iconSrc: Icons.gitIcon },
+    { name: "Bash", iconSrc: Icons.bashIcon },
+  ],
+  tools: [
+    { name: "VS Code", iconSrc: Icons.vscodeIcon },
+    { name: "Unity", iconSrc: Icons.unityIcon },
+  ]
+};
 
 export default function Portfolio() {
   return (
@@ -27,46 +55,39 @@ export default function Portfolio() {
         </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-4 sm:gap-0 md:gap-8 max-w-6xl w-full px-4 mb-20">
-          
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">Frontend</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-                <HoverItem name="React" iconSrc={Icons.reactIcon} />
-                <HoverItem name="Tailwind" iconSrc={Icons.tailwindIcon} />
-                <HoverItem name="TypeScript" iconSrc={Icons.typescriptIcon} />
-                <HoverItem name="JavaScript" iconSrc={Icons.javascriptIcon} />
-                <HoverItem name="HTML5" iconSrc={Icons.html5Icon} />
-                <HoverItem name="CSS3" iconSrc={Icons.css3Icon} />
+                {techStack.frontend.map((tech) => (
+                  <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
+                ))}
             </div>
           </HoverCard>
 
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">Backend</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-                <HoverItem name="C#" iconSrc={Icons.csharpIcon} />
-                <HoverItem name="C++" iconSrc={Icons.cplusplusIcon} />
-                <HoverItem name="Python" iconSrc={Icons.pythonIcon} />
-                <HoverItem name="Next.js" iconSrc={Icons.nextjsIcon} />
-                <HoverItem name="Node.js" iconSrc={Icons.nodejsIcon} />
-                <HoverItem name="MongoDB" iconSrc={Icons.mongodbIcon} />
+                {techStack.backend.map((tech) => (
+                  <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
+                ))}
             </div>
           </HoverCard>
 
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">DevOps</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-                <HoverItem name="Linux" iconSrc={Icons.linuxIcon} />
-                <HoverItem name="Docker" iconSrc={Icons.dockerIcon} />
-                <HoverItem name="Git" iconSrc={Icons.gitIcon} />
-                <HoverItem name="Bash" iconSrc={Icons.bashIcon} />
+                {techStack.devops.map((tech) => (
+                  <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
+                ))}
             </div>
           </HoverCard>
 
           <HoverCard>
             <h4 className="font-bold text-xl text-white mb-6 text-center">Tools</h4>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-                <HoverItem name="VS Code" iconSrc={Icons.vscodeIcon} />
-                <HoverItem name="Unity" iconSrc={Icons.unityIcon} />
+                {techStack.tools.map((tech) => (
+                  <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
+                ))}
             </div>
           </HoverCard>
         </div>

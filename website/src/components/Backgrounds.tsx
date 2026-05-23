@@ -133,10 +133,7 @@ export function BackgroundAscii({
     let animationId: number;
 
     const renderLoop = () => {
-      if (video.paused || video.ended) {
-        animationId = requestAnimationFrame(renderLoop);
-        return;
-      }
+      if (video.paused || video.ended) return;
 
       if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
         canvas.width = canvas.clientWidth;
@@ -156,7 +153,10 @@ export function BackgroundAscii({
 
     const startVideo = () => {
       video.play().catch(() => {});
-      animationId = requestAnimationFrame(renderLoop);
+      if (video.readyState >= 3) { 
+        cancelAnimationFrame(animationId);
+        animationId = requestAnimationFrame(renderLoop);
+      }
     };
 
     if (video.readyState >= 1) {
@@ -164,6 +164,11 @@ export function BackgroundAscii({
     } else {
       video.addEventListener('loadedmetadata', startVideo);
     }
+
+    video.addEventListener('play', () => {
+      cancelAnimationFrame(animationId);
+      animationId = requestAnimationFrame(renderLoop);
+    });
 
     return () => {
       video.removeEventListener('loadedmetadata', startVideo);

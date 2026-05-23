@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Background, { BackgroundAscii } from './components/Backgrounds';
 import { HeaderBar, FooterBar } from './components/Bars';
@@ -15,7 +15,7 @@ function LocationAwareRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
         <Route path="/portfolio" element={<Suspense fallback={<PageLoader />}><Portfolio /></Suspense>} />
       </Routes>
