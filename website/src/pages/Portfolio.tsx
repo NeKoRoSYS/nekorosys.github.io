@@ -38,7 +38,7 @@ export default function Portfolio() {
     <PageWrapper>
       <div className="flex flex-col w-full items-center animate-in fade-in duration-700 mt-24 md:mt-42 mb-16">
         
-        <div className="mt-8 md:mt-12 mb-16 md:mb-20 text-center px-4">
+        <div className="mt-8 md:mt-12 mb-24 md:mb-20 text-center px-4">
           <FadeIn delay={0.1}>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(0,180,110,0.75)] text-transparent bg-clip-text bg-linear-to-br from-green-600 to-green-300 tracking-tight">
               Creation
@@ -50,7 +50,7 @@ export default function Portfolio() {
         </div>
 
         <FadeIn delay={0.2}>
-          <h1 className="mb-12 text-3xl sm:text-4xl font-extrabold text-white tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
+          <h1 className="mb-6 text-3xl sm:text-4xl font-extrabold text-white tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
             { `{ Versatile == true }` }
           </h1>
         </FadeIn>
