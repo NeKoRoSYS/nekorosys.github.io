@@ -3,7 +3,6 @@ import { PillButton } from '../components/Buttons';
 import { PopoutBlock } from '../components/PageRenderer';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 import Colors from '../shared/Colors';
-import HoverItem from '../components/HoverItem';
 
 export default function Home() {
   return (

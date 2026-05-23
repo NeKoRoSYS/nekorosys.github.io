@@ -3,8 +3,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import { AnimatePresence } from 'framer-motion';
 
 import Background from './components/Background';
-import HeaderBar from './components/HeaderBar';
-import FooterBar from './components/FooterBar';
+import { HeaderBar, FooterBar } from './components/Bars';
 import { SmoothScroller } from './shared/Effects';
 import { PageLoader } from './components/Loaders';
 
