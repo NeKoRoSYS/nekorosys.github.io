@@ -46,7 +46,7 @@ export function PopoutPanel({ children, className = "" }: WrapperProps) {
         variants={innerPanelVariants}
         className="w-screen relative left-1/2 -translate-x-1/2 border-gray-600/80 bg-gray-900/20 backdrop-blur-md p-8 border-y text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
       > 
-        <div className="max-w-7xl mx-auto px-6 min-h-150 flex flex-col items-center">
+        <div className="md:max-w-8xl mx-auto px-6 min-h-150 flex flex-col items-center">
            {children}
         </div> 
       </motion.div> 

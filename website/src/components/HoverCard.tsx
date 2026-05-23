@@ -4,11 +4,12 @@ import { PopoutBlock } from "./PageRenderer";
 
 interface CardProps {
   children: ReactNode;
+  className?: string;
 }
 
-export default function HoverCard({ children }: CardProps) {
+export default function HoverCard({ children, className }: CardProps) {
     return (
-        <PopoutBlock className={`flex-1 ${ Animations.riseOnHover } transition-transform`}>
+        <PopoutBlock className={`${className} flex-1 ${ Animations.riseOnHover } transition-transform`}>
             {children}
         </PopoutBlock>
     )

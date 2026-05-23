@@ -28,7 +28,7 @@ interface ButtonProps {
   className?: string;
 }
 
-export function Rectangular({ children, onClick, className }: ButtonProps) {
+export function RectButton({ children, onClick, className }: ButtonProps) {
   return (
     <ButtonBase 
       onClick={onClick} 
@@ -40,7 +40,7 @@ export function Rectangular({ children, onClick, className }: ButtonProps) {
   );
 }
 
-export function Pill({ children, onClick, className }: ButtonProps) {
+export function PillButton({ children, onClick, className }: ButtonProps) {
   return (
     <ButtonBase 
       onClick={onClick} 

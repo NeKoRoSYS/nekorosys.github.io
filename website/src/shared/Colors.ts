@@ -4,7 +4,7 @@ const Colors = {
     get interactable() { return this.button },
 
     // Typography
-    textAccent: "text-purple-400",
+    textAccent: "text-green-400",
     textAccentHover: "hover:text-purple-400",
     textMutedNav: "text-slate-400",
     textBody: "text-gray-300",
@@ -15,7 +15,9 @@ const Colors = {
     // Text & Box Glows
     glowTextWhite: "drop-shadow-[0_0_24px_rgba(255,255,255,0.5)]",
     glowTextPurple: "drop-shadow-[0_0_24px_rgba(211,34,238,0.4)]",
+    glowTexGreen: "drop-shadow-[0_0_24px_rgba(0,180,110,0.4)]",
     glowBoxPurple: "shadow-[0_0_16px_rgba(211,34,238,0.5)]",
+    glowBoxGreene: "shadow-[0_0_16px_rgba(0,180,110,0.5)]",
 
     // Backgrounds & Borders
     bgBase: "bg-purple-950",

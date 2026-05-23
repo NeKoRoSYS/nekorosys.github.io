@@ -35,7 +35,7 @@ export default function App() {
         
         <HeaderBar/>
         
-        <div className="relative z-10 flex flex-col items-center w-full max-w-8x1 mx-auto px-6">
+        <div className="relative z-10 flex flex-col items-center w-full md:max-w-8x1 mx-auto px-6">
           <LocationAwareRoutes />
         </div>
 

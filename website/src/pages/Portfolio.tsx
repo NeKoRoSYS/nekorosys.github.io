@@ -6,11 +6,11 @@ import Colors from '../shared/Colors'
 export default function Portfolio() {
   return (
     <PageWrapper>
-        <div className="flex flex-col w-full items-center animate-in fade-in duration-700 mt-32 mb-15 gap-10">
+        <div className="flex flex-col w-full items-center animate-in fade-in duration-700 mt-32 mb-15">
 
             <div className="mt-12 mb-20 text-center">
                 <FadeIn delay={0.1}>
-                    <h1 className="text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(110,0,180,0.75)] text-transparent bg-clip-text bg-linear-to-br from-purple-400 to-pink-400 tracking-tight">
+                    <h1 className="text-5xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(0,180,110,0.75)] text-transparent bg-clip-text bg-linear-to-br from-green-600 to-green-300 tracking-tight">
                         Creation
                     </h1>
                     <p className="mt-4 text-gray-400 text-lg tracking-widest uppercase font-medium">
@@ -20,21 +20,33 @@ export default function Portfolio() {
             </div>
 
             <FadeIn delay={0.2}>
-                <h1 className='text-3xl font-extrabold text-white tracking-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]'>Versatile</h1>
+                <h1 className='mb-15 text-3xl font-extrabold text-white tracking-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.5)]'>Versatile</h1>
             </FadeIn>
 
-            <div className="flex flex-col md:flex-row gap-8 max-w-6xl px-4 mb-20">
+            <div className="flex flex-col md:flex-row md:gap-8 max-w-6xl px-4">
+                <HoverCard>
+                    <div className="flex justify-center-safe items-center gap-3">
+                        <h3 className="font-bold text-xl text-white">Graphic Design</h3>
+                    </div>
+                </HoverCard>
+                <HoverCard>
+                    <div className="flex justify-center-safe items-center gap-3">
+                        <h3 className="font-bold text-xl text-white">Software</h3>
+                    </div>
+                </HoverCard>
+            </div>
+            <div className="flex flex-col md:flex-row md:gap-8 max-w-6xl px-4 mb-20">
                 <HoverCard>
                     <div className="flex justify-center-safe items-center gap-3 mb-4">
                         <h3 className="font-bold text-xl text-white">Frontend</h3>
                     </div>
                     <div className="space-y-2 text-sm text-gray-300">
-                        <p><span className={`${Colors.textAccent}`}>React</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Tailwind</span></p>
-                        <p><span className={`${Colors.textAccent}`}>TypeScript</span></p>
-                        <p><span className={`${Colors.textAccent}`}>JavaScript</span></p>
-                        <p><span className={`${Colors.textAccent}`}>HTML</span></p>
-                        <p><span className={`${Colors.textAccent}`}>CSS</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>React</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Tailwind</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>TypeScript</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>JavaScript</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>HTML</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>CSS</span></p>
                     </div>
                 </HoverCard>
                 <HoverCard>
@@ -42,13 +54,13 @@ export default function Portfolio() {
                         <h3 className="font-bold text-xl text-white">Backend</h3>
                     </div>
                     <div className="space-y-2 text-sm text-gray-300">
-                        <p><span className={`${Colors.textAccent}`}>Unity</span></p>
-                        <p><span className={`${Colors.textAccent}`}>C#</span></p>
-                        <p><span className={`${Colors.textAccent}`}>C++</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Python</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Next.js</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Node.js</span></p>
-                        <p><span className={`${Colors.textAccent}`}>MongoDB</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Unity</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>C#</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>C++</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Python</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Next.js</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Node.js</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>MongoDB</span></p>
                     </div>
                 </HoverCard>
                 <HoverCard>
@@ -56,10 +68,10 @@ export default function Portfolio() {
                         <h3 className="font-bold text-xl text-white">DevOps</h3>
                     </div>
                     <div className="space-y-2 text-sm text-gray-300">
-                        <p><span className={`${Colors.textAccent}`}>Linux</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Docker</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Git</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Bash</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Linux</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Docker</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Git</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Bash</span></p>
                     </div>
                 </HoverCard>
                 <HoverCard>
@@ -67,8 +79,8 @@ export default function Portfolio() {
                         <h3 className="font-bold text-xl text-white">Tools</h3>
                     </div>
                     <div className="space-y-2 text-sm text-gray-300">
-                        <p><span className={`${Colors.textAccent}`}>VS Code</span></p>
-                        <p><span className={`${Colors.textAccent}`}>Unity</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>VS Code</span></p>
+                        <p><span className={`${Colors.textAccent} font-mono`}>Unity</span></p>
                     </div>
                 </HoverCard>
             </div>
