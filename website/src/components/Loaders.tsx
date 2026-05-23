@@ -20,7 +20,7 @@ export function BlockLoader() {
         variants={innerBlockVariants}
         initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
         animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
-        style={{ willChange: "auto" }}
+        style={{ willChange: "transform, opacity" }}
         className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/20 h-full w-full shadow-xl flex flex-col gap-4"
       >
         <motion.div animate={{ opacity: [0.3, 0.7, 0.3] }} transition={pulseTransition} className="h-6 bg-white/10 rounded w-3/4"></motion.div>
@@ -41,7 +41,7 @@ export function PanelLoader() {
       ref={containerRef}
       initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
       animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
-      style={{ willChange: "auto" }}
+      style={{ willChange: "transform, opacity" }}
       viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
       className="w-full mb-8 relative min-h-30"
     >
