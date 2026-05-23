@@ -25,7 +25,7 @@ function LocationAwareRoutes() {
 
 export default function App() {
   const location = useLocation();
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path:string) => location.pathname === path;
   return (
     <>
       <SmoothScroller />
@@ -39,7 +39,7 @@ export default function App() {
           <LocationAwareRoutes />
         </div>
 
-        <FooterBar />
+        {!isActive('/bad-apple') ? <FooterBar /> : undefined}
       </div>
     </>
   );
