@@ -8,8 +8,8 @@ import FooterBar from './components/FooterBar';
 import { SmoothScroller } from './effects/Effects';
 import { PageLoader } from './components/Loaders';
 
+const Portfolio = lazy(() => import('./pages/Portfolio'));
 const Home = lazy(() => import('./pages/Home'));
-const About = lazy(() => import('./pages/About'));
 
 function LocationAwareRoutes() {
   const location = useLocation();
@@ -19,7 +19,7 @@ function LocationAwareRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
         <Route path="/home" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
-        <Route path="/about" element={<Suspense fallback={<PageLoader />}><About /></Suspense>} />
+        <Route path="/portfolio" element={<Suspense fallback={<PageLoader />}><Portfolio /></Suspense>} />
       </Routes>
     </AnimatePresence>
   );
@@ -35,7 +35,7 @@ export default function App() {
         
         <HeaderBar/>
         
-        <div className="relative z-10 flex flex-col items-center w-full max-w-7xl mx-auto px-6">
+        <div className="relative z-10 flex flex-col items-center w-full max-w-8x1 mx-auto px-6">
           <LocationAwareRoutes />
         </div>
 

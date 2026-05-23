@@ -58,7 +58,7 @@ export function PopoutPanel({ children, className = "" }: WrapperProps) {
         variants={innerPanelVariants}
         className="w-screen relative left-1/2 -translate-x-1/2 bg-purple-950/25 backdrop-blur-md p-8 border-y border-purple-400/80 text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
       > 
-        <div className="max-w-6xl mx-auto px-6 min-h-150 flex flex-col items-center">
+        <div className="max-w-7xl mx-auto px-6 min-h-150 flex flex-col items-center">
            {children}
         </div> 
       </motion.div> 
@@ -85,10 +85,10 @@ export default function ScrollSection() {
   return (
     <div className="gap-0 flex flex-col items-center text-center py-20">
       
-      <div className="max-w-6xl mx-7 px-4 gap-12 flex grid-cols-3 justify-center-safe items-center"> 
+      <div className="max-w-8xl mx-7 px-4 gap-12 flex grid-cols-3 justify-center-safe items-center"> 
       </div> 
       
-      <div className="max-w-6xl w-full mx-auto px-4 flex flex-col items-center"> 
+      <div className="max-w-8xl w-full mx-auto px-4 flex flex-col items-center"> 
       </div> 
 
       <div className="w-full mx-auto px-4 gap-12 flex flex-col items-center">

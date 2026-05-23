@@ -16,7 +16,8 @@ export default function HeaderBar() {
         
         <nav className={`flex gap-6 text-sm font-medium ${Colors.textMutedNav}`}>
           <Link to="/home" className="hover:text-purple-400 transition-all">Home</Link>
-          <Link to="/about" className="hover:text-purple-400 transition-all">About</Link>
+          <Link to="/portfolio" className="hover:text-purple-400 transition-all">Portfolio</Link>
+          <Link to="/blogs" className="hover:text-purple-400 transition-all">Blogs</Link>
         </nav>
       </div>
 
