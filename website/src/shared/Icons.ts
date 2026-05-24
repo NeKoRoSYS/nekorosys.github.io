@@ -17,25 +17,57 @@ import bashIcon from '../assets/techStack/bash-original.svg';
 import vscodeIcon from '../assets/techStack/vscode-original.svg';
 import unityIcon from '../assets/techStack/unity-original.svg';
 
+import behanceIcon from '../assets/socials/behance.png';
+import bitcoinIcon from '../assets/socials/bitcoin.png';
+import discordIcon from '../assets/socials/discord.png';
+import emailIcon from '../assets/socials/email.png';
+import ethereumIcon from '../assets/socials/ethereum.png';
+import facebookIcon from '../assets/socials/facebook.png';
+import githubIcon from '../assets/socials/github.png';
+import instagramIcon from '../assets/socials/instagram.png';
+import kofiIcon from '../assets/socials/kofi.png';
+import linkedinIcon from '../assets/socials/linkedin.png';
+import payhipIcon from '../assets/socials/payhip.png';
+import paypalIcon from '../assets/socials/paypal.png';
+import tiktokIcon from '../assets/socials/tiktok.png';
+import twitterIcon from '../assets/socials/twitter-alt-square.png';
+import youtubeIcon from '../assets/socials/youtube.png';
+
 const Icons = {
-    reactIcon: reactIcon,
-    tailwindIcon: tailwindIcon,
-    typescriptIcon: typescriptIcon,
-    javascriptIcon: javascriptIcon,
-    html5Icon: html5Icon,
-    css3Icon: css3Icon,
-    csharpIcon: csharpIcon,
-    cplusplusIcon: cplusplusIcon,
-    pythonIcon: pythonIcon,
-    nextjsIcon: nextjsIcon,
-    nodejsIcon: nodejsIcon,
-    mongodbIcon: mongodbIcon,
-    linuxIcon: linuxIcon,
-    dockerIcon: dockerIcon,
-    gitIcon: gitIcon,
-    bashIcon: bashIcon,
-    vscodeIcon: vscodeIcon,
-    unityIcon: unityIcon,
+    reactIcon,
+    tailwindIcon,
+    typescriptIcon,
+    javascriptIcon,
+    html5Icon,
+    css3Icon,
+    csharpIcon,
+    cplusplusIcon,
+    pythonIcon,
+    nextjsIcon,
+    nodejsIcon,
+    mongodbIcon,
+    linuxIcon,
+    dockerIcon,
+    gitIcon,
+    bashIcon,
+    vscodeIcon,
+    unityIcon,
+
+    behanceIcon,
+    bitcoinIcon,
+    discordIcon,
+    emailIcon,
+    ethereumIcon,
+    facebookIcon,
+    githubIcon,
+    instagramIcon,
+    kofiIcon,
+    linkedinIcon,
+    payhipIcon,
+    paypalIcon,
+    tiktokIcon,
+    twitterIcon,
+    youtubeIcon,
 };
 
 export default Icons;

@@ -34,7 +34,7 @@ export default function App() {
     <>
       <SmoothScroller/>
       
-      <div className="relative flex flex-col min-h-screen items-center justify-start bg-black text-white overflow-x-hidden scrollbar-none selection:bg-purple-300/30">
+      <div className="relative flex flex-col min-h-screen items-center justify-start bg-black text-gray-100 overflow-x-hidden scrollbar-none selection:bg-purple-300/30">
         {CheckIfRouteActive('/bad-apple') ? <BackgroundAscii /> : <Background/>}
         <HeaderBar/>
         <ScrollIndicator/>

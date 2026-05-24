@@ -91,7 +91,7 @@ export function ProjectsMarquee() {
             >
                 <div className="flex items-center gap-4 mb-2">
                   <p className={`${Colors.textAccent}`}>{'>'}</p>
-                  <h4 className="font-bold text-xl text-white">{project.title}</h4>
+                  <h4 className="font-bold text-xl text-gray-100">{project.title}</h4>
                 </div>
                 
                 <p className="text-base text-gray-400 line-clamp-4 leading-relaxed mb-auto">
