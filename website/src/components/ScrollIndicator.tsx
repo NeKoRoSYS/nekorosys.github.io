@@ -34,7 +34,7 @@ export default function ScrollIndicator() {
   
   return (
     <footer 
-      className={`fixed bottom-0 left-0 w-full h-50 z-50 transition-all duration-500 ease-in-out ${
+      className={`fixed bottom-0 left-0 w-full h-50 z-51 transition-all duration-500 ease-in-out ${
         isVisible 
           ? 'opacity-100 translate-y-0 pointer-events-auto' 
           : 'opacity-0 translate-y-4 pointer-events-none'
