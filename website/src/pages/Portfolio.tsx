@@ -33,6 +33,12 @@ const techStack = {
   ]
 };
 
+const Label = ({ children }) => (
+  <span className={`${Colors.textAccent} font-mono mr-2 select-none`}>
+    {`> ${children}:`}
+  </span>
+);
+
 export default function Portfolio() {
   return (
     <PageWrapper>
@@ -64,9 +70,9 @@ export default function Portfolio() {
           </div>
           
           <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
-            <p><span className={`${Colors.textAccent} font-mono`}>{"> Adobe Photoshop:"}</span> General-purpose</p>
-            <p><span className={`${Colors.textAccent} font-mono`}>{"> IbisPaint:"}</span> Illustration</p>
-            <p><span className={`${Colors.textAccent} font-mono`}>{"> Canva:"}</span> Layouting</p>
+              <p><Label>Adobe Photoshop</Label>General-purpose Editing</p>
+              <p><Label>IbisPaint</Label>Illustration</p>
+              <p><Label>Canva</Label>Layout Design</p>
           </div>
         </HoverCard>
         
@@ -77,13 +83,13 @@ export default function Portfolio() {
           </div>
           
           <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
-            <p><span className={`${Colors.textAccent} font-mono`}>{"> Unity:"}</span> Game Development</p>
-            <p><span className={`${Colors.textAccent} font-mono`}>{"> VS Code:"}</span> Code Editor</p>
+              <p><Label>Unity</Label>Main Game Engine</p>
+              <p><Label>VS Code</Label>Code Editor</p>
           </div>
         </HoverCard>
         
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-0 md:gap-8 max-w-4xl w-full px-4 mb-10 md:mb-20 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-0 md:gap-8 max-w-4xl w-full px-4 mb-10 md:mb-10 mx-auto">
 
           <HoverCard>
             <div className="flex items-center gap-4 mb-6">

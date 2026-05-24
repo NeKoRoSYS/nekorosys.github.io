@@ -1,5 +1,6 @@
 import { useEffect, useState, type RefObject } from 'react';
 import { useInView } from 'motion/react';
+import { useLocation } from 'react-router-dom';
 
 export function CheckScrollOnTop() {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -10,7 +11,7 @@ export function CheckScrollOnTop() {
     const handleScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          setIsAtTop(window.scrollY < 100);
+          setIsAtTop(window.scrollY < 50);
           ticking = false;
         });
         ticking = true;
@@ -40,3 +41,13 @@ export function CheckIfAboveCenter(object: RefObject<HTMLDivElement | null>) {
 
   return isAboveCenter;
 }
+
+export function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};

@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
 import { PillButton } from '../components/Buttons';
-import { PopoutBlock } from '../components/Popouts';
+import { PopoutBlock, PopoutPanel } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 import Colors from '../shared/Colors';
+
+const Label = ({ children }) => (
+  <span className={`${Colors.textAccent} font-mono mr-2 select-none`}>
+    {`> ${children}:`}
+  </span>
+);
 
 export default function Home() {
   return (
@@ -28,17 +34,25 @@ export default function Home() {
             </div>
             
             <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
-              <p><span className={`${Colors.textAccent} font-mono`}>{"> Name:"}</span> John Marky Malibiran</p>
-              <p><span className={`${Colors.textAccent} font-mono`}>{"> Online Alias:"}</span> NeKoRoSYS</p>
-              <p><span className={`${Colors.textAccent} font-mono`}>{"> Favorite OS:"}</span> Arch Linux</p>
+              <p><Label>Name</Label>John Marky G. Malibiran</p>
+              <p><Label>Alias</Label>NeKoRoSYS</p>
+              <p><Label>Role</Label>Graphic Designer | Full-Stack Web & Game Developer</p>
             </div>
           </PopoutBlock>
         </div>
 
-        <div className='mt-16 w-full max-w-62.5 flex justify-center'>
+        <div className='mt-12 w-full max-w-62.5 flex justify-center'>
             <Link to="/portfolio" className="w-full">
                 <PillButton delay={0.3} className="w-full">{<b>Hire Me</b>}</PillButton>
             </Link>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-8 w-full max-w-2xl justify-center mt-24">
+          <PopoutPanel className="flex-1 w-full">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <h1 className="font-bold text-3xl sm:text-5xl text-white drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">About Me</h1>
+            </div>
+          </PopoutPanel>
         </div>
       </div>
     </PageWrapper>
