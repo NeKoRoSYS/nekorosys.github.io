@@ -164,22 +164,6 @@ export default function Portfolio() {
             <p className='absolute bottom-0 mb-5'>...and more! On: <b><a href='https://behance.com/NeKoRoSYS' target='_blank' className={`${Colors.textAccentHover} transition-colors`}>Behance</a></b> | <b><a href='https://github.com/NeKoRoSYS' target='_blank' className={`${Colors.textAccentHover} transition-colors`}>GitHub</a></b></p>
           </PopoutPanel>
         </div>
-        
-        <div className="mt-24 flex flex-col items-center w-full max-w-4xl gap-8">
-          <FadeIn delay={0.2}>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-100 tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
-              Work with Me
-            </h1>
-          </FadeIn>
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 mb-16">
-            <LinkBtn delay={0.1} className={Colors.linkedin} iconSrc={Icons.linkedinIcon}>LinkedIn</LinkBtn>
-            <LinkBtn delay={0.2} className={Colors.github} iconSrc={Icons.githubIcon}>GitHub</LinkBtn>
-            <LinkBtn delay={0.3} className={Colors.behance} iconSrc={Icons.behanceIcon}>Behance</LinkBtn>
-            <LinkBtn delay={0.4} className={Colors.google} iconSrc={Icons.emailIcon}>Mail</LinkBtn>
-            <LinkBtn delay={0.5} className={Colors.facebook} iconSrc={Icons.facebookIcon}>Facebook</LinkBtn>
-            <LinkBtn delay={0.6} className={Colors.discord} iconSrc={Icons.discordIcon}>Discord</LinkBtn>
-          </div>
-        </div>
 
       </div>
     </PageWrapper>
