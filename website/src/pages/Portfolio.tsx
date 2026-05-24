@@ -66,9 +66,9 @@ export default function Portfolio() {
           </h1>
         </FadeIn>
 
-        <div className="flex max-w-4xl w-full px-4 mx-auto sm:gap-0 md:gap-8 mt-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl w-full px-4 mx-auto sm:gap-0 md:gap-8 mt-8 mb-8">
 
-        <HoverCard>
+        <HoverCard _className='sm:mb-8'>
           <div className="flex items-center gap-4 mb-6">
             <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
             <h4 className="font-bold text-lg sm:text-xl text-white">{"$ ls ./skills/graphic-design"}</h4>
@@ -96,7 +96,7 @@ export default function Portfolio() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-0 md:gap-8 max-w-4xl w-full px-4 mb-22 md:mb-24 mx-auto">
-          <HoverCard>
+          <HoverCard _className='sm:mb-8'>
             <div className="flex items-center gap-4 mb-6">
               <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
               <h4 className="font-bold text-lg sm:text-sm text-white">{"$ ls ./skills/frontend"}</h4>
@@ -109,7 +109,7 @@ export default function Portfolio() {
             </div>
           </HoverCard>
 
-          <HoverCard>
+          <HoverCard _className='sm:mb-8'>
             <div className="flex items-center gap-4 mb-6">
               <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
               <h4 className="font-bold text-lg sm:text-sm text-white">{"$ ls ./skills/backend"}</h4>
@@ -121,7 +121,7 @@ export default function Portfolio() {
             </div>
           </HoverCard>
 
-          <HoverCard>
+          <HoverCard _className='sm:mb-8'>
             <div className="flex items-center gap-4 mb-6">
               <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
               <h4 className="font-bold text-lg sm:text-sm text-white">{"$ ls ./skills/devops"}</h4>
