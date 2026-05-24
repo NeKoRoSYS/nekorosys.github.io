@@ -153,7 +153,7 @@ export default function Portfolio() {
         </div>
 
         <div className="mt-24 w-full">
-          <PopoutPanel className='flex items-center justify-center-safe !mb-0'>
+          <PopoutPanel className='flex items-center justify-center-safe mb-0!'>
             <div className="flex items-center justify-center gap-4">
               <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
               <h1 className="font-bold text-3xl sm:text-5xl text-gray-100 drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">$ ls ./my-projects</h1>
@@ -171,7 +171,7 @@ export default function Portfolio() {
               Work with Me
             </h1>
           </FadeIn>
-          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 mb-16">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 mb-16">
             <LinkBtn delay={0.1} className={Colors.linkedin} iconSrc={Icons.linkedinIcon}>LinkedIn</LinkBtn>
             <LinkBtn delay={0.2} className={Colors.github} iconSrc={Icons.githubIcon}>GitHub</LinkBtn>
             <LinkBtn delay={0.3} className={Colors.behance} iconSrc={Icons.behanceIcon}>Behance</LinkBtn>

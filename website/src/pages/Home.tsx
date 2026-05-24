@@ -69,7 +69,7 @@ export default function Home() {
         </div>
 
         <div className="mt-24 flex w-full max-w-2xl justify-center">
-          <PopoutPanel className="flex-1 w-full !mb-0">
+          <PopoutPanel className="flex-1 w-full mb-0!">
             <div className="flex items-center justify-center gap-4 mb-4">
               <h1 className="font-bold text-3xl sm:text-5xl text-gray-100 drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">About Me</h1>
             </div>
