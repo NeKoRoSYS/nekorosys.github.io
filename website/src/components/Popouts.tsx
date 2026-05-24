@@ -15,13 +15,13 @@ export function PopoutBlock({ children, className = "", animate = true }: Wrappe
   const aboveCenter = CheckIfAboveCenter(containerRef);
 
   return ( 
-    <div ref={containerRef} className={`w-full min-h-30 ${className}`}> 
+    <div ref={containerRef} className={`w-full h-full min-h-30 ${className}`}> 
       <motion.div 
         variants={innerBlockVariants}
         initial={animate ? (aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
         animate={animate ? (isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
         style={{ willChange: "auto" }}
-        className="bg-linear-to-br from-gray-700/25 to-white/15 hover:from-gray-700/15 hover:to-purple-500/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_16px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg,gradient]"
+        className="h-full flex flex-col bg-linear-to-br from-gray-700/25 to-white/15 hover:from-gray-700/15 hover:to-purple-500/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_16px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg,gradient]"
       >
         {children} 
       </motion.div>
@@ -45,7 +45,7 @@ export function PopoutPanel({ children, className = "", animate = true }: Wrappe
     > 
       <motion.div 
         variants={innerPanelVariants}
-        className="w-screen relative left-1/2 -translate-x-1/2 border-gray-600/80 bg-gray-900/20 backdrop-blur-md p-8 border-y text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
+        className="w-screen relative left-1/2 -translate-x-1/2 border-gray-600/80 bg-gray-900/20 backdrop-blur-md p-8 border-y text-center text-xl leading-relaxed shadow-xl" 
       > 
         <div className="md:max-w-8xl mx-auto px-6 flex flex-col items-center">
            {children}

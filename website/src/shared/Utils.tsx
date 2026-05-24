@@ -7,6 +7,15 @@ export function CheckIfRouteActive(path: string) {
   return location.pathname === path;
 }
 
+export function CopyTextToClipboard(text: string) {
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Text copied to clipboard!");
+  }).catch(err => {
+    console.error('Failed to copy: ', err);
+  });
+}
+
+
 export function CheckScrollOnTop() {
   const [isAtTop, setIsAtTop] = useState(true);
 

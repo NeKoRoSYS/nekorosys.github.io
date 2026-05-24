@@ -7,27 +7,29 @@ import { ProjectsMarquee } from '../components/MarqueeCarousel';
 import { RectButton } from '../components/Buttons';
 
 const techStack = {
-  frontend: [
-    { name: ">React", iconSrc: Icons.reactIcon },
-    { name: ">Tailwind", iconSrc: Icons.tailwindIcon },
+  languages: [
     { name: ">TypeScript", iconSrc: Icons.typescriptIcon },
     { name: ">JavaScript", iconSrc: Icons.javascriptIcon },
-    { name: ">HTML5", iconSrc: Icons.html5Icon },
-    { name: ">CSS3", iconSrc: Icons.css3Icon },
-  ],
-  backend: [
     { name: ">C#", iconSrc: Icons.csharpIcon },
     { name: ">C++", iconSrc: Icons.cplusplusIcon },
     { name: ">Python", iconSrc: Icons.pythonIcon },
+  ],
+  frontend: [
+    { name: ">React", iconSrc: Icons.reactIcon },
+    { name: ">Tailwind", iconSrc: Icons.tailwindIcon },
     { name: ">Next.js", iconSrc: Icons.nextjsIcon },
+    { name: ">Vite", iconSrc: Icons.viteIcon },
+  ],
+  backend: [
     { name: ">Node.js", iconSrc: Icons.nodejsIcon },
     { name: ">MongoDB", iconSrc: Icons.mongodbIcon },
   ],
   devops: [
     { name: ">Linux", iconSrc: Icons.linuxIcon },
-    { name: ">Docker", iconSrc: Icons.dockerIcon },
     { name: ">Git", iconSrc: Icons.gitIcon },
-    { name: ">Bash", iconSrc: Icons.bashIcon },
+    { name: ">Docker", iconSrc: Icons.dockerIcon },
+    { name: ">Kubernetes", iconSrc: Icons.kubernetesIcon },
+    { name: ">Bash/Zsh", iconSrc: Icons.bashIcon },
   ],
   tools: [
     { name: ">Unity", iconSrc: Icons.unityIcon },
@@ -53,13 +55,23 @@ interface LinkBtnProps {
   delay: number;
 }
 
-const LinkBtn = ({ children, href = "#", className, iconSrc, delay }: LinkBtnProps) => (
-  <a href={href}>
-    <RectButton delay={delay} invertIcon={true} className={className} iconSrc={iconSrc}>
-      <b>{children}</b>
-    </RectButton>
-  </a>
-);
+const LinkBtn = ({ children, href = "#", className, iconSrc, delay }: LinkBtnProps) => {
+  const isMailto = href.startsWith("mailto:");
+
+  return (
+    <a 
+      href={href} 
+      target={isMailto ? undefined : "_blank"} 
+      rel={isMailto ? undefined : "noopener noreferrer"} 
+      className="flex-1 min-w-40 max-w-full flex"
+    >
+      <RectButton delay={delay} invertIcon={true} className={className} iconSrc={iconSrc}>
+        <b>{children}</b>
+      </RectButton>
+    </a>
+  );
+};
+
 
 export default function Portfolio() {
   return (
@@ -77,49 +89,32 @@ export default function Portfolio() {
           </FadeIn>
         </div>
 
-        <div className="flex flex-col items-center w-full max-w-4xl gap-8">
+        <div className="mt-8 flex flex-col items-center w-full max-w-5xl gap-8">
           <FadeIn delay={0.2}>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-100 tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-100 tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center mb-4">
               { `{ Versatile == true }` }
             </h1>
           </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full">
-            <HoverCard>
-              <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
-                <h4 className="font-bold text-lg sm:text-xl text-gray-100">{"$ ls ./skills/graphic-design"}</h4>
-              </div>
-              
-              <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
-                  <p><Label>Adobe Photoshop</Label>General-purpose Editing</p>
-                  <p><Label>IbisPaint</Label>Illustration</p>
-                  <p><Label>Canva</Label>Layout Design</p>
-              </div>
-            </HoverCard>
-            
-            <HoverCard>
-              <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
-                <h4 className="font-bold text-lg sm:text-xl text-gray-100">{"$ ls ./utils/main-dev-tools"}</h4>
-              </div>
-              
-              <div className="space-y-3 text-sm sm:text-base text-gray-400 overflow-hidden wrap-break-word">
-                  <p><Label>Unity</Label>Main Game Engine</p>
-                  <p><Label>VS Code</Label>Code Editor</p>
-                  <br></br>
-              </div>
-            </HoverCard>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full">
             <HoverCard>
               <div className="flex items-center gap-4 mb-6">
                 <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/languages"}</h4>
+              </div>
+              <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
+                  {techStack.languages.map((tech) => (
+                    <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
+                  ))}
+              </div>
+            </HoverCard>
+
+            <HoverCard>
+              <div className="flex items-center gap-4 mb-6">
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/frontend"}</h4>
               </div>
-              
-              <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
+              <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
                   {techStack.frontend.map((tech) => (
                     <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
                   ))}
@@ -131,8 +126,20 @@ export default function Portfolio() {
                 <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/backend"}</h4>
               </div>
-              <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
+              <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
                   {techStack.backend.map((tech) => (
+                    <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
+                  ))}
+              </div>
+            </HoverCard>
+
+             <HoverCard>
+              <div className="flex items-center gap-4 mb-6">
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/devops"}</h4>
+              </div>
+              <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
+                  {techStack.devops.map((tech) => (
                     <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
                   ))}
               </div>
@@ -141,12 +148,26 @@ export default function Portfolio() {
             <HoverCard>
               <div className="flex items-center gap-4 mb-6">
                 <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
-                <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/devops"}</h4>
+                <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/tools"}</h4>
               </div>
-              <div className="flex flex-wrap justify-center gap-2 sm:gap-0">
-                  {techStack.devops.map((tech) => (
+              <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
+                  {techStack.tools.map((tech) => (
                     <HoverItem key={tech.name} name={tech.name} iconSrc={tech.iconSrc} />
                   ))}
+              </div>
+            </HoverCard>
+
+            <HoverCard>
+              <div className="flex items-center gap-4 mb-6">
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/graphic-design"}</h4>
+              </div>
+              <div className="flex-1 flex flex-col items-center-safe justify-center-safe space-y-3 text-sm text-gray-400 overflow-hidden wrap-break-word px-2">
+                  <p><Label>Alight Motion</Label>Video Editing</p>
+                  <p><Label>Photoshop</Label>Editing</p>
+                  <p><Label>IbisPaint</Label>Illustration</p>
+                  <p><Label>Canva</Label>Layout Design</p>
+                  <p><Label>Figma</Label>UI/UX Prototyping</p>
               </div>
             </HoverCard>
           </div>
@@ -161,8 +182,28 @@ export default function Portfolio() {
 
             <ProjectsMarquee/>
 
-            <p className='absolute bottom-0 mb-5'>...and more! On: <b><a href='https://behance.com/NeKoRoSYS' target='_blank' className={`${Colors.textAccentHover} transition-colors`}>Behance</a></b> | <b><a href='https://github.com/NeKoRoSYS' target='_blank' className={`${Colors.textAccentHover} transition-colors`}>GitHub</a></b></p>
+            <div className='left-0 w-full px-6 flex flex-col md:flex-row items-center justify-center gap-4'>
+                <p className="text-gray-400 font-mono text-sm uppercase tracking-widest md:mr-2 shrink-0">...and more on</p>
+                <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 max-w-70 sm:max-w-md">
+                    <LinkBtn delay={0} className={Colors.behance} iconSrc={Icons.behanceIcon} href="https://behance.com/NeKoRoSYS">Behance</LinkBtn>
+                    <LinkBtn delay={0.1} className={Colors.github} iconSrc={Icons.githubIcon} href="https://github.com/NeKoRoSYS">GitHub</LinkBtn>
+                </div>
+            </div>
           </PopoutPanel>
+        </div>
+        
+        <div className="mt-24 flex flex-col items-center w-full max-w-4xl gap-8">
+          <FadeIn delay={0.2}>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-100 tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
+              Work with Me
+            </h1>
+          </FadeIn>
+          <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-16">
+            <LinkBtn delay={0.6} href="https://discord.gg/invite/tZsMTPNYU8" className={Colors.discord} iconSrc={Icons.discordIcon}>Discord</LinkBtn>
+            <LinkBtn delay={0.1} href="https://linkedin.com/in/malibiran-johnmarky" className={Colors.linkedin} iconSrc={Icons.linkedinIcon}>LinkedIn</LinkBtn>
+            <LinkBtn delay={0.5} href="https://facebook.com/malibiran.johnmarky" className={Colors.facebook} iconSrc={Icons.facebookIcon}>Facebook</LinkBtn>
+            <LinkBtn delay={0.4} href="mailto:nekorosys@gmail.com" className={Colors.google} iconSrc={Icons.emailIcon}>Mail</LinkBtn>
+          </div>
         </div>
 
       </div>
