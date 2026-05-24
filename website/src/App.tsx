@@ -8,6 +8,8 @@ import { PageLoader } from './components/Loaders';
 import ScrollIndicator from './components/ScrollIndicator';
 import { CheckIfRouteActive } from './shared/Utils';
 
+const NotFound = lazy(() => import('./pages/404'));
+const BadApple = lazy(() => import('./pages/Bad-Apple'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
 const Home = lazy(() => import('./pages/Home'));
 
@@ -20,6 +22,8 @@ function LocationAwareRoutes() {
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
         <Route path="/portfolio" element={<Suspense fallback={<PageLoader />}><Portfolio /></Suspense>} />
+        <Route path="/bad-apple" element={<Suspense fallback={<PageLoader />}><BadApple /></Suspense>} />
+        <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFound /></Suspense>} />
       </Routes>
     </AnimatePresence>
   );
