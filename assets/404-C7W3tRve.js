@@ -1,1 +1,0 @@
-import{c as e}from"./index-C2ip5W5O.js";var t=e();function n(){return(0,t.jsxs)(`div`,{className:`flex flex-col w-full h-full min-w-screen min-h-screen items-center justify-center`,children:[(0,t.jsx)(`h1`,{children:`404`}),(0,t.jsx)(`p`,{children:`Page not found!`})]})}export{n as default};
