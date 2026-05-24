@@ -120,7 +120,7 @@ export default function Home() {
                      </li>
                      <li className="flex flex-col sm:flex-row sm:gap-2 mt-4 pt-4 border-t border-white/10">
                         <span className="text-green-400 font-bold min-w-30 animate-pulse">Running:</span> 
-                        <span className="text-gray-100 font-bold">NeKoRoGEAR</span>
+                        <span className="text-gray-100 font-bold">On Caffeine</span>
                      </li>
                   </ul>
                </div>
