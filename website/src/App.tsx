@@ -6,6 +6,7 @@ import { HeaderBar, FooterBar } from './components/Bars';
 import { SmoothScroller } from './shared/Effects';
 import { PageLoader } from './components/Loaders';
 import ScrollIndicator from './components/ScrollIndicator';
+import { CheckIfRouteActive } from './shared/Utils';
 
 const Portfolio = lazy(() => import('./pages/Portfolio'));
 const Home = lazy(() => import('./pages/Home'));
@@ -25,15 +26,12 @@ function LocationAwareRoutes() {
 }
 
 export default function App() {
-  const location = useLocation();
-  const isActive = (path:string) => location.pathname === path;
-  
   return (
     <>
       <SmoothScroller/>
       
       <div className="relative flex flex-col min-h-screen items-center justify-start bg-black text-white overflow-x-hidden scrollbar-none selection:bg-purple-300/30">
-        {isActive('/bad-apple') ? <BackgroundAscii /> : <Background/>}
+        {CheckIfRouteActive('/bad-apple') ? <BackgroundAscii /> : <Background/>}
         <HeaderBar/>
         <ScrollIndicator/>
         
@@ -41,7 +39,7 @@ export default function App() {
           <LocationAwareRoutes />
         </div>
 
-        {!isActive('/bad-apple') ? <FooterBar /> : undefined}
+        {!CheckIfRouteActive('/bad-apple') ? <FooterBar /> : undefined}
       </div>
     </>
   );

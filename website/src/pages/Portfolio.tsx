@@ -138,7 +138,8 @@ export default function Portfolio() {
         <div className="flex flex-col gap-16 w-full">
           <PopoutPanel className='flex items-center justify-center-safe'>
             <div className="flex items-center justify-center gap-4">
-              <h1 className="font-bold text-3xl sm:text-5xl text-white drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">My Projects</h1>
+              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+              <h1 className="font-bold text-3xl sm:text-5xl text-white drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">$ ls ./my-projects</h1>
             </div>
 
             <ProjectsMarquee/>

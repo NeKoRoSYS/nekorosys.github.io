@@ -42,37 +42,37 @@ export interface ProjectData {
 
 const myProjects: ProjectData[] = [
   {
-    title: "NeKONTROLLER",
+    title: "'NeKONTROLLER'",
     description: "A input-handler layer solution that sits on top of Unity's New Input System.",
     techStack: ["Unity", "C#"],
     link: "https://github.com/NeKoRoSYS/NeKONTROLLER",
   },
   {
-    title: "NeKoRoGEAR",
+    title: "'NeKoRoGEAR'",
     description: "A custom 3D game engine programmed from scratch with C++.",
     techStack: ["C++", "OpenGL", "SDL3", "GLAD"],
     link: "https://github.com/NeKoRoSYS/NeKoRoGEAR",
   },
   {
-    title: "NeKoRoSHELL",
+    title: "'NeKoRoSHELL'",
     description: "A minimal, generic, and modular ricing/customization framework for Arch Linux + Hyprland.",
     techStack: ["Bash", "C++", "Arch Linux", "Hyprland", "Wayland"],
     link: "https://github.com/NeKoRoSYS/NeKoRoSHELL",
   },
   {
-    title: "NeKoRoSHELL DLux",
+    title: "'NeKoRoSHELL DLux'",
     description: "An optional upgrade for NeKoRoSHELL that replaces everything with Quickshell UI elements.",
     techStack: ["Bash", "Arch Linux", "Hyprland", "Wayland", "Quickshell", "QML"],
     link: "https://github.com/NeKoRoSYS/NeKoRoSHELL-DLux",
   },
   {
-    title: "NeKoRoBOT.js",
+    title: "'NeKoRoBOT.js'",
     description: "A full-stack Discord.js bot template. Powers 'nexsplit'.",
     techStack: ["Node.js", "Discord.js", "Python", "MongoDB", "Docker"],
     link: "https://github.com/NeKoRoSYS/NeKoRoBOT.js",
   },
   {
-    title: "nexsplit",
+    title: "'nexsplit'",
     description: "A full-stack Discord.js bot that handles custom matchmaking features for the game Standoff 2.",
     techStack: ["Node.js", "Discord.js", "Python", "MongoDB", "Docker"],
     link: "https://discord.gg/cxjwAnWCjr",
@@ -90,7 +90,7 @@ export function ProjectsMarquee() {
                 animate={false}
             >
                 <div className="flex items-center gap-4 mb-2">
-                  <div className={`w-4 h-4 rounded-full ${Colors.indicatorPulse}`} />
+                  <p className={`${Colors.textAccent}`}>{'>'}</p>
                   <h4 className="font-bold text-xl text-white">{project.title}</h4>
                 </div>
                 

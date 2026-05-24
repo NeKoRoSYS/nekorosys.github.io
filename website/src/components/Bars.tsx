@@ -1,10 +1,21 @@
 import Colors from "../shared/Colors";
-import { Link, useLocation } from "react-router-dom";
-import { CheckScrollOnTop } from '../shared/Utils'
+import { Link } from "react-router-dom";
+import { CheckIfRouteActive, CheckScrollOnTop } from '../shared/Utils'
+
+interface LabelProps {
+  children: string;
+  path: string;
+}
+
+const Label = ({ children, path }: LabelProps) => (
+  <Link to={path}>
+    <span className={`${CheckIfRouteActive(path) ? `${Colors.textAccent} ${Colors.glowTextGreen}` : ''} ${Colors.textAccentHover} duration-250 transition-all`}>
+      {`${children}`}
+    </span>
+  </Link>
+);
 
 export function HeaderBar() {
-  const location = useLocation();
-  const isActive = (path:string) => location.pathname === path;
   const isAtTop = CheckScrollOnTop();
 
   return (
@@ -16,9 +27,10 @@ export function HeaderBar() {
         </div>
         
         <nav className={`flex gap-6 text-sm font-medium ${Colors.textMutedNav}`}>
-          <Link to="/home" className={`${isActive('/home') ? 'text-purple-400' : ''} hover:text-purple-400 duration-500 transition-all`}>Home</Link>
-          <Link to="/portfolio" className={`${isActive('/portfolio') ? 'text-purple-400' : ''} hover:text-purple-400 duration-500 transition-all`}>Portfolio</Link>
-          <Link to="/blogs" className={`${isActive('/blogs') ? 'text-purple-400' : ''} hover:text-purple-400 duration-500 transition-all`}>Blogs</Link>
+          <p className={`${Colors.textMutedNav}`}>cd ./pages/</p>
+          <Label path="/home">'Home'</Label>
+          <Label path="/portfolio">'Portfolio'</Label>
+          <Label path="/blogs">'Blogs'</Label>
         </nav>
       </div>
 
