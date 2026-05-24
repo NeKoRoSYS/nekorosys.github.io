@@ -121,7 +121,7 @@ export default function Portfolio() {
             </div>
           </HoverCard>
 
-          <HoverCard _className='sm:mb-8'>
+          <HoverCard>
             <div className="flex items-center gap-4 mb-6">
               <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
               <h4 className="font-bold text-lg sm:text-sm text-white">{"$ ls ./skills/devops"}</h4>
