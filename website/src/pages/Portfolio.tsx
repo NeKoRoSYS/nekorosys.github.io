@@ -33,7 +33,11 @@ const techStack = {
   ]
 };
 
-const Label = ({ children }) => (
+interface LabelProps {
+  children: string;
+}
+
+const Label = ({ children }: LabelProps) => (
   <span className={`${Colors.textAccent} font-mono mr-2 select-none`}>
     {`> ${children}:`}
   </span>
