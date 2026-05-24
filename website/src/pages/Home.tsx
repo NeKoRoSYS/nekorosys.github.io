@@ -30,7 +30,7 @@ export default function Home() {
           </FadeIn>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 w-full max-w-2xl justify-center">
+        <div className="flex flex-col md:flex-row gap-8 w-full max-w-4xl justify-center">
           <PopoutBlock className="flex-1 w-full">
             <div className="flex items-center gap-4 mb-6">
               <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
@@ -45,7 +45,7 @@ export default function Home() {
           </PopoutBlock>
         </div>
 
-        <div className='mt-12 w-full max-w-62.5 flex justify-center'>
+        <div className='mt-24 w-full max-w-62.5 flex justify-center'>
             <Link to="/portfolio" className="w-full">
                 <PillButton delay={0.3} className="w-full">{<b>Hire Me</b>}</PillButton>
             </Link>

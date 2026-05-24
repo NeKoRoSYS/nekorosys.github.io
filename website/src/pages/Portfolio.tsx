@@ -3,6 +3,7 @@ import { PopoutBlock, PopoutPanel } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 import Icons from '../shared/Icons'
 import Colors from '../shared/Colors';
+import { ProjectsMarquee } from '../components/MarqueeCarousel';
 
 const techStack = {
   frontend: [
@@ -65,7 +66,7 @@ export default function Portfolio() {
           </h1>
         </FadeIn>
 
-        <div className="max-w-4xl w-full px-4 mx-auto mt-8">
+        <div className="flex max-w-4xl w-full px-4 mx-auto sm:gap-0 md:gap-8 mt-8 mb-8">
 
         <HoverCard>
           <div className="flex items-center gap-4 mb-6">
@@ -93,8 +94,8 @@ export default function Portfolio() {
         </HoverCard>
         
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-0 md:gap-8 max-w-4xl w-full px-4 mb-10 md:mb-10 mx-auto">
 
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-0 md:gap-8 max-w-4xl w-full px-4 mb-22 md:mb-24 mx-auto">
           <HoverCard>
             <div className="flex items-center gap-4 mb-6">
               <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
@@ -133,11 +134,15 @@ export default function Portfolio() {
           </HoverCard>
         </div>
 
-        <div className="flex flex-col gap-16 w-full px-4">
-          <PopoutPanel>
-            <div className="flex items-center justify-center gap-4 mb-4">
+        <div className="flex flex-col gap-16 w-full">
+          <PopoutPanel className='flex items-center justify-center-safe'>
+            <div className="flex items-center justify-center gap-4">
               <h1 className="font-bold text-3xl sm:text-5xl text-white drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">My Projects</h1>
             </div>
+
+            <ProjectsMarquee/>
+
+            <p className='absolute bottom-0 mb-5'>...and more! On: <b><a href='https://behance.com/NeKoRoSYS' target='_blank'>Behance</a></b> | <b><a href='https://github.com/NeKoRoSYS' target='_blank'>GitHub</a></b></p>
           </PopoutPanel>
 
           <PopoutBlock>

@@ -6,20 +6,21 @@ import { innerBlockVariants, innerPanelVariants } from '../shared/Animations';
 interface WrapperProps {
   children: ReactNode;
   className?: string;
+  animate?: boolean
 }
 
-export function PopoutBlock({ children, className = "" }: WrapperProps) {
+export function PopoutBlock({ children, className = "", animate = true }: WrapperProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: false, amount: 0.35 });
   const aboveCenter = CheckIfAboveCenter(containerRef);
 
   return ( 
-    <div ref={containerRef} className={`w-full mb-12 min-h-30 ${className}`}> 
+    <div ref={containerRef} className={`w-full min-h-30 ${className}`}> 
       <motion.div 
         variants={innerBlockVariants}
-        initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
-        animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
-      style={{ willChange: "auto" }}
+        initial={animate ? (aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
+        animate={animate ? (isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
+        style={{ willChange: "auto" }}
         className="bg-linear-to-br from-gray-700/25 to-white/15 hover:from-gray-700/15 hover:to-purple-500/25 backdrop-blur-md p-8 rounded-2xl border border-white/80 hover:border-purple-400/80 text-left text-xl leading-relaxed text-gray-100 hover:text-purple-300 shadow-xl hover:drop-shadow-[0_0_16px_rgba(211,34,238,0.5)] transition-[filter,shadow,border,bg,gradient]"
       >
         {children} 
@@ -28,7 +29,7 @@ export function PopoutBlock({ children, className = "" }: WrapperProps) {
   );
 }
 
-export function PopoutPanel({ children, className = "" }: WrapperProps) {
+export function PopoutPanel({ children, className = "", animate = true }: WrapperProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: false, amount: 0.35 });
   const aboveCenter = CheckIfAboveCenter(containerRef);
@@ -36,8 +37,8 @@ export function PopoutPanel({ children, className = "" }: WrapperProps) {
   return ( 
     <motion.div
       ref={containerRef}
-      initial={aboveCenter ? "hiddenTop" : "hiddenBottom"}
-      animate={isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom"}
+      initial={animate ? (aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
+      animate={animate ? (isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
       style={{ willChange: "auto" }}
       viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
       className={`w-full mb-8 relative min-h-30 ${className}`}
@@ -46,10 +47,10 @@ export function PopoutPanel({ children, className = "" }: WrapperProps) {
         variants={innerPanelVariants}
         className="w-screen relative left-1/2 -translate-x-1/2 border-gray-600/80 bg-gray-900/20 backdrop-blur-md p-8 border-y text-center text-xl leading-relaxed text-purple-300 shadow-xl" 
       > 
-        <div className="md:max-w-8xl mx-auto px-6 min-h-150 flex flex-col items-center">
+        <div className="md:max-w-8xl mx-auto px-6 flex flex-col items-center">
            {children}
         </div> 
       </motion.div> 
     </motion.div> 
   ); 
-} 
+}
