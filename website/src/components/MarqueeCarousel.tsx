@@ -86,7 +86,7 @@ export function ProjectsMarquee() {
         {myProjects.map((project, index) => (
             <HoverCard 
                 key={`${project.title}-${index}`} 
-                _className="!flex-none w-80 sm:w-96 md:w-[28rem] p-8 flex flex-col justify-start items-start gap-4 min-h-64 cursor-default"
+                className="flex-none! w-80 sm:w-96 md:w-md p-8 flex flex-col justify-start items-start gap-4 min-h-64 cursor-default"
                 animate={false}
             >
                 <div className="flex items-center gap-4 mb-2">
