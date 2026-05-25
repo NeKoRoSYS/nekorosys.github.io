@@ -1,34 +1,44 @@
 import { useEffect, useState } from 'react';
-import arrowIcon from '../assets/arrow.png'
+import arrowIcon from '../assets/arrow.webp'
 
 export default function ScrollIndicator() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleVisibility = () => {
-      const totalHeight = document.documentElement.scrollHeight;
-      const screenHeight = window.innerHeight;
-      const currentScroll = window.scrollY;
+    let ticking = false;
 
-      if (totalHeight > screenHeight && currentScroll < 20) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+    const handleVisibility = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const totalHeight = document.documentElement.scrollHeight;
+          const screenHeight = window.innerHeight;
+          const currentScroll = window.scrollY;
+
+          setIsVisible(totalHeight > screenHeight && currentScroll < 20);
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
     handleVisibility();
 
-    window.addEventListener('scroll', handleVisibility);
-    window.addEventListener('resize', handleVisibility);
+    window.addEventListener('scroll', handleVisibility, { passive: true });
+    window.addEventListener('resize', handleVisibility, { passive: true });
     
-    const observer = new MutationObserver(handleVisibility);
+    let timeoutId: number;
+    const observer = new MutationObserver(() => {
+      clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(handleVisibility, 100);
+    });
+    
     observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
       window.removeEventListener('scroll', handleVisibility);
       window.removeEventListener('resize', handleVisibility);
       observer.disconnect();
+      clearTimeout(timeoutId);
     };
   }, []);
   

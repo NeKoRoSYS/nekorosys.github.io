@@ -1,4 +1,4 @@
-import backgroundImage from '../assets/background.jpeg';
+import backgroundImage from '../assets/background.webp';
 
 export default function Background() {
   return (
