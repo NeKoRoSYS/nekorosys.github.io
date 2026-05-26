@@ -199,7 +199,7 @@ export default function Portfolio() {
             </h1>
           </FadeIn>
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-16">
-            <LinkBtn delay={0.6} href="https://discord.gg/invite/tZsMTPNYU8" className={Colors.discord} iconSrc={Icons.discordIcon}>Discord</LinkBtn>
+            <LinkBtn delay={0.6} href="https://discordapp.com/users/788001337782435840/" className={Colors.discord} iconSrc={Icons.discordIcon}>Discord</LinkBtn>
             <LinkBtn delay={0.1} href="https://linkedin.com/in/malibiran-johnmarky" className={Colors.linkedin} iconSrc={Icons.linkedinIcon}>LinkedIn</LinkBtn>
             <LinkBtn delay={0.4} href="mailto:nekorosys@gmail.com" className={Colors.google} iconSrc={Icons.emailIcon}>Mail</LinkBtn>
           </div>
