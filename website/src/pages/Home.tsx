@@ -103,7 +103,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row max-w-4xl gap-10 items-stretch text-gray-300 text-sm sm:text-base leading-relaxed">
                <div className="flex-1 space-y-5">
                   <p>
-                    Hello! My name is Marky, and I am better known online as NeKoRoSYS! I am a 19-year-old Filipino based in Manilaaa, and I aspire to be a software developer and systems architect.
+                    Hello! My name is Marky, and I am better known online as NeKoRoSYS! I am a 19-year-old Filipino based in Manila, and I aspire to be a software developer and systems architect.
                     My goal is to learn a lot of aspects that come in developing software and IoT such as video games, and other tools and systems. 
                   </p><br></br>
                   <p>
