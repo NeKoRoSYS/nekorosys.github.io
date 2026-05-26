@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
-import type { MouseEvent } from 'react';
+import { type MouseEvent } from 'react';
 import { PillButton, RectButton } from '../components/Buttons';
 import { PopoutBlock, PopoutPanel } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
 import Colors from '../shared/Colors';
 import Icons from '../shared/Icons';
+import downloadIcon from '../assets/download.webp';
 import { CopyTextToClipboard } from '../shared/Utils';
+import { educationData, experienceData, Timeline } from '../components/Timeline';
 
 interface LabelProps {
   children: string;
@@ -69,7 +71,7 @@ export default function Home() {
         <div className="flex w-full max-w-4xl justify-center">
           <PopoutBlock className="flex-1 w-full">
             <div className="flex items-center gap-4 mb-6">
-              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
               <h4 className="font-bold text-lg sm:text-xl text-gray-100">{"$ fastfetch"}</h4>
             </div>
             
@@ -88,7 +90,7 @@ export default function Home() {
             </Link>
         </div>
 
-        <div className="mt-24 flex w-full max-w-4xl justify-center">
+        <div className="mt-24 mb-12 flex w-full max-w-4xl justify-center">
           <PopoutPanel className="flex-1 w-full mb-0! text-left">
             <div className="flex items-center justify-center gap-4 mb-10">
               <h1 className="font-bold text-3xl sm:text-5xl text-gray-100 drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">About Me</h1>
@@ -139,8 +141,6 @@ export default function Home() {
         
         <div className="mt-24 flex flex-col items-center w-full max-w-4xl gap-12">
             
-          
-
           <div className="w-full flex flex-col items-center gap-8">
             <FadeIn delay={0.2}>
               <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-100 tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
@@ -157,6 +157,25 @@ export default function Home() {
           </div>
 
         </div>
+
+        <div className="mt-24 flex w-full max-w-4xl justify-center">
+          <PopoutPanel className="flex-1 w-full mb-0! text-left">
+            <div className="flex items-center justify-center gap-4 mb-10">
+              <h1 className="font-bold text-3xl sm:text-5xl text-gray-100 drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">Curriculum Vitae</h1>
+              <a>
+                <img className='invert' src={downloadIcon} width={25} height={25}></img>
+              </a>
+            </div>
+
+            <h2 className="text-xl font-bold text-gray-300 mt-4 text-center">Education</h2>
+            <Timeline data={educationData} />
+            
+            <h2 className="text-xl font-bold text-gray-300 mt-20 text-center">Experience</h2>
+            <Timeline data={experienceData} />
+            
+          </PopoutPanel>
+        </div>
+        
       </div>
     </PageWrapper>
   );

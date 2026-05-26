@@ -1,6 +1,7 @@
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { Animations } from "../shared/Animations";
 import { PopoutBlock } from "./Popouts";
+import Colors from "../shared/Colors";
 
 interface CardProps {
   children: ReactNode;
@@ -34,4 +35,20 @@ export function HoverItem({ name, iconSrc }: ItemProps) {
       </span>
     </div>
   );
+}
+
+interface NodeProps {
+  children: ReactNode;
+}
+
+export function HoverNode({ children }: NodeProps) {
+  const [ isHovered, setIsHovered ] = useState(false);
+
+  return (
+    <div className={`relative w-4 h-4 min-w-4 flex items-center justify-center`} onMouseEnter={() => {setIsHovered(true)}} onMouseLeave={() => {setIsHovered(false)}}>
+      <button className={`absolute rounded-full w-full h-full ${isHovered ? "bg-[#27e844] shadow-[0_0_10px_rgba(57,255,20,1)]" : "bg-[#eff162]"}`}></button>
+      <div className={`absolute rounded-full w-full h-full ${isHovered ? "" : Colors.indicatorPulseYellow}`}></div>
+      {isHovered && children}
+    </div>
+  )
 }

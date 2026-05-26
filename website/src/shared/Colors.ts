@@ -23,7 +23,8 @@ const Colors = {
     textMutedNav: "text-slate-400",
     textBody: "text-gray-200",
 
-    indicatorPulse: "bg-[#27e844] animate-pulse shadow-[0_0_10px_rgba(57,255,20,1)]",
+    indicatorPulseGreen: "bg-[#27e844] animate-pulse shadow-[0_0_10px_rgba(57,255,20,1)]",
+    indicatorPulseYellow: "bg-[#f2f75c] animate-ping shadow-[0_0_10px_rgba(255,255,0,1)]",
 
     glowTextWhite: "drop-shadow-[0_0_24px_rgba(255,255,255,0.5)]",
     glowTextPurple: "drop-shadow-[0_0_24px_rgba(211,34,238,0.4)]",

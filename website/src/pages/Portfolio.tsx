@@ -80,7 +80,7 @@ export default function Portfolio() {
         
         <div className="mt-8 md:mt-12 mb-16 md:mb-20 text-center">
           <FadeIn delay={0.1}>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(57,255,20,0.75)] text-transparent bg-clip-text bg-linear-to-br from-[#39FF14] to-green-200 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(57,255,20,0.5)] text-transparent bg-clip-text bg-linear-to-br from-[#39FF14] to-green-200 tracking-tight">
               Creation
             </h1>
             <p className="mt-4 text-gray-400 text-sm sm:text-lg tracking-widest uppercase font-medium">
@@ -99,7 +99,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full">
             <HoverCard>
               <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/languages"}</h4>
               </div>
               <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
@@ -111,7 +111,7 @@ export default function Portfolio() {
 
             <HoverCard>
               <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/frontend"}</h4>
               </div>
               <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
@@ -123,7 +123,7 @@ export default function Portfolio() {
 
             <HoverCard>
               <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/backend"}</h4>
               </div>
               <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
@@ -135,7 +135,7 @@ export default function Portfolio() {
 
              <HoverCard>
               <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/devops"}</h4>
               </div>
               <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
@@ -147,7 +147,7 @@ export default function Portfolio() {
 
             <HoverCard>
               <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/tools"}</h4>
               </div>
               <div className="flex-1 flex flex-wrap justify-center content-center gap-2 sm:gap-0">
@@ -159,10 +159,10 @@ export default function Portfolio() {
 
             <HoverCard>
               <div className="flex items-center gap-4 mb-6">
-                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+                <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
                 <h4 className="font-bold text-lg sm:text-sm text-gray-100">{"$ ls ./skills/graphic-design"}</h4>
               </div>
-              <div className="flex-1 flex flex-col items-center-safe justify-center-safe space-y-3 text-sm text-gray-400 overflow-hidden wrap-break-word px-2">
+              <div className="flex-1 flex flex-col items-center justify-center space-y-3 text-sm text-gray-400 overflow-hidden wrap-break-word px-2">
                   <p><Label>Alight Motion</Label>Video Editing</p>
                   <p><Label>Photoshop</Label>Editing</p>
                   <p><Label>IbisPaint</Label>Illustration</p>
@@ -174,9 +174,9 @@ export default function Portfolio() {
         </div>
 
         <div className="mt-24 w-full">
-          <PopoutPanel className='flex items-center justify-center-safe mb-0!'>
+          <PopoutPanel className='flex items-center justify-center mb-0!'>
             <div className="flex items-center justify-center gap-4">
-              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulse}`} />
+              <div className={`w-4 h-4 rounded-full min-w-4 ${Colors.indicatorPulseGreen}`} />
               <h1 className="font-bold text-3xl sm:text-5xl text-gray-100 drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">$ ls ./my-projects</h1>
             </div>
 

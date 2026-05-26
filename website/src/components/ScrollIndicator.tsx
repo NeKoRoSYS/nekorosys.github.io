@@ -50,7 +50,7 @@ export default function ScrollIndicator() {
           : 'opacity-0 translate-y-4 pointer-events-none'
       }`}
     >
-      <div className="w-full h-full bg-linear-to-b from-black/0 to-75% to-black/75 flex items-center justify-center-safe">
+      <div className="w-full h-full bg-linear-to-b from-black/0 to-75% to-black/75 flex items-center justify-center">
         <div 
         className="w-5 h-5 bg-yellow-500 animate-[float_2s_ease-in-out_infinite] mt-10"
         style={{
