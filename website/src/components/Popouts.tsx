@@ -11,7 +11,7 @@ interface WrapperProps {
 
 export function PopoutBlock({ children, className = "", animate = true }: WrapperProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: false, amount: 0.35 });
+  const isInView = useInView(containerRef, { once: false, margin: "-150px 0px -150px 0px" });
   const aboveCenter = CheckIfAboveCenter(containerRef);
 
   return ( 
@@ -31,7 +31,7 @@ export function PopoutBlock({ children, className = "", animate = true }: Wrappe
 
 export function PopoutPanel({ children, className = "", animate = true }: WrapperProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: false, amount: 0.35 });
+  const isInView = useInView(containerRef, { once: false, margin: "-150px 0px -150px 0px" });
   const aboveCenter = CheckIfAboveCenter(containerRef);
   
   return ( 
@@ -40,7 +40,6 @@ export function PopoutPanel({ children, className = "", animate = true }: Wrappe
       initial={animate ? (aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
       animate={animate ? (isInView ? "visible" : aboveCenter ? "hiddenTop" : "hiddenBottom") : "visible"}
       style={{ willChange: "auto" }}
-      viewport={{ once: false, margin: "-10% 0px -10% 0px", amount: 0.35 }} 
       className={`w-full mb-8 relative min-h-30 ${className}`}
     > 
       <motion.div 

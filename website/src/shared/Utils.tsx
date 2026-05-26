@@ -40,7 +40,7 @@ export function CheckScrollOnTop() {
 }
 
 export function CheckIfAboveCenter(object: RefObject < HTMLDivElement | null > ) {
-	const isInView = useInView(object, { once: false, amount: 0.35 });
+	const isInView = useInView(object, { once: false, margin: "-150px 0px -150px 0px" });
 	const [isAboveCenter, setIsAboveCenter] = useState(false);
 
 	useEffect(() => {
