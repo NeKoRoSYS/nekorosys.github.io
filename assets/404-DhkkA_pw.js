@@ -1,0 +1,1 @@
+import{l as e}from"./index-DtIPj7Zy.js";var t=e();function n(){return(0,t.jsxs)(`div`,{className:`flex flex-col w-full h-full min-w-screen min-h-screen items-center justify-center`,children:[(0,t.jsx)(`h1`,{children:`404`}),(0,t.jsx)(`p`,{children:`Page not found!`})]})}export{n as default};
