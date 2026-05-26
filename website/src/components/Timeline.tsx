@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { PopoutBlock } from "./Popouts";
 import Colors from "../shared/Colors";
 
@@ -86,34 +86,80 @@ interface TimelineProps {
 
 export function Timeline({ data }: TimelineProps) {
     const [activeIndex, setActiveIndex] = useState(0);
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+    const handleNodeClick = (index: number, event: React.MouseEvent<HTMLDivElement>) => {
+        setActiveIndex(index);
+        const element = event.currentTarget;
+        const container = scrollContainerRef.current;
+        
+        if (container && element) {
+            const scrollLeft = element.offsetLeft - (container.offsetWidth / 2) + (element.offsetWidth / 2);
+            container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+        }
+    };
     
     return (
         <div className="w-full flex flex-col items-center">
-            <div className="w-full max-w-3xl mx-auto relative mt-12 mb-12 px-4 sm:px-12 flex justify-between items-center">
-                <div className="absolute left-6 right-6 sm:left-14 sm:right-14 h-1 bg-purple-500/30 z-0 top-1/2 -translate-y-1/2 rounded-full" />
-                
-                {data.map((level, index) => {
-                const isActive = activeIndex === index;
-                return (
-                    <div 
-                    key={index}
-                    className="relative z-10 flex flex-col items-center gap-3 cursor-pointer group p-2"
-                    onClick={() => setActiveIndex(index)}
-                    onMouseEnter={() => setActiveIndex(index)}
-                    >
-                    <div className={`w-5 h-5 rounded-full transition-all duration-300 border-2 flex items-center justify-center ${isActive ? 'bg-[#39FF14] border-[#39FF14] shadow-[0_0_12px_rgba(57,255,20,0.8)] scale-125' : 'bg-gray-900 border-yellow-500 group-hover:border-[#39FF14] group-hover:scale-110'}`}>
-                        {isActive && <div className="w-2 h-2 bg-black rounded-full" />}
-                    </div>
-                    <span className={`absolute top-full mt-2 text-xs sm:text-sm font-mono whitespace-nowrap transition-colors duration-300 ${isActive ? 'text-[#39FF14] font-bold' : 'text-gray-500 group-hover:text-purple-400'}`}>
-                        {level.date ? level.date.split('–')[0].trim() : `Item ${index + 1}`}
-                    </span>
-                    </div>
-                );
-                })}
+            <style>{`
+                /* Override global hiding for Firefox */
+                .glass-scrollbar {
+                    scrollbar-width: thin !important;
+                    scrollbar-color: rgba(168, 85, 247, 0.4) rgba(255, 255, 255, 0.05) !important;
+                }
+                /* Override global hiding for WebKit (Chrome/Safari/Edge) */
+                .glass-scrollbar::-webkit-scrollbar {
+                    display: block !important; 
+                    height: 8px !important;
+                }
+                .glass-scrollbar::-webkit-scrollbar-track {
+                    display: block !important;
+                    background: rgba(255, 255, 255, 0.05) !important;
+                    border-radius: 9999px !important;
+                    margin: 0 16px !important;
+                }
+                .glass-scrollbar::-webkit-scrollbar-thumb {
+                    display: block !important;
+                    background: rgba(168, 85, 247, 0.4) !important;
+                    border-radius: 9999px !important;
+                }
+                .glass-scrollbar::-webkit-scrollbar-thumb:hover {
+                    background: rgba(168, 85, 247, 0.7) !important;
+                }
+            `}</style>
+
+            <div 
+                ref={scrollContainerRef}
+                className="glass-scrollbar w-full max-w-4xl mx-auto mt-8 overflow-x-auto snap-x snap-mandatory px-4 md:px-12 pt-6 pb-12"
+            >
+                <div className="relative flex justify-start sm:justify-center items-center gap-16 md:gap-24 min-w-max mx-auto px-8">
+                    
+                    <div className="absolute left-8 right-8 h-1 bg-purple-500/30 z-0 top-1/2 -translate-y-1/2 rounded-full" />
+                    
+                    {data.map((level, index) => {
+                        const isActive = activeIndex === index;
+                        return (
+                            <div 
+                                key={index}
+                                className="relative z-10 flex flex-col items-center gap-3 cursor-pointer group p-2 snap-center shrink-0"
+                                onClick={(e) => handleNodeClick(index, e)}
+                            >
+                                <div className={`w-5 h-5 rounded-full transition-all duration-300 border-2 flex items-center justify-center ${isActive ? 'bg-[#39FF14] border-[#39FF14] shadow-[0_0_12px_rgba(57,255,20,0.8)] scale-125' : 'bg-gray-900 border-yellow-500 group-hover:border-[#39FF14] group-hover:scale-110'}`}>
+                                    {isActive && <div className="w-2 h-2 bg-black rounded-full" />}
+                                </div>
+                                
+                                <span className={`absolute top-full mt-4 text-xs sm:text-sm font-mono whitespace-nowrap transition-colors duration-300 ${isActive ? 'text-[#39FF14] font-bold drop-shadow-[0_0_4px_rgba(57,255,20,0.5)]' : 'text-gray-500 group-hover:text-purple-400'}`}>
+                                    {level.date ? level.date.split('–')[0].trim() : `Item ${index + 1}`}
+                                </span>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
 
-            <div className="w-full max-w-4xl flex justify-center mt-4">
-                <PopoutBlock key={activeIndex} animate={true} className="max-w-4xl flex-none! w-full sm:w-[90%] md:w-[80%] flex flex-col justify-center items-center gap-3 min-h-64">
+            <div className="w-full max-w-4xl flex justify-center px-4 sm:px-0">
+                <PopoutBlock key={activeIndex} animate={true} className="max-w-4xl flex-none! w-full sm:w-[90%] md:w-[80%] flex flex-col justify-center items-start gap-3 min-h-64 p-6 md:p-8">
+                    
                     <div className="flex items-center gap-3 mb-2">
                         <p className={`${Colors.textAccent}`}>{'>'}</p>
                         <h4 className="font-bold text-xl sm:text-2xl text-gray-100">{data[activeIndex].title}</h4>
@@ -121,21 +167,21 @@ export function Timeline({ data }: TimelineProps) {
                     
                     <h5 className="font-semibold text-gray-300 text-lg">{data[activeIndex].institution}</h5>
                     
-                    <p className="text-sm sm:text-base text-gray-400 leading-relaxed mb-auto mt-2">
+                    <p className="text-sm sm:text-base text-gray-400 leading-relaxed mb-auto mt-2 text-left">
                         {data[activeIndex].description}
                     </p>
         
                     {data[activeIndex].tags && (
-                    <div className="flex flex-wrap gap-2 mt-4 justify-center">
-                        {data[activeIndex].tags.map((tag) => (
-                        <span 
-                            key={tag} 
-                            className="text-xs sm:text-sm font-mono text-[#39FF14] bg-[#39FF14]/10 px-3 py-1.5 rounded-md border border-[#39FF14]/20"
-                        >
-                            {tag}
-                        </span>
-                        ))}
-                    </div>
+                        <div className="flex flex-wrap gap-2 mt-6 justify-center w-full">
+                            {data[activeIndex].tags.map((tag) => (
+                                <span 
+                                    key={tag} 
+                                    className="text-xs sm:text-sm font-mono text-[#39FF14] bg-[#39FF14]/10 px-3 py-1.5 rounded-md border border-[#39FF14]/20"
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
                     )}
                     
                     {data[activeIndex].date && (

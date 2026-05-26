@@ -179,10 +179,10 @@ export default function Home() {
             <h2 className="text-xl font-bold text-gray-300 mt-4 text-center">Education</h2>
             <Timeline data={educationData} />
             
-            <h2 className="text-xl font-bold text-gray-300 mt-20 text-center">Work and Leadership</h2>
+            <h2 className="text-xl font-bold text-gray-300 mt-10 text-center">Work and Leadership</h2>
             <Timeline data={professionalData} />
 
-            <h2 className="text-xl font-bold text-gray-300 mt-20 text-center">Technical Endeavors</h2>
+            <h2 className="text-xl font-bold text-gray-300 mt-10 text-center">Technical Endeavors</h2>
             <Timeline data={technicalData} />
             
           </PopoutPanel>
