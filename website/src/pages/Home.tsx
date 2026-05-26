@@ -107,7 +107,7 @@ export default function Home() {
                     My goal is to learn a lot of aspects that come in developing software and IoT such as video games, and other tools and systems. 
                   </p><br></br>
                   <p>
-                    I also happen to be interested in graphic and motion design, too. This website of mine serves as a landing page where you can check my creative and technical sides!
+                    I also happen to be interested in graphic and motion design, too. This website of mine serves as a landing page where you can explore my creative and technical sides!
                   </p>
                </div>
                
