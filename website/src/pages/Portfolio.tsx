@@ -59,16 +59,17 @@ const LinkBtn = ({ children, href = "#", className, iconSrc, delay }: LinkBtnPro
   const isMailto = href.startsWith("mailto:");
 
   return (
-    <a 
-      href={href} 
+    <RectButton 
+      href={href}
       target={isMailto ? undefined : "_blank"} 
-      rel={isMailto ? undefined : "noopener noreferrer"} 
-      className="flex-1 min-w-40 max-w-full flex"
+      rel={isMailto ? undefined : "noopener noreferrer"}
+      delay={delay} 
+      invertIcon={true} 
+      className={className} 
+      iconSrc={iconSrc}
     >
-      <RectButton delay={delay} invertIcon={true} className={className} iconSrc={iconSrc}>
-        <b>{children}</b>
-      </RectButton>
-    </a>
+      <b>{children}</b>
+    </RectButton>
   );
 };
 

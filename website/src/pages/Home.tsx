@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { type MouseEvent } from 'react';
 import { PillButton, RectButton } from '../components/Buttons';
 import { PopoutBlock, PopoutPanel } from '../components/Popouts';
 import { FadeIn, PageWrapper } from '../components/PageTransition';
@@ -22,7 +21,7 @@ const Label = ({ children }: LabelProps) => (
 interface LinkBtnProps {
   children: string;
   href?: string;
-  onClick?: (e: MouseEvent<HTMLAnchorElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void; // <-- Updated this line
   textToCopy?: string;
   className: string;
   iconSrc: string;
@@ -30,7 +29,7 @@ interface LinkBtnProps {
 }
 
 const LinkBtn = ({ children, href, onClick, textToCopy, className, iconSrc, delay }: LinkBtnProps) => {
-  const handleClick = async (e: MouseEvent<HTMLAnchorElement>) => {
+  const handleClick = async (e: React.MouseEvent<HTMLElement>) => {
     if (textToCopy) {
       e.preventDefault();
       CopyTextToClipboard(textToCopy);
@@ -44,11 +43,16 @@ const LinkBtn = ({ children, href, onClick, textToCopy, className, iconSrc, dela
   const resolvedHref = href || "#";
 
   return (
-    <a href={resolvedHref} onClick={handleClick}>
-      <RectButton delay={delay} onClick={undefined} invertIcon={true} className={className} iconSrc={iconSrc}>
-        <b>{children}</b>
-      </RectButton>
-    </a>
+    <RectButton 
+      href={resolvedHref} 
+      onClick={handleClick} 
+      delay={delay} 
+      invertIcon={true} 
+      className={className} 
+      iconSrc={iconSrc}
+    >
+      <b>{children}</b>
+    </RectButton>
   );
 };
 
@@ -168,7 +172,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-4 mb-10">
               <h1 className="font-bold text-3xl sm:text-5xl text-gray-100 drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">Curriculum Vitae</h1>
               <a>
-                <img className='invert' src={downloadIcon} width={25} height={25}></img>
+                <img aria-hidden={true} className='invert' src={downloadIcon} width={25} height={25}></img>
               </a>
             </div>
 
