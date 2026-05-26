@@ -39,19 +39,12 @@ export const educationData: TimelineItemData[] = [
   },
 ];
 
-export const experienceData: TimelineItemData[] = [
+export const professionalData: TimelineItemData[] = [
   {
     title: "Graphic Designer",
     institution: "Freelance",
     description: "I've been practicing graphic design and have made designs for different purposes, mainly, for clans and organizations from a video game I once spent a lot of my time on. My involvement with said organizations and video game slowly dissipated but up until now I continue to find ways to improve my designs for many other purposes.",
     date: "May 2018 – Present",
-    tags: ["Graphic Design"]
-  },
-  {
-    title: "Programmer",
-    institution: "Freelance",
-    description: "I started with game development because the topic became prevalent back then. However, I've branched out ever since and learned other concepts like web development and DevOps. My goal is to upskill myself and I believe that my journey in the tech industry is just getting started!",
-    date: "January 2020 – Present",
     tags: ["Graphic Design"]
   },
   {
@@ -75,6 +68,16 @@ export const experienceData: TimelineItemData[] = [
     date: "July 2024 – June 2025",
     tags: ["Motion Graphics", "Video Editing", "Photo Editing", "Graphic Design", "Layout Design", "Photography", "Copywriting"]
   }
+];
+
+export const technicalData: TimelineItemData[] = [
+  {
+    title: "Programmer",
+    institution: "Freelance/Hobby",
+    description: "I started with game development because I was interested in how games were made. However, I have since then branched out and learned other concepts like web development. My goal is to upskill myself and I believe that my journey in the tech industry is just getting started!",
+    date: "January 2020 – Present",
+    tags: ["Game Development", "Full-stack Web Development"]
+  },
 ];
 
 interface TimelineProps {
@@ -136,7 +139,7 @@ export function Timeline({ data }: TimelineProps) {
                     )}
                     
                     {data[activeIndex].date && (
-                        <p className="text-sm font-mono text-purple-400 bg-purple-900/30 px-3 py-1 rounded-md mt-8">{data[activeIndex].date}</p>
+                        <p className="text-sm font-mono self-center text-purple-400 bg-purple-900/30 px-3 py-1 rounded-md mt-8">{data[activeIndex].date}</p>
                     )}
                 </PopoutBlock>
             </div>

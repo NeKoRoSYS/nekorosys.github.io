@@ -7,7 +7,7 @@ import Colors from '../shared/Colors';
 import Icons from '../shared/Icons';
 import downloadIcon from '../assets/download.webp';
 import { CopyTextToClipboard } from '../shared/Utils';
-import { educationData, experienceData, Timeline } from '../components/Timeline';
+import { educationData, professionalData, technicalData, Timeline } from '../components/Timeline';
 
 interface LabelProps {
   children: string;
@@ -99,7 +99,11 @@ export default function Home() {
             <div className="flex flex-col md:flex-row max-w-4xl gap-10 items-stretch text-gray-300 text-sm sm:text-base leading-relaxed">
                <div className="flex-1 space-y-5">
                   <p>
-                    Hello! My name is Marky, and I'm better known online as NeKoRoSYS! I am a 19-year-old software developer and systems architect based in Manila, Philippines.
+                    Hello! My name is Marky, and I am better known online as NeKoRoSYS! I am a 19-year-old Filipino based in Manilaaa, and I aspire to be a software developer and systems architect.
+                    My goal is to learn a lot of aspects that come in developing software and IoT such as video games, and other tools and systems. 
+                  </p><br></br>
+                  <p>
+                    I also happen to be interested in graphic and motion design, too. This website of mine serves as a landing page where you can check my creative and technical sides!
                   </p>
                </div>
                
@@ -144,7 +148,7 @@ export default function Home() {
           <div className="w-full flex flex-col items-center gap-8">
             <FadeIn delay={0.2}>
               <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-100 tracking-tight drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] text-center">
-                Sponsor Me
+                *Sponsor Me
               </h1>
             </FadeIn>
             <div className="w-full grid grid-cols-5 gap-4 md:gap-6 mb-16">
@@ -154,6 +158,7 @@ export default function Home() {
                 <LinkBtn delay={0.4} className={Colors.etherium} iconSrc={Icons.ethereumIcon} textToCopy='0x5C429b3fdc7E6F7a692C234358ba31492Feb651C'>Ethereum</LinkBtn>
                 <LinkBtn delay={0.5} className={Colors.bitcoin} iconSrc={Icons.bitcoinIcon} textToCopy='bc1qw80kkgu8yp4mwzuzddygmnyamcjesfavwmer8a'>Bitcoin</LinkBtn>
             </div>
+            <p><i>*Sponsoring me is not a must, but will be immensely appreciated! (❁´◡`❁)</i></p>
           </div>
 
         </div>
@@ -170,8 +175,11 @@ export default function Home() {
             <h2 className="text-xl font-bold text-gray-300 mt-4 text-center">Education</h2>
             <Timeline data={educationData} />
             
-            <h2 className="text-xl font-bold text-gray-300 mt-20 text-center">Experience</h2>
-            <Timeline data={experienceData} />
+            <h2 className="text-xl font-bold text-gray-300 mt-20 text-center">Work and Leadership</h2>
+            <Timeline data={professionalData} />
+
+            <h2 className="text-xl font-bold text-gray-300 mt-20 text-center">Technical Endeavors</h2>
+            <Timeline data={technicalData} />
             
           </PopoutPanel>
         </div>
