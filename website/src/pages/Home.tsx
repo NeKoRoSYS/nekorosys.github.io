@@ -57,7 +57,7 @@ export default function Home() {
         
         <div className="mt-8 md:mt-12 mb-16 md:mb-20 text-center">
           <FadeIn delay={0.1}>
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(57,255,20,0.75)] text-transparent bg-clip-text bg-linear-to-br from-green-600 to-[#39FF14] tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(57,255,20,0.5)] text-transparent bg-clip-text bg-linear-to-br from-[#39FF14] to-green-200 tracking-tight">
               Hello, World!
             </h1>
             <p className="mt-4 text-gray-400 text-sm sm:text-lg tracking-widest uppercase font-medium">
