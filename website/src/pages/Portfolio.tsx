@@ -65,14 +65,13 @@ const LinkBtn = ({ children, href = "#", className, iconSrc, delay }: LinkBtnPro
       rel={isMailto ? undefined : "noopener noreferrer"}
       delay={delay} 
       invertIcon={true} 
-      className={className} 
+      className={`flex-1 min-w-40 max-w-full ${className}`} 
       iconSrc={iconSrc}
     >
       <b>{children}</b>
     </RectButton>
   );
 };
-
 
 export default function Portfolio() {
   return (
