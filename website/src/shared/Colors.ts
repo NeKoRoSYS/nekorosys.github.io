@@ -1,5 +1,5 @@
 const Colors = {
-    button: "border-yellow-400/80 hover:border-green-400 bg-linear-to-b from-yellow-700/25 to-yellow-300/50 hover:from-green-300/50 hover:to-green-600/25 hover:drop-shadow-[0_0_8px_rgba(80,200,150,0.5)]",
+    button: "border-yellow-400/80 hover:border-[#39FF14] bg-linear-to-b from-yellow-700/25 to-yellow-300/50 hover:from-[#39FF14]/50 hover:to-green-600/25 hover:drop-shadow-[0_0_8px_rgba(57,255,20,0.5)]",
     get interactable() { return this.button },
 
     github: "border-slate-500/80 hover:border-slate-300 bg-linear-to-b from-slate-800/40 to-slate-600/50 hover:from-slate-600/50 hover:to-slate-500/30 hover:drop-shadow-[0_0_8px_rgba(200,205,215,0.4)]",
@@ -17,18 +17,18 @@ const Colors = {
     etherium: "border-purple-500/60 hover:border-indigo-300 bg-linear-to-b from-slate-800/50 to-indigo-950/40 hover:from-indigo-500/40 hover:to-purple-500/20 hover:drop-shadow-[0_0_8px_rgba(140,124,240,0.5)]",
     bitcoin: "border-amber-500/80 hover:border-amber-400 bg-linear-to-b from-amber-900/40 to-amber-600/50 hover:from-amber-500/50 hover:to-amber-700/30 hover:drop-shadow-[0_0_8px_rgba(247,147,26,0.6)]",
 
-    textAccent: "text-green-400",
+    textAccent: "text-[#39FF14]",
     textAccentHover: "hover:text-yellow-400",
     textMutedNav: "text-slate-400",
     textBody: "text-gray-200",
 
-    indicatorPulse: "bg-emerald-400 animate-pulse shadow-[0_0_10px_rgba(52,211,153,0.8)]",
+    indicatorPulse: "bg-[#39FF14] animate-pulse shadow-[0_0_10px_rgba(57,255,20,0.8)]",
 
     glowTextWhite: "drop-shadow-[0_0_24px_rgba(255,255,255,0.5)]",
     glowTextPurple: "drop-shadow-[0_0_24px_rgba(211,34,238,0.4)]",
-    glowTextGreen: "drop-shadow-[0_0_24px_rgba(0,180,110,0.4)]",
+    glowTextGreen: "drop-shadow-[0_0_24px_rgba(57,255,20,0.4)]",
     glowBoxPurple: "shadow-[0_0_16px_rgba(211,34,238,0.5)]",
-    glowBoxGreene: "shadow-[0_0_16px_rgba(0,180,110,0.5)]",
+    glowBoxGreen: "shadow-[0_0_16px_rgba(57,255,20,0.5)]",
 
     bgBase: "bg-purple-950",
     borderAccent: "border-purple-400/80"

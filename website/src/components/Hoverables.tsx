@@ -29,7 +29,7 @@ export function HoverItem({ name, iconSrc }: ItemProps) {
         alt={name}
         className="w-10 h-10 sm:w-12 sm:h-12 object-contain rotate-0 saturate-50 opacity-50 group-hover:rotate-8 group-hover:saturate-100 group-hover:scale-125 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300"
       />
-      <span className="text-[10px] sm:text-xs font-mono text-gray-500 opacity-0 group-hover:opacity-100 group-hover:text-green-400 transition-opacity duration-300 text-center">
+      <span className="text-[10px] sm:text-xs font-mono text-gray-500 opacity-0 group-hover:opacity-100 group-hover:text-[#39FF14] transition-opacity duration-300 text-center">
         {name}
       </span>
     </div>

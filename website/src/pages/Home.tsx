@@ -57,7 +57,7 @@ export default function Home() {
         
         <div className="mt-8 md:mt-12 mb-16 md:mb-20 text-center">
           <FadeIn delay={0.1}>
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(0,180,110,0.75)] text-transparent bg-clip-text bg-linear-to-br from-green-600 to-green-300 tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold drop-shadow-[0_0_8px_rgba(57,255,20,0.75)] text-transparent bg-clip-text bg-linear-to-br from-green-600 to-[#39FF14] tracking-tight">
               Hello, World!
             </h1>
             <p className="mt-4 text-gray-400 text-sm sm:text-lg tracking-widest uppercase font-medium">
@@ -103,7 +103,7 @@ export default function Home() {
                
                <div className="flex-1 flex flex-col justify-center bg-black/30 p-6 md:p-8 rounded-xl border border-white/10 w-full shadow-inner">
                   <h3 className="text-xl font-bold text-gray-100 mb-6 flex items-center gap-3">
-                    <span className="text-green-400 text-2xl">{`{ }`}</span> core_modules
+                    <span className="text-[#39FF14] text-2xl">{`{ }`}</span> core_modules
                   </h3>
                   <ul className="space-y-4 font-mono text-sm md:text-base">
                      <li className="flex flex-col sm:flex-row sm:gap-2">
@@ -119,7 +119,7 @@ export default function Home() {
                         <span className="text-gray-300">Arch Linux / Zsh (Hyprland)</span>
                      </li>
                      <li className="flex flex-col sm:flex-row sm:gap-2 mt-4 pt-4 border-t border-white/10">
-                        <span className="text-green-400 font-bold min-w-30 animate-pulse">Running:</span> 
+                        <span className="text-[#39FF14] font-bold min-w-30 animate-pulse">Running:</span> 
                         <span className="text-gray-100 font-bold">On Caffeine</span>
                      </li>
                   </ul>

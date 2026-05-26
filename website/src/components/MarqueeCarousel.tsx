@@ -102,7 +102,7 @@ export function ProjectsMarquee() {
                   {project.techStack.map((tech) => (
                     <span 
                       key={tech} 
-                      className="text-xs sm:text-sm font-mono text-green-400 bg-green-400/10 px-3 py-1.5 rounded-md border border-green-400/20"
+                      className="text-xs sm:text-sm font-mono text-[#39FF14] bg-[#39FF14]/10 px-3 py-1.5 rounded-md border border-[#39FF14]/20"
                     >
                       {tech}
                     </span>
