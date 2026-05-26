@@ -129,7 +129,7 @@ export default function Home() {
               <div className="w-full grid grid-cols-5 gap-4 md:gap-6">
                   <LinkBtn delay={0.1} className={Colors.google} iconSrc={Icons.youtubeIcon} href="https://youtube.com/@nekorosys">YouTube</LinkBtn>
                   <LinkBtn delay={0.2} className={Colors.twitter} iconSrc={Icons.twitterIcon} href="https://x.com/nekorosys">X</LinkBtn>
-                  <LinkBtn delay={0.3} className={Colors.instagram} iconSrc={Icons.instagramIcon} href="https://instagram.com/nekorosys">Instagram</LinkBtn>
+                  <LinkBtn delay={0.3} className={Colors.itchio} iconSrc={Icons.itchioIcon} href="https://nekorosys.itch.io">Itch.io</LinkBtn>
                   <LinkBtn delay={0.4} className={Colors.tiktok} iconSrc={Icons.tiktokIcon} href="https://tiktok.com/@nekorosys">TikTok</LinkBtn>
                   <LinkBtn delay={0.6} className={Colors.discord} iconSrc={Icons.discordIcon} href="https://discord.gg/invite/tZsMTPNYU8">Discord</LinkBtn>
               </div>

@@ -26,6 +26,7 @@ import emailIcon from '../assets/socials/email.png';
 import ethereumIcon from '../assets/socials/ethereum.png';
 import facebookIcon from '../assets/socials/facebook.png';
 import githubIcon from '../assets/socials/github.png';
+import itchioIcon from '../assets/socials/itchio.webp';
 import instagramIcon from '../assets/socials/instagram.png';
 import kofiIcon from '../assets/socials/kofi.png';
 import linkedinIcon from '../assets/socials/linkedin.png';
@@ -64,6 +65,7 @@ const Icons = {
     ethereumIcon,
     facebookIcon,
     githubIcon,
+    itchioIcon,
     instagramIcon,
     kofiIcon,
     linkedinIcon,
